@@ -144,8 +144,20 @@
   }
 }
 
+.btn__icon--arrow-left {
+  @include rem(padding-left, 33px);
+  position: relative;
+
+  &::before {
+    @extend %icon-arrow-left;
+    @include rem(font-size, 15px);
+    @include rem(margin-left, -20px);
+    @include rem(top, 12px);
+    position: absolute;
+  }
+}
+
 .btn__text {
   position: relative;
   top: -3px;
 }
-
