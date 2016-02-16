@@ -10,7 +10,7 @@ The library exposes the following paths:
 * assetImagePaths
 * assetFontPaths
 
-Run
+Install the module:
 
 ```
 npm install fear-core-ui --save
@@ -22,8 +22,9 @@ Add the following to the gulp sass compile file.
 var fearCoreUI = require('fear-core-ui');
 
 .pipe(sass({
-    includePaths: fearCoreUI.sassPaths
-}));
+        includePaths: fearCoreUI.sassPaths
+    })
+);
 ```
 
 The following variables need to be set
@@ -77,7 +78,6 @@ The following can be exposed through aggregate files:
 `@import utlities.scss;`
 
 ```sass
-// utlities.scss
 @import 'utilities/functions';
 @import 'utilities/mixins';
 @import 'utilities/variables';
@@ -92,13 +92,12 @@ When a sass file contains direct CSS it needs to consumed through an explicit im
 i.e. If I only wanted to use the `buttons.sass` component. Importing an aggregate `components.sass` 
 which included all the components CSS. That would create bloat and unused CSS being included in the consuming project.
  
-**Example**
+**Example:**
 The buttons components contains direct CSS and must be imported through a direct import and not an aggregate sass file.
 
 `@import ui-pattern/buttons;`
 
 ```sass
-// buttons.scss
 .btn--primary {
   @include create-btn(40px, 15px, $color__brand--green, $color__brand--dark-grey, $color__brand--background-grey, $color__brand--light-grey);
 }
@@ -108,7 +107,7 @@ The buttons components contains direct CSS and must be imported through a direct
 }
 ```
 
-## Directory structure
+### Directory structure
 
 ```
 assets
@@ -130,8 +129,7 @@ item.scss
 ```
 
 #### item.scss
-```css
-// item.scss
+```sass
 @import 'item/variables';
 @import 'item/extends';
 @import 'item/functions';
@@ -139,7 +137,6 @@ item.scss
 @import 'item/module_itemA';
 @import 'item/module_itemB';
 ```
-
 
 ### Directory categories
 ```
