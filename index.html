@@ -57,8 +57,9 @@
 <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">fearCoreUI</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fear-core-ui'</span><span class="p">);</span>
 
 <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">sass</span><span class="p">({</span>
-    <span class="na">includePaths</span><span class="p">:</span> <span class="nx">fearCoreUI</span><span class="p">.</span><span class="nx">sassPaths</span>
-<span class="p">}));</span>
+        <span class="na">includePaths</span><span class="p">:</span> <span class="nx">fearCoreUI</span><span class="p">.</span><span class="nx">sassPaths</span>
+    <span class="p">})</span>
+<span class="p">);</span>
 </code></pre></div>
 <p>The following variables need to be set</p>
 <div class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nv">$fear-core-ui-font-dir</span><span class="p">:</span> <span class="s1">'/assets/fonts'</span><span class="err">;</span>
@@ -104,8 +105,7 @@ This should be imported once and ONLY once per generated CSS file. If you import
 
 <p><strong>Example:</strong> 
 <code>@import utlities.scss;</code></p>
-<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="c1">// utlities.scss
-</span><span class="k">@import</span> <span class="s">'utilities/functions';</span>
+<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="k">@import</span> <span class="s">'utilities/functions';</span>
 <span class="k">@import</span> <span class="s">'utilities/mixins';</span>
 <span class="k">@import</span> <span class="s">'utilities/variables';</span>
 </code></pre></div>
@@ -122,8 +122,7 @@ which included all the components CSS. That would create bloat and unused CSS be
 The buttons components contains direct CSS and must be imported through a direct import and not an aggregate sass file.</p>
 
 <p><code>@import ui-pattern/buttons;</code></p>
-<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="c1">// buttons.scss
-</span><span class="nc">.btn--primary</span> <span class="err">{</span>
+<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nc">.btn--primary</span> <span class="err">{</span>
   <span class="k">@include</span> <span class="nd">create-btn</span><span class="p">(</span><span class="m">40px</span><span class="o">,</span> <span class="m">15px</span><span class="o">,</span> <span class="nv">$color__brand--green</span><span class="o">,</span> <span class="nv">$color__brand--dark-grey</span><span class="o">,</span> <span class="nv">$color__brand--background-grey</span><span class="o">,</span> <span class="nv">$color__brand--light-grey</span><span class="p">)</span><span class="err">;</span>
 <span class="err">}</span>
 
@@ -148,13 +147,12 @@ sass
     |- _module_itemB.scss
 </code></pre></div>
 <h4>item.scss</h4>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">//</span> <span class="nt">item</span><span class="nc">.scss</span>
-<span class="k">@import</span> <span class="s2">'item/variables'</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s2">'item/extends'</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s2">'item/functions'</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s2">'item/mixins'</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s2">'item/module_itemA'</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s2">'item/module_itemB'</span><span class="p">;</span>
+<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="k">@import</span> <span class="s">'item/variables';</span>
+<span class="k">@import</span> <span class="s">'item/extends';</span>
+<span class="k">@import</span> <span class="s">'item/functions';</span>
+<span class="k">@import</span> <span class="s">'item/mixins';</span>
+<span class="k">@import</span> <span class="s">'item/module_itemA';</span>
+<span class="k">@import</span> <span class="s">'item/module_itemB';</span>
 </code></pre></div>
 <h3>Directory categories</h3>
 <div class="highlight"><pre><code class="language-" data-lang="">|- layouts
