@@ -1,9 +1,0 @@
-node_modules
-dist
-.sass-cache
-.idea
-.vscode
-app/generated
-build
-deploy-package.tgz
-_gh_pages

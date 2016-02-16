@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Fear Core UI</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="alternate" type="application/atom+xml" title="Recent commits to this repository" href="/commits/master.atom">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic,900">
+  <link rel="stylesheet" href="/fear-core-ui/assets/css/monokai.css">
+  <link rel="stylesheet" href="/fear-core-ui/assets/css/critical.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body class="wrap">
+  <header id="checkout-header" class="header header--checkout" tabindex="-1" role="banner">
+	<div class="header__inner">
+		<a class="logo logo--checkout"><span class="acc__text">Marks and Spencer</span></a>
+		<div class="acc-wrapper">
+			<h2 class="acc__header">Accessibility links</h2>
+			<ul class="acc__links">
+				<li><a class="acc__skip-link" href="#main-content">Skip to main content</a></li>
+				<li><a class="acc__skip-link" href="http://help.marksandspencer.com/support/company-website/terms-and-conditions" target="_blank">Terms & conditions</a></li>
+			</ul>
+		</div>
+        <div class="row">
+            <div class="col" style="text-align: center;">
+                <h1>Fear Core UI</h1>
+            </div>
+        </div>
+	</div>
+</header>
+
+  
+  <div class="site-wrapper">
+    <div class="site-wrapper__inner">
+        <div class="content" ng-controller="HubCtrl as hub">
+            <div class="content__inner">
+                <div class="row">
+                    <div class="col" style="margin: 30px 0px">
+                        <p>Core Sass, fonts and images for Marks and Spencer</p>
+
+<h2>Consuming the Library</h2>
+
+<p>The library exposes the following paths:</p>
+
+<ul>
+<li>sassPaths</li>
+<li>assetPaths</li>
+<li>assetImagePaths</li>
+<li>assetFontPaths</li>
+</ul>
+
+<p>Run</p>
+<div class="highlight"><pre><code class="language-" data-lang="">npm install fear-core-ui --save
+</code></pre></div>
+<p>Add the following to the gulp sass compile file.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">fearCoreUI</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fear-core-ui'</span><span class="p">);</span>
+
+<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">sass</span><span class="p">({</span>
+    <span class="na">includePaths</span><span class="p">:</span> <span class="nx">fearCoreUI</span><span class="p">.</span><span class="nx">sassPaths</span>
+<span class="p">}));</span>
+</code></pre></div>
+<p>The following variables need to be set</p>
+<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nv">$fear-core-ui-font-dir</span><span class="p">:</span> <span class="s1">'/assets/fonts'</span><span class="err">;</span>
+<span class="nv">$fear-core-ui-sprite-image-dir</span><span class="p">:</span> <span class="s1">'/assets/images/sprites'</span><span class="err">;</span>
+</code></pre></div>
+<p>Copy fear-core-ui assets to your working directory</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">fearCoreUI</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fear-core-ui'</span><span class="p">);</span>
+
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'copy-fear-core-ui-assets'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">([</span><span class="nx">fearCoreUI</span><span class="p">.</span><span class="nx">assetPaths</span> <span class="o">+</span> <span class="s1">'/**/*.*'</span><span class="p">])</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s1">'/assets'</span><span class="p">));</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><em>Note that the variables set in step 3 should correspond to the location of the assets copied in step 4.</em></p>
+
+<p>You can now reference any sass file.</p>
+
+<h3>example:</h3>
+<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="k">@import</span> <span class="s">'fear-core-ui/base';</span>
+<span class="k">@import</span> <span class="s">'fear-core-ui/typography';</span>
+</code></pre></div>
+<h2>Basic Structure</h2>
+
+<p><code>fear-core-ui/base</code> contains all the variables, functions and mixins in the library. 
+You can import this multiple times in your SASS code.</p>
+
+<p><code>fear-core-ui/extends</code> contains all the extends rules. 
+This should be imported once and ONLY once per generated CSS file. If you import it more than once per generated CSS file you will have duplicate CSS rules.</p>
+
+<h2>SASS / CSS coding standards</h2>
+
+<p>We want to make sure that unnecessary CSS is not imported to consuming projects.</p>
+
+<h2>Aggregates</h2>
+
+<p>The following can be exposed through aggregate files:</p>
+
+<ul>
+<li>mixins</li>
+<li>variables</li>
+<li>functions</li>
+</ul>
+
+<p><strong>Example:</strong> 
+<code>@import utlities.scss;</code></p>
+<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="c1">// utlities.scss
+</span><span class="k">@import</span> <span class="s">'utilities/functions';</span>
+<span class="k">@import</span> <span class="s">'utilities/mixins';</span>
+<span class="k">@import</span> <span class="s">'utilities/variables';</span>
+</code></pre></div>
+<p>This can be done because the sass code in these files do not add CSS unless mixins / extends are explicitly called from the consuming code.</p>
+
+<h2>Explicit imports</h2>
+
+<p>When a sass file contains direct CSS it needs to consumed through an explicit import. </p>
+
+<p>i.e. If I only wanted to use the <code>buttons.sass</code> component. Importing an aggregate <code>components.sass</code> 
+which included all the components CSS. That would create bloat and unused CSS being included in the consuming project.</p>
+
+<p><strong>Example</strong>
+The buttons components contains direct CSS and must be imported through a direct import and not an aggregate sass file.</p>
+
+<p><code>@import ui-pattern/buttons;</code></p>
+<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="c1">// buttons.scss
+</span><span class="nc">.btn--primary</span> <span class="err">{</span>
+  <span class="k">@include</span> <span class="nd">create-btn</span><span class="p">(</span><span class="m">40px</span><span class="o">,</span> <span class="m">15px</span><span class="o">,</span> <span class="nv">$color__brand--green</span><span class="o">,</span> <span class="nv">$color__brand--dark-grey</span><span class="o">,</span> <span class="nv">$color__brand--background-grey</span><span class="o">,</span> <span class="nv">$color__brand--light-grey</span><span class="p">)</span><span class="err">;</span>
+<span class="err">}</span>
+
+<span class="nc">.btn--secondary</span> <span class="err">{</span>
+  <span class="k">@include</span> <span class="nd">create-btn</span><span class="p">(</span><span class="m">40px</span><span class="o">,</span> <span class="m">15px</span><span class="o">,</span> <span class="nv">$color__brand--grey-40</span><span class="o">,</span> <span class="nv">$color__brand--dark-grey</span><span class="o">,</span> <span class="nv">$color__brand--background-grey</span><span class="o">,</span> <span class="nv">$color__brand--light-grey</span><span class="p">)</span><span class="err">;</span>
+<span class="err">}</span>
+</code></pre></div>
+<h2>Directory structure</h2>
+<div class="highlight"><pre><code class="language-" data-lang="">assets
+    |- fonts
+    |- images
+sass
+</code></pre></div>
+<h3>Directory pattern</h3>
+<div class="highlight"><pre><code class="language-" data-lang="">item.scss
+- item // directory
+    |- _variables.scss
+    |- _extends.scss
+    |- _functions.scss
+    |- _mixins.scss
+    |- _module_itemA.scss
+    |- _module_itemB.scss
+</code></pre></div>
+<h4>item.scss</h4>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">//</span> <span class="nt">item</span><span class="nc">.scss</span>
+<span class="k">@import</span> <span class="s2">'item/variables'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">'item/extends'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">'item/functions'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">'item/mixins'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">'item/module_itemA'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">'item/module_itemB'</span><span class="p">;</span>
+</code></pre></div>
+<h3>Directory categories</h3>
+<div class="highlight"><pre><code class="language-" data-lang="">|- layouts
+    |- _grid.scss
+    |- grid
+        |- _variables.scss        
+        |- _mixins.scss        
+        |- _module_grid.scss        
+    |- _zindex.scss
+|- normalize
+    |- _module_mns-normalize.scss
+    |- _module_normalize.scss
+|- typography
+|- ui-pattern
+    |- _buttons.scss
+    |- buttons
+        |- _mixins.scss
+        |- _module_icons.scss
+        |- _module_buttons.scss
+|- utilites
+    |- _mixins_measurements.scss
+_colors.scss
+_sprites.scss
+_normalize.scss
+</code></pre></div>
+<h3><strong>Further reading</strong></h3>
+
+<ul>
+<li><a href="http://digitalinnovation.github.io/fear-core">Website</a></li>
+<li><a href="http://digitalinnovation.github.io/fear-core/docs/">Technical documentation</a></li>
+<li><a href="https://github.com/DigitalInnovation/fear-core/wiki">Wiki</a></li>
+</ul>
+
+<p><br /></p>
+
+<h2><strong>Changelog</strong></h2>
+
+<h4><strong>1.1.5</strong></h4>
+
+<ul>
+<li>Screen sm breakpoint fix</li>
+<li>added icon-sparks-filled to icon.scss</li>
+</ul>
+
+<h4><strong>1.1.4</strong></h4>
+
+<ul>
+<li>add button icon with left arrow</li>
+</ul>
+
+<h4><strong>1.1.3</strong></h4>
+
+<ul>
+<li>added &#39;sparks-filled&#39; icon</li>
+</ul>
+
+<p><br /></p>
+
+<h2><strong>Contributing</strong></h2>
+
+<p>Here&#39;s the most direct way to get your work merged into the project:</p>
+
+<ul>
+<li>Fork the project.</li>
+<li>Clone down your fork ( <code>git clone git@github.com:[username]/fear-core-ui.git</code> ).</li>
+<li>Create a topic branch to contain your change ( <code>git checkout -b my_awesome_feature</code> ).</li>
+<li>Hack away, add tests. Not necessarily in that order.</li>
+<li>Make sure everything still passes by running <code>npm run test</code>.</li>
+<li>If necessary, rebase your commits into logical chunks, without errors.</li>
+<li>Push the branch up ( <code>git push origin my_awesome_feature</code> ).</li>
+<li>Create a pull request against fear-core-ui/develop and describe what your change
+does and the why you think it should be merged.</li>
+</ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>
