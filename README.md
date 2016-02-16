@@ -1,35 +1,41 @@
-# FEAR CORE UI
 
 Core Sass, fonts and images for Marks and Spencer
 
-
-### Consuming the Library
+## Consuming the Library
 
 The library exposes the following paths:
-- sassPaths
-- assetPaths
-- assetImagePaths
-- assetFontPaths
 
+* sassPaths
+* assetPaths
+* assetImagePaths
+* assetFontPaths
 
-.1 Run `npm install https://github.com/DigitalInnovation/fear-core-ui --save-dev`
+Run
 
-.2 Add the following to the gulp sass compile file.
-```js
+```
+npm install fear-core-ui --save
+```
+
+Add the following to the gulp sass compile file.
+
+```javascript
 var fearCoreUI = require('fear-core-ui');
 
 .pipe(sass({
     includePaths: fearCoreUI.sassPaths
-}))
+}));
 ```
-.3 The following variables need to be set
-```css
-$fear-core-ui-font-dir: '/assets/fonts';
 
+The following variables need to be set
+
+```sass
+$fear-core-ui-font-dir: '/assets/fonts';
 $fear-core-ui-sprite-image-dir: '/assets/images/sprites';
 ```
-.4 Copy fear-core-ui assets to your working directory
-```js
+
+Copy fear-core-ui assets to your working directory
+
+```javascript
 var fearCoreUI = require('fear-core-ui');
 
 gulp.task('copy-fear-core-ui-assets', function() {
@@ -38,17 +44,17 @@ gulp.task('copy-fear-core-ui-assets', function() {
 });
 ```
 
-**Note that the variables set in step 3 should correspond to the location of the assets copied in step 4.**
+*Note that the variables set in step 3 should correspond to the location of the assets copied in step 4.*
 
 You can now reference any sass file.
 
-#### example:
-```
+### example:
+```sass
 @import 'fear-core-ui/base';
 @import 'fear-core-ui/typography';
 ```
 
-### Basic Structure
+## Basic Structure
 
 `fear-core-ui/base` contains all the variables, functions and mixins in the library. 
 You can import this multiple times in your SASS code.
@@ -56,24 +62,25 @@ You can import this multiple times in your SASS code.
 `fear-core-ui/extends` contains all the extends rules. 
 This should be imported once and ONLY once per generated CSS file. If you import it more than once per generated CSS file you will have duplicate CSS rules.
 
-# SASS / CSS coding standards
+## SASS / CSS coding standards
 
 We want to make sure that unnecessary CSS is not imported to consuming projects.
 
 ## Aggregates
 The following can be exposed through aggregate files:
-- mixins
-- variables
-- functions
+
+* mixins
+* variables
+* functions
 
 **Example:** 
 `@import utlities.scss;`
 
-```css
-    // utlities.scss
-    @import 'utilities/functions';
-    @import 'utilities/mixins';
-    @import 'utilities/variables';
+```sass
+// utlities.scss
+@import 'utilities/functions';
+@import 'utilities/mixins';
+@import 'utilities/variables';
 ```
   
 This can be done because the sass code in these files do not add CSS unless mixins / extends are explicitly called from the consuming code.
@@ -90,15 +97,15 @@ The buttons components contains direct CSS and must be imported through a direct
 
 `@import ui-pattern/buttons;`
 
-```css
-    // buttons.scss
-    .btn--primary {
-      @include create-btn(40px, 15px, $color__brand--green, $color__brand--dark-grey, $color__brand--background-grey, $color__brand--light-grey);
-    }
-    
-    .btn--secondary {
-      @include create-btn(40px, 15px, $color__brand--grey-40, $color__brand--dark-grey, $color__brand--background-grey, $color__brand--light-grey);
-    }
+```sass
+// buttons.scss
+.btn--primary {
+  @include create-btn(40px, 15px, $color__brand--green, $color__brand--dark-grey, $color__brand--background-grey, $color__brand--light-grey);
+}
+
+.btn--secondary {
+  @include create-btn(40px, 15px, $color__brand--grey-40, $color__brand--dark-grey, $color__brand--background-grey, $color__brand--light-grey);
+}
 ```
 
 ## Directory structure
@@ -159,3 +166,10 @@ _colors.scss
 _sprites.scss
 _normalize.scss
 ```
+
+###**Further reading**
+
+* [Website](http://digitalinnovation.github.io/fear-core)
+* [Technical documentation](http://digitalinnovation.github.io/fear-core/docs/)
+* [Wiki](https://github.com/DigitalInnovation/fear-core/wiki)
+ 

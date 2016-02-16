@@ -1,5 +1,5 @@
-Workflow
---------
+
+##**Contributing**
 
 Here's the most direct way to get your work merged into the project:
 

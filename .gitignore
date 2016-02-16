@@ -6,3 +6,4 @@ dist
 app/generated
 build
 deploy-package.tgz
+_gh_pages
