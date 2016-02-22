@@ -1,5 +1,4 @@
-$ttip-border-tmp1: rgba(245, 245, 245, 0);
-$ttip-border-tmp2: rgba(213, 213, 213, 0);
+@import 'variables';
 
 .ttip {
   @include rem(border-radius, 5px);
