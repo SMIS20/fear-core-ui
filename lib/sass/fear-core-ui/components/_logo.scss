@@ -82,6 +82,6 @@ M&S Logo
 
 .no-svg .logo {
   @include rem(top, 4px);
-  background: url('#{$fear-core-ui-images}/global/logo-icon.png') no-repeat;
+  background: url('#{$fear-core-ui-images-dir}/global/logo-icon.png') no-repeat;
 }
 

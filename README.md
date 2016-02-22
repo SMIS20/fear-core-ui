@@ -25,8 +25,7 @@ var fearCoreUI = require('fear-core-ui');
 .3 The following variables need to be set
 ```css
 $fear-core-ui-font-dir: '/assets/fonts';
-$fear-core-ui-images: '/assets/images';
-$fear-core-ui-sprite-image-dir: '/assets/images/sprites';
+$fear-core-ui-images-dir: '/assets/images';
 ```
 .4 Copy fear-core-ui assets to your working directory
 ```js
