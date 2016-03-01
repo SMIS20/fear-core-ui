@@ -1,6 +1,10 @@
 
 ## **Changelog**
 
+
+#### **1.1.6**
+- Fix bug for sparks icons
+
 #### **1.1.5**
 - Screen sm breakpoint fix
 - added icon-sparks-filled to icon.scss
