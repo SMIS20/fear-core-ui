@@ -4,9 +4,7 @@
   "description": "Marks and Spencer core UI sass, fonts, images and assets",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "docs": "./node_modules/sassdoc/bin/sassdoc lib/sass -d _gh_pages/docs",
-    "prepublish": "npm test",
     "postpublish": "node postpublish"
   },
   "repository": {
