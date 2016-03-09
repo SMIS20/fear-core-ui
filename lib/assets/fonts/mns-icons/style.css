@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'mns-icons';
-    src:    url('..../mns-icons.eot?oj91h3');
-    src:    url('../mns-icons.eot?oj91h3#iefix') format('embedded-opentype'),
-        url('../mns-icons.ttf?oj91h3') format('truetype'),
-        url('../mns-icons.woff?oj91h3') format('woff'),
-        url('../mns-icons.svg?oj91h3#mns-icons') format('svg');
+    src:    url('../mns-icons.eot?1inrki');
+    src:    url('../mns-icons.eot?1inrki#iefix') format('embedded-opentype'),
+        url('../mns-icons.ttf?1inrki') format('truetype'),
+        url('../mns-icons.woff?1inrki') format('woff'),
+        url('../mns-icons.svg?1inrki#mns-icons') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,11 +24,26 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-circle-arrow:before {
+    content: "\e902";
+}
+.icon-long-arrow:before {
+    content: "\e900";
+}
+.icon-gear:before {
+    content: "\e903";
+}
+.icon-gear-filled:before {
+    content: "\e904";
+}
+.icon-lock:before {
+    content: "\e905";
+}
 .icon-delivery-email:before {
     content: "\e634";
 }
 .icon-sparks-filled:before {
-    content: "\e900";
+    content: "\e901";
 }
 .icon-sparks:before {
     content: "\e633";

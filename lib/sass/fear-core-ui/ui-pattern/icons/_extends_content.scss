@@ -211,6 +211,26 @@
   content: '\e900';
 }
 
+%icon-circle-arrow::before {
+  content: '\e902';
+}
+
+%icon-long-arrow::before {
+  content: '\e900';
+}
+
+%icon-gear::before {
+  content: '\e903';
+}
+
+%icon-gear-filled::before {
+  content: '\e904';
+}
+
+%icon-lock::before {
+  content: '\e905';
+}
+
 %icon-delivery-email::before {
   content: '\e634';
 }

@@ -100,9 +100,19 @@
 @include create-icon('print', 'icon-print');
 // Order Confirmation - print - icon
 @include create-icon('sparks', 'icon-sparks');
-// Basket - sparks icon
+// Loyalty - sparks icon
 @include create-icon('sparks-filled', 'icon-sparks-filled');
 // Loyalty - sparks filled
+@include create-icon('circle-arrow', 'icon-circle-arrow');
+// Loyalty - circle arrow
+@include create-icon('long-arrow', 'icon-long-arrow');
+// Loyalty - long arrow
+@include create-icon('gear', 'icon-gear');
+// Loyalty - gear
+@include create-icon('gear-filled', 'icon-gear-filled');
+// Loyalty - gear filled
+@include create-icon('lock', 'icon-lock');
+// Loyalty - lock
 @include create-icon('delivery-ed', 'icon-delivery-email');
 // Checkout pages - delivery email icon
 
