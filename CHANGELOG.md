@@ -1,6 +1,13 @@
 
 ## **Changelog**
 
+#### **1.1.7**
+**Added new icons**  
+- icon-circle-arrow e902  
+- icon-long-arrow e900  
+- icon-gear e903  
+- icon-gear-filled e904  
+- icon-lock e905  
 
 #### **1.1.6**
 - Fix bug for sparks icons
