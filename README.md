@@ -168,5 +168,6 @@ _normalize.scss
 
 * [Website](http://digitalinnovation.github.io/fear-core)
 * [Technical documentation](http://digitalinnovation.github.io/fear-core/docs/)
+* [Pattern library](http://patternlibrary.auto.devops.mnscorp.net/#/Core)
 * [Wiki](https://github.com/DigitalInnovation/fear-core/wiki)
  
