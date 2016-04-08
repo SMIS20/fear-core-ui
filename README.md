@@ -164,6 +164,32 @@ _sprites.scss
 _normalize.scss
 ```
 
+### Add an icon to the mns-icon fonts
+The mns-icons fonts are located in the `lib/assets/fonts` directory.  The font directory contains the generated mns-icon fonts:
+- mns-icons.eot
+- mns-icons.svg
+- mns-icons.ttf
+- mns-icons.woff
+
+In the `mns-icons` folder you will find the settings file (`selection.json`) used by icomoon and a demo project to serve up and test the fonts:
+
+The following steps will guide you through the process of adding icons to the mns-icon font
+
+1. Browse to https://icomoon.io/app/
+2. Click on Import Icons
+3. Browse to the fear-core-ui project folder and select the selection.json file (`lib/assets/fonts/mns-icons/selection.json`)
+4. If a message dialog pops up select to import all settings from the file
+5. Select the required fonts from the UI
+6. When you are done, at the bottom click `Generate Font`
+7. Check if the old icons unicode signatures match with the original font (you can achieve this by serving up the `demo.html` file in the demo-files folder.
+8. Click download and save the zip file on your local hard drive
+9. Unzip this folder and copy the generated font files to `lib/assets/fonts` and the demo files to the `mns-icons` folder
+10. Add the icons unicode sign to the following file: `lib/sass/fear-core-ui/ui-pattern/_extends_content.scss` and give it a proper sass variable name
+11. Generate the css class in the `lib/sass/fear-core-ui/ui-pattern/_module_icons.scss` file:
+```scss
+@include('css-class-name', 'icon-variable-name')
+```
+
 ###**Further reading**
 
 * [Website](http://digitalinnovation.github.io/fear-core)
