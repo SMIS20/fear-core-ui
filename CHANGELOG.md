@@ -1,6 +1,9 @@
 
 ## **Changelog**
 
+#### **1.1.8**
+- Install sassdoc-theme-mns from github using SSH, as repo is now private
+
 #### **1.1.7**
 **Added new icons**  
 - icon-circle-arrow e902  
@@ -21,4 +24,3 @@
 
 #### **1.1.3**
 - added 'sparks-filled' icon
-
