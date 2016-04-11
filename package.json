@@ -42,7 +42,7 @@
     "gulp-scss-lint": "0.3.8",
     "sassdoc": "2.1.15",
     "sassdoc-extras": "2.3.0",
-    "sassdoc-theme-mns": "git+https://github.com/DigitalInnovation/sassdoc-theme-mns",
+    "sassdoc-theme-mns": "git+ssh://git@github.com:DigitalInnovation/sassdoc-theme-mns",
     "sprity": "1.0.8",
     "sprity-fear": "kevinlambert/sprity-fear"
   }
