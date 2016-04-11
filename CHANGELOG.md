@@ -1,5 +1,7 @@
+# fear-core-ui change log
 
-## **Changelog**
+## 1.1.8
+- Install sassdoc-theme-mns from github using SSH, as repo is now private
 
 #### **1.1.7**
 **Added new icons**  
