@@ -3,11 +3,9 @@
   -------- */
 
 /* -------- Icons -------- */
-
 @include font-face('mns-icons', $fear-core-ui-font-dir + '/mns-icons', $file-formats: eot woff ttf svg);
 
 /* -------- Typographic -------- */
-
 // Helvetica font declarations
 @include font-face('helvetica-ultra', $fear-core-ui-font-dir + '/helvetica-ultra-light', $file-formats: eot woff ttf svg);
 @include font-face('helvetica-light', $fear-core-ui-font-dir + '/helvetica-light', $file-formats: eot woff ttf svg);
@@ -24,3 +22,6 @@
 @include font-face('didot-bold', $fear-core-ui-font-dir + '/didot-bold', $file-formats: eot woff ttf svg);
 @include font-face('didot-bold-italic', $fear-core-ui-font-dir + '/didot-bold-italic', $file-formats: eot woff ttf svg);
 
+// _new_ M&S London fonts - initial trail on CFTO eSite
+@include font-face('mns-london', $fear-core-ui-font-dir + 'cfto/MSLondoneTextW04-Regular', $file-formats: eot woff ttf svg);
+@include font-face('mns-london-bold', $fear-core-ui-font-dir + 'cfto/MSLondoneTextW04-Demibold', $file-formats: eot woff ttf svg);

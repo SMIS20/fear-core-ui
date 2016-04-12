@@ -1,6 +1,9 @@
 
 ## **Changelog**
 
+#### **1.1.9**
+- Including the updated MNS-london regular and bold fonts
+
 #### **1.1.8**
 - Install sassdoc-theme-mns from github using SSH, as repo is now private
 
