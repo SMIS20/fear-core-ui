@@ -1,6 +1,9 @@
 
 ## **Changelog**
 
+#### **1.1.10**
+- Fixing path to the newly included MNS-london fonts (oops)
+
 #### **1.1.9**
 - Including the updated MNS-london regular and bold fonts
 
