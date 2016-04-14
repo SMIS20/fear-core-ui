@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "docs": "./node_modules/sassdoc/bin/sassdoc lib/sass -d _gh_pages/docs",
-    "postpublish": "node postpublish"
+    "pretest": "eslint tasks/",
+    "postpublish": "node postpublish",
+    "prepublish": "npm test",
+    "test" : "gulp lint-sass"
   },
   "repository": {
     "type": "git",
@@ -31,16 +34,17 @@
     "node-bourbon": "4.2.3"
   },
   "devDependencies": {
+    "eslint": "1.2.1",
+    "eslint-config-fear-core": "git+https://github.com/digitalinnovation/fear-core-eslint-config",
+    "fear-core-dev": "1.1.13",
     "gh-pages" : "0.10.0",
     "gulp": "3.9.0",
-    "gulp-cached": "1.1.0",
-    "gulp-if": "2.0.0",
     "gulp-sass": "2.1.0",
-    "gulp-scss-lint": "0.3.8",
     "sassdoc": "2.1.15",
     "sassdoc-extras": "2.3.0",
     "sassdoc-theme-mns": "git+ssh://git@github.com:DigitalInnovation/sassdoc-theme-mns",
     "sprity": "1.0.8",
-    "sprity-fear": "kevinlambert/sprity-fear"
+    "sprity-fear": "kevinlambert/sprity-fear",
+    "yargs": "3.15.0"
   }
 }

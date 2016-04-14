@@ -1,9 +1,28 @@
 'use strict';
 
-var lint = require('./tasks/lint'),
-    sass = require('./tasks/sass'),
-    sprites = require('./tasks/sprites');
+var argv = require('yargs').argv;
 
-lint();
-sass();
-sprites();
+/**
+ * logger
+ * @param error {Object}
+ */
+function logger (error) {
+    if (argv.debug) {
+        throw error;
+    }
+}
+
+/**
+ * modulePath
+ * @param modulePath {String}
+ */
+function loadModule (modulePath) {
+    try {
+        require(modulePath)();
+    } catch (e) {
+        logger(e);
+    }
+}
+
+//tasks
+loadModule('./tasks/dev');
