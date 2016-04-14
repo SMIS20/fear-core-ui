@@ -5,6 +5,8 @@
 - Aligning with the UX team on which of the mns-london fonts we should use:
  - mns-london-regular - the semibold font (much better legibility)
  - mns-london-demibold - the bold font (used is font-weight: bold produces inconsistent results)
+- add ux tooltip styles
+- add fear-core dev sass and eslint
 
 #### **1.1.10**
 - Fixing path to the newly included MNS-london fonts (oops)
