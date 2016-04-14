@@ -1,7 +1,6 @@
+/**
+ * FEAR Core default .eslintrc extending Browser related rules
+ */
 {
-    "env": {
-        "browser": true,
-        "amd": true
-    },
-    "extends": "eslint:recommended"
+    "extends": "fear-core/node-config"
 }

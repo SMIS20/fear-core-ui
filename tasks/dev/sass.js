@@ -13,11 +13,10 @@ module.exports = function() {
         errLogToConsole: true
     };
 
-    gulp.task('sass', function() {
-        gulp.src(['./app/sass/**/*.scss', './test/sass/**/*.scss'])
+    gulp.task('compile-sass', function() {
+        gulp.src(['./lib/sass/**/*.scss', './test/sass/**/*.scss'])
             .pipe(sass(sassOptions)
                 .on('error', sass.logError))
-            .pipe(gulp.dest('./build/css'))
+            .pipe(gulp.dest('./build/css'));
     });
-
 };
