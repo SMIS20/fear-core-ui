@@ -1,6 +1,6 @@
 ## **Linting**
 
-```npm test``` runs ``` eslint ```eslint tasks/``` and sass lint ```gulp lint-sass```
+```npm test``` runs eslint ```eslint tasks/``` and sass lint ```gulp lint-sass```
 
 ## **Changelog**
 
