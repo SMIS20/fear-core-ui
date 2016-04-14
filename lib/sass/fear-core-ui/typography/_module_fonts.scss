@@ -23,5 +23,5 @@
 @include font-face('didot-bold-italic', $fear-core-ui-font-dir + '/didot-bold-italic', $file-formats: eot woff ttf svg);
 
 // _new_ M&S London fonts - initial trail on CFTO eSite
-@include font-face('mns-london', $fear-core-ui-font-dir + '/cfto/MSLondoneTextW04-Regular', $file-formats: eot woff ttf svg);
+@include font-face('mns-london-regular', $fear-core-ui-font-dir + '/cfto/MSLondoneTextW04-Semibold', $file-formats: eot woff ttf svg);
 @include font-face('mns-london-bold', $fear-core-ui-font-dir + '/cfto/MSLondoneTextW04-Demibold', $file-formats: eot woff ttf svg);
