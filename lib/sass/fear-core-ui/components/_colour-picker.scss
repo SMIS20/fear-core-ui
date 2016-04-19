@@ -3,7 +3,8 @@
   list-style: none;
   padding: 0;
 
-  &--single, &--none {
+  &--single,
+  &--none {
     display: none;
   }
 
@@ -31,7 +32,8 @@
       }
     }
 
-    .is-active, .color-picker__swatch-selector:checked + img {
+    .is-active,
+    .color-picker__swatch-selector:checked + img {
       padding: 1px;
       border: solid 2px $color__brand--dark-grey;
     }
