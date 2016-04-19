@@ -23,4 +23,4 @@ module.exports = function() {
         }).pipe(gulpif('*.png', gulp.dest('lib/assets/images/sprites/'), gulp.dest('lib/sass/fear-core-ui/')));
 
     });
-}
+};

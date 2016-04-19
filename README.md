@@ -190,6 +190,9 @@ The following steps will guide you through the process of adding icons to the mn
 @include('css-class-name', 'icon-variable-name')
 ```
 
+## **Linting**
+```npm test``` runs eslint ```eslint tasks``` and sass lint ```gulp lint-sass```
+
 ###**Further reading**
 
 * [Website](http://digitalinnovation.github.io/fear-core)
