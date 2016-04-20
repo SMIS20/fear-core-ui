@@ -29,6 +29,7 @@ $box_shadow: rgba(0, 0, 0, .25);
 //  ::after being used to give the effect of the body of the arrow.
 .ttip__arrow::before,
 .ttip__arrow::after {
+  @include rem(left, 17px);
   @include rem(border-width, 7px);
   border-color: transparent;
   border-style: solid;
@@ -38,14 +39,30 @@ $box_shadow: rgba(0, 0, 0, .25);
   height: 0;
 }
 
+// Down Modifier (Default)
+//  Moves the arrow to the bottom of the tooltip
+//  Applies the colour to the top border
+.ttip__arrow::after {
+  top: 100%;
+  border-top-color: $color__brand--background-grey;
+}
+
+.ttip__arrow::before {
+  top: 103%;
+  border-top-color: $color__brand--grey-40;
+}
+
 // Up Modifier
 //  Moves the arrow to the top of the tooltip
 //  Removes the top border
 //  Applies the colour to the bottom border
 .ttip__arrow--up::before,
 .ttip__arrow--up::after {
-  @include rem(left, 17px);
-  border-top: 0;
+  @include rem(border-bottom-width, 7px);
+
+  // reset defaults
+  top: auto;
+  border-top-color: transparent;
 }
 
 .ttip__arrow--up::after {
@@ -58,26 +75,28 @@ $box_shadow: rgba(0, 0, 0, .25);
   border-bottom-color: $color__brand--grey-40;
 }
 
-// Down Modifier
-//  Moves the arrow to the bottom of the tooltip
-//  Removes the bottom border
-//  Applies the colour to the top border
-.ttip__arrow--down::before,
-.ttip__arrow--down::after {
-  @include rem(left, 17px);
-  border-bottom: 0;
+// Left Modifier
+//  Moves the arrow to the left of the tooltip
+//  Centers the arrow in the y-axis of the tooltup
+.ttip__arrow--left::before,
+.ttip__arrow--left::after {
+  @include rem(border-left-width, 7px);
+  @include rem(margin-top, -7px);
+  top: 50%;
+
+  // reset defaults
+  border-top-color: transparent;
 }
 
-.ttip__arrow--down::after {
-  top: 100%;
-  border-top-color: $color__brand--background-grey;
+.ttip__arrow--left::after {
+  @include rem(left, -14px);
+  border-right-color: $color__brand--background-grey;
 }
 
-.ttip__arrow--down::before {
-  top: 103%;
-  border-top-color: $color__brand--grey-40;
+.ttip__arrow--left::before {
+  @include rem(left, -15px);
+  border-right-color: $color__brand--grey-40;
 }
-
 
 // Center Modifier
 //  Moves the arrow to the middle of tooltip's x-axis
@@ -86,24 +105,4 @@ $box_shadow: rgba(0, 0, 0, .25);
 .ttip__arrow--center::after {
   @include rem(margin-left, -7px);
   left: 50%;
-}
-
-// Left Modifier
-//  Moves the arrow to the left of the tooltip
-//  Centers the arrow in the y-axis of the tooltup
-.ttip__arrow--left::before,
-.ttip__arrow--left::after {
-  @include rem(margin-top, -7px);
-  top: 50%;
-  border-left: 0;
-}
-
-.ttip__arrow--left::after {
-  @include rem(left, -7px);
-  border-right-color: $color__brand--background-grey;
-}
-
-.ttip__arrow--left::before {
-  @include rem(left, -8px);
-  border-right-color: $color__brand--grey-40;
 }
