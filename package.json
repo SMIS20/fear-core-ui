@@ -1,6 +1,6 @@
 {
   "name": "fear-core-ui",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Marks and Spencer core UI sass, fonts, images and assets",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "pretest": "eslint tasks/",
     "postpublish": "node postpublish",
     "prepublish": "npm test",
-    "test" : "gulp lint-sass"
+    "test": "gulp lint-sass"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,7 @@
     "eslint": "1.2.1",
     "eslint-config-fear-core": "git+https://github.com/digitalinnovation/fear-core-eslint-config",
     "fear-core-dev": "1.1.13",
-    "gh-pages" : "0.10.0",
+    "gh-pages": "0.10.0",
     "gulp": "3.9.0",
     "gulp-sass": "2.1.0",
     "sassdoc": "2.1.15",
