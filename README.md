@@ -31,7 +31,7 @@ The following variables need to be set
 
 ```sass
 $fear-core-ui-font-dir: '/assets/fonts';
-$fear-core-ui-sprite-image-dir: '/assets/images/sprites';
+$fear-core-ui-images-dir: '/assets/images';
 ```
 
 Copy fear-core-ui assets to your working directory
