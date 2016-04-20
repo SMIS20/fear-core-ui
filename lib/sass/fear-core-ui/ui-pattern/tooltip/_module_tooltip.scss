@@ -58,7 +58,6 @@ $box_shadow: rgba(0, 0, 0, .25);
 //  Applies the colour to the bottom border
 .ttip__arrow--up::before,
 .ttip__arrow--up::after {
-  @include rem(border-bottom-width, 7px);
 
   // reset defaults
   top: auto;
@@ -80,7 +79,6 @@ $box_shadow: rgba(0, 0, 0, .25);
 //  Centers the arrow in the y-axis of the tooltup
 .ttip__arrow--left::before,
 .ttip__arrow--left::after {
-  @include rem(border-left-width, 7px);
   @include rem(margin-top, -7px);
   top: 50%;
 
