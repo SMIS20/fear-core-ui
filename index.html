@@ -50,7 +50,7 @@
 <li>assetFontPaths</li>
 </ul>
 
-<p>Run</p>
+<p>Install the module:</p>
 <div class="highlight"><pre><code class="language-" data-lang="">npm install fear-core-ui --save
 </code></pre></div>
 <p>Add the following to the gulp sass compile file.</p>
@@ -63,7 +63,7 @@
 </code></pre></div>
 <p>The following variables need to be set</p>
 <div class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nv">$fear-core-ui-font-dir</span><span class="p">:</span> <span class="s1">'/assets/fonts'</span><span class="err">;</span>
-<span class="nv">$fear-core-ui-sprite-image-dir</span><span class="p">:</span> <span class="s1">'/assets/images/sprites'</span><span class="err">;</span>
+<span class="nv">$fear-core-ui-images-dir</span><span class="p">:</span> <span class="s1">'/assets/images'</span><span class="err">;</span>
 </code></pre></div>
 <p>Copy fear-core-ui assets to your working directory</p>
 <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">fearCoreUI</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fear-core-ui'</span><span class="p">);</span>
@@ -118,7 +118,7 @@ This should be imported once and ONLY once per generated CSS file. If you import
 <p>i.e. If I only wanted to use the <code>buttons.sass</code> component. Importing an aggregate <code>components.sass</code> 
 which included all the components CSS. That would create bloat and unused CSS being included in the consuming project.</p>
 
-<p><strong>Example</strong>
+<p><strong>Example:</strong>
 The buttons components contains direct CSS and must be imported through a direct import and not an aggregate sass file.</p>
 
 <p><code>@import ui-pattern/buttons;</code></p>
@@ -130,7 +130,7 @@ The buttons components contains direct CSS and must be imported through a direct
   <span class="k">@include</span> <span class="nd">create-btn</span><span class="p">(</span><span class="m">40px</span><span class="o">,</span> <span class="m">15px</span><span class="o">,</span> <span class="nv">$color__brand--grey-40</span><span class="o">,</span> <span class="nv">$color__brand--dark-grey</span><span class="o">,</span> <span class="nv">$color__brand--background-grey</span><span class="o">,</span> <span class="nv">$color__brand--light-grey</span><span class="p">)</span><span class="err">;</span>
 <span class="err">}</span>
 </code></pre></div>
-<h2>Directory structure</h2>
+<h3>Directory structure</h3>
 <div class="highlight"><pre><code class="language-" data-lang="">assets
     |- fonts
     |- images
@@ -178,17 +178,110 @@ _colors.scss
 _sprites.scss
 _normalize.scss
 </code></pre></div>
+<h3>Add an icon to the mns-icon fonts</h3>
+
+<p>The mns-icons fonts are located in the <code>lib/assets/fonts</code> directory.  The font directory contains the generated mns-icon fonts:
+- mns-icons.eot
+- mns-icons.svg
+- mns-icons.ttf
+- mns-icons.woff</p>
+
+<p>In the <code>mns-icons</code> folder you will find the settings file (<code>selection.json</code>) used by icomoon and a demo project to serve up and test the fonts:</p>
+
+<p>The following steps will guide you through the process of adding icons to the mns-icon font</p>
+
+<ol>
+<li>Browse to https://icomoon.io/app/</li>
+<li>Click on Import Icons</li>
+<li>Browse to the fear-core-ui project folder and select the selection.json file (<code>lib/assets/fonts/mns-icons/selection.json</code>)</li>
+<li>If a message dialog pops up select to import all settings from the file</li>
+<li>Select the required fonts from the UI</li>
+<li>When you are done, at the bottom click <code>Generate Font</code></li>
+<li>Check if the old icons unicode signatures match with the original font (you can achieve this by serving up the <code>demo.html</code> file in the demo-files folder.</li>
+<li>Click download and save the zip file on your local hard drive</li>
+<li>Unzip this folder and copy the generated font files to <code>lib/assets/fonts</code> and the demo files to the <code>mns-icons</code> folder</li>
+<li>Add the icons unicode sign to the following file: <code>lib/sass/fear-core-ui/ui-pattern/_extends_content.scss</code> and give it a proper sass variable name</li>
+<li>Generate the css class in the <code>lib/sass/fear-core-ui/ui-pattern/_module_icons.scss</code> file:
+<code>scss
+@include(&#39;css-class-name&#39;, &#39;icon-variable-name&#39;)
+</code></li>
+</ol>
+
+<h2><strong>Linting</strong></h2>
+
+<p><code>npm test</code> runs eslint <code>eslint tasks</code> and sass lint <code>gulp lint-sass</code></p>
+
 <h3><strong>Further reading</strong></h3>
 
 <ul>
 <li><a href="http://digitalinnovation.github.io/fear-core">Website</a></li>
 <li><a href="http://digitalinnovation.github.io/fear-core/docs/">Technical documentation</a></li>
+<li><a href="http://patternlibrary.auto.devops.mnscorp.net/#/Core">Pattern library</a></li>
 <li><a href="https://github.com/DigitalInnovation/fear-core/wiki">Wiki</a></li>
 </ul>
 
 <p><br /></p>
 
-<h2><strong>Changelog</strong></h2>
+<p># fear-core-ui change log</p>
+
+<h4><strong>2.0.0</strong></h4>
+
+<ul>
+<li>improved more logical folder structure</li>
+<li>Finalised MNS-london regular and bold fonts.</li>
+</ul>
+
+<h2>1.1.8</h2>
+
+<ul>
+<li>Install sassdoc-theme-mns from github using SSH, as repo is now private</li>
+</ul>
+
+<h4><strong>1.1.11</strong></h4>
+
+<ul>
+<li>Aligning with the UX team on which of the mns-london fonts we should use:
+
+<ul>
+<li>mns-london-regular - the semibold font (much better legibility)</li>
+<li>mns-london-demibold - the bold font (used is font-weight: bold produces inconsistent results)</li>
+</ul></li>
+<li>add ux tooltip styles</li>
+<li>add fear-core dev sass and eslint</li>
+</ul>
+
+<h4><strong>1.1.10</strong></h4>
+
+<ul>
+<li>Fixing path to the newly included MNS-london fonts (oops)</li>
+</ul>
+
+<h4><strong>1.1.9</strong></h4>
+
+<ul>
+<li>Including the updated MNS-london regular and bold fonts</li>
+</ul>
+
+<h4><strong>1.1.8</strong></h4>
+
+<ul>
+<li>Install sassdoc-theme-mns from github using SSH, as repo is now private</li>
+</ul>
+
+<h4><strong>1.1.7</strong></h4>
+
+<p><strong>Added new icons</strong><br>
+- icon-circle-arrow e902<br>
+- icon-long-arrow e900<br>
+- icon-gear e903<br>
+- icon-gear-filled e904<br>
+- icon-lock e905  </p>
+
+<h4><strong>1.1.6</strong></h4>
+
+<ul>
+<li>Fix bug for sparks icons</li>
+</ul>
 
 <h4><strong>1.1.5</strong></h4>
 
@@ -206,10 +299,9 @@ _normalize.scss
 <h4><strong>1.1.3</strong></h4>
 
 <ul>
-<li>added &#39;sparks-filled&#39; icon</li>
+<li>added &#39;sparks-filled&#39; icon
+<br /></li>
 </ul>
-
-<p><br /></p>
 
 <h2><strong>Contributing</strong></h2>
 
