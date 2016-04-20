@@ -1,11 +1,11 @@
 # fear-core-ui change log
 
+#### **2.0.0**
+- improved more logical folder structure
+- Finalised MNS-london regular and bold fonts.
+
 ## 1.1.8
 - Install sassdoc-theme-mns from github using SSH, as repo is now private
-
-#### **1.2.0**
-- A new set of fonts warrents a new release version - not just a small patch.
-Now that bugs are out of the way we can lock this in.
 
 #### **1.1.11**
 - Aligning with the UX team on which of the mns-london fonts we should use:
