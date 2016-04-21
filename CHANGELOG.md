@@ -4,9 +4,6 @@
 - improved more logical folder structure
 - Finalised MNS-london regular and bold fonts.
 
-## 1.1.8
-- Install sassdoc-theme-mns from github using SSH, as repo is now private
-
 #### **1.1.11**
 - Aligning with the UX team on which of the mns-london fonts we should use:
  - mns-london-regular - the semibold font (much better legibility)
