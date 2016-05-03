@@ -1,7 +1,5 @@
 # Default application configuration that all configurations inherit from.
 
-scss_files: ["./app/sass/**/*.scss", "./app/sass/*.scss"]
-
 linters:
   BangFormat:
     enabled: true
