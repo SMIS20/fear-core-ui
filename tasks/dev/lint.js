@@ -10,6 +10,6 @@ module.exports = function () {
     });
 
     gulp.task('lint-sass', function () {
-        return lintSass(['./lib/sass/**/*.scss', './test/sass/**/*.scss', '!./lib/sass/fear-core-ui/_sprites.scss']);
+        return lintSass(['./lib/sass/**/*.scss', './test/sass/**/*.scss', '!./lib/sass/fear-core-ui/sprites/**/*.scss']);
     });
 };
