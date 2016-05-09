@@ -1,3 +1,6 @@
+/***************************************
+    file: sprites/_mixins.scss
+***************************************/
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }

@@ -10,6 +10,11 @@ module.exports = function () {
     });
 
     gulp.task('lint-sass', function () {
-        return lintSass(['./lib/sass/**/*.scss', './test/sass/**/*.scss', '!./lib/sass/fear-core-ui/sprites/**/*.scss']);
+        return lintSass([
+            './lib/sass/**/*.scss',
+            './test/sass/**/*.scss',
+            '!./lib/sass/fear-core-ui/sprites/**/*.scss',
+            '!./lib/sass/fear-core-ui/_temp_sprites_generated.scss'
+        ]);
     });
 };

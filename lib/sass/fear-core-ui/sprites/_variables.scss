@@ -1,3 +1,7 @@
+/***************************************
+    file: sprites/_variables.scss
+***************************************/
+
 $cards-amex: -0px -0px 82px 41px;
 $cards-jcb: -0px -41px 82px 41px;
 $cards-maestro: -0px -82px 82px 41px;
@@ -20,6 +24,8 @@ $cards-mini-mscredit: -0px -168px 42px 21px;
 $cards-mini-visa: -0px -189px 42px 21px;
 $cards-mini-visa_electron: -0px -210px 42px 21px;
 $cards-mini-visaelectron: -0px -231px 42px 21px;
+$global-secure_payments: -0px -0px 260px 25px;
+$global-gift_wrap_demo: -0px -25px 20px 26px;
 $cards-xs-amex: -0px -0px 19px 16px;
 $cards-xs-jcb: -0px -16px 16px 16px;
 $cards-xs-maestro: -0px -32px 27px 16px;
@@ -30,5 +36,3 @@ $cards-xs-mns_creditcard: -0px -96px 26px 16px;
 $cards-xs-mns_debitcard: -0px -112px 25px 16px;
 $cards-xs-visa: -0px -128px 36px 16px;
 $cards-xs-visa_electron: -0px -144px 26px 16px;
-$global-secure_payments: -0px -0px 260px 25px;
-$global-gift_wrap_demo: -0px -25px 20px 26px;
