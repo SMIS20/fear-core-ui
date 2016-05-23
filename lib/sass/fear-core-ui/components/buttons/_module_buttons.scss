@@ -12,7 +12,7 @@
   @include rem(margin, 0 0 1px 0);
   border: 0;
   color: $color__brand--dark-grey;
-  font-family: $font__helvetica--medium;
+  font-family: $font__mns-london--bold;
   text-align: center;
   text-decoration: none;
   width: 100%;
@@ -42,7 +42,7 @@
 .btn--quart {
   @include create-btn(40px, 15px, $color__brand--white, $color__brand--dark-grey, $color__brand--white, $color__brand--background-grey);
   border: 1px solid $color__brand--light-grey;
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
 }
 
 /* sof 10 June 15 - new button for north */
@@ -120,7 +120,7 @@
 .btn--no-border {
   background: none;
   border: 0;
-  font-family: $font__helvetica--roman;
+  font-family: $font__mns-london;
 
   span {
     text-decoration: underline;

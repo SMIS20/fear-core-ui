@@ -167,7 +167,7 @@
 .lightbox__title {
   @include rem(margin, 6px 0 30px);
   @include rem(font-size, 24px);
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
   line-height: 100%;
 }
 
@@ -175,7 +175,7 @@
   @include rem(padding, 40px 10px 24px 10px);
   height: auto;
   width: 100%;
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
 
   @include media-query-xsmall {
     @include rem(padding, 20px 30px 24px 30px);
@@ -256,7 +256,7 @@
   .lightbox__title {
     @include rem(margin, 6px 0 30px);
     @include rem(font-size, 27px);
-    font-family: $font__helvetica--light;
+    font-family: $font__mns-london;
     line-height: 100%;
   }
 

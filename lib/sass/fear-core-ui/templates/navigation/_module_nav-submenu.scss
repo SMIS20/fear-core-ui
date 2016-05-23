@@ -179,7 +179,7 @@
   color: $color__brand--dark-grey;
   cursor: pointer;
   display: block;
-  font-family: $font__helvetica--medium;
+  font-family: $font__mns-london--bold;
   margin-bottom: 0;
   position: relative;
   text-transform: none;
@@ -275,7 +275,7 @@
     }
 
     > a {
-      font-family: $font__helvetica--light;
+      font-family: $font__mns-london;
       text-decoration: none;
       cursor: pointer;
       display: block;
@@ -342,7 +342,7 @@
     @include rem('font-size', 14px);
     @include rem('margin-top', 10px);
     @include rem('margin-bottom', 7px);
-    font-family: $font__helvetica--light;
+    font-family: $font__mns-london;
     text-transform: uppercase;
 
     @include media-query-large {
@@ -380,7 +380,7 @@
   @include rem('line-height', 20px);
   @include rem('letter-spacing', .5px);
   color: $color__brand--grey-80;
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
 
   @include media-query-small {
     @include rem('line-height', 16px);
