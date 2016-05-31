@@ -39,12 +39,13 @@
     "fear-core-dev": "1.1.13",
     "gh-pages": "0.10.0",
     "gulp": "3.9.0",
+    "gulp-if": "2.0.0",
     "gulp-sass": "2.1.0",
     "sassdoc": "2.1.15",
     "sassdoc-extras": "2.3.0",
     "sassdoc-theme-mns": "git+ssh://git@github.com:DigitalInnovation/sassdoc-theme-mns",
     "sprity": "1.0.8",
-    "sprity-fear": "kevinlambert/sprity-fear",
+    "sprity-fear": "DigitalInnovation/sprity-fear",
     "yargs": "3.15.0"
   }
 }

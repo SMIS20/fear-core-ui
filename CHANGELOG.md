@@ -1,5 +1,8 @@
 # fear-core-ui change log
 
+#### **2.1.0**
+- Refactor sprites to prevent duplication. (breaking change)
+
 #### **2.0.0**
 - improved more logical folder structure
 - Finalised MNS-london regular and bold fonts.
