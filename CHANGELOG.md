@@ -1,4 +1,4 @@
-# fear-core-ui change log
+# core-ui change log
 
 #### **3.0.0**
 - Refactor sprites to prevent duplication. (Breaking)
