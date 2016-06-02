@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'mns-icons';
-    src:    url('fonts/mns-icons.eot?xdl22e');
-    src:    url('fonts/mns-icons.eot?xdl22e#iefix') format('embedded-opentype'),
-        url('fonts/mns-icons.ttf?xdl22e') format('truetype'),
-        url('fonts/mns-icons.woff?xdl22e') format('woff'),
-        url('fonts/mns-icons.svg?xdl22e#mns-icons') format('svg');
+    src:    url('../mns-icons.eot?xdl22e');
+    src:    url('../mns-icons.eot?xdl22e#iefix') format('embedded-opentype'),
+        url('../mns-icons.ttf?xdl22e') format('truetype'),
+        url('../mns-icons.woff?xdl22e') format('woff'),
+        url('../mns-icons.svg?xdl22e#mns-icons') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -219,4 +219,3 @@
 .icon-map-marker:before {
     content: "\f041";
 }
-
