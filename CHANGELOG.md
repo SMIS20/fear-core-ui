@@ -1,9 +1,9 @@
 # fear-core-ui change log
 
-- Added Sparks logo as mns-icons font (New feature)
-
-#### **2.1.0**
-- Refactor sprites to prevent duplication. (breaking change)
+#### **3.0.0**
+- Refactor sprites to prevent duplication. (Breaking)
+- Added Sparks logo as mns-icons font (Feature)
+- Refactor tooltip (Patch)
 
 #### **2.0.0**
 - improved more logical folder structure
