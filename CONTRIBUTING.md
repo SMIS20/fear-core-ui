@@ -10,7 +10,7 @@ If your work is a new feature or a patch then follow the following workflow
 * Create a topic branch to contain your change ( `git checkout -b my_awesome_feature` ).
 * Code away and add tests if applicable. Not necessarily in that order.
 * Make sure everything still passes by running `npm run test`.
-* Update the change log with details of the change and then mark in brackets what type of change it is (new feature/patch). The version of the next published version will then be decided by this.
+* Update the change log with details of the change under the corresponding heading (new feature/patch) - create the heading if it doesnt already exist. The version of the next published version will then be decided by this.
 * If necessary, rebase your commits into logical chunks, without errors.
 * Push the branch up ( `git push origin my_awesome_feature` ).
 * Create a pull request against fear-core-ui/master and describe what your change
