@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'mns-icons';
-    src:    url('../mns-icons.eot?apvzv4');
-    src:    url('../mns-icons.eot?apvzv4#iefix') format('embedded-opentype'),
-        url('../mns-icons.ttf?apvzv4') format('truetype'),
-        url('../mns-icons.woff?apvzv4') format('woff'),
-        url('../mns-icons.svg?apvzv4#mns-icons') format('svg');
+    src:    url('fonts/mns-icons.eot?xdl22e');
+    src:    url('fonts/mns-icons.eot?xdl22e#iefix') format('embedded-opentype'),
+        url('fonts/mns-icons.ttf?xdl22e') format('truetype'),
+        url('fonts/mns-icons.woff?xdl22e') format('woff'),
+        url('fonts/mns-icons.svg?xdl22e#mns-icons') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,6 +24,15 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-sparks-events:before {
+    content: "\e907";
+}
+.icon-sparks-priority:before {
+    content: "\e908";
+}
+.icon-sparks-offers:before {
+    content: "\e909";
+}
 .icon-circle-arrow:before {
     content: "\e902";
 }
