@@ -1,5 +1,8 @@
 # fear-core-ui change log
 
+#### **3.0.1**
+- Added 3 Sparks icons (offers, events, priority access) as mns-icons font (Feature)
+
 #### **3.0.0**
 - Refactor sprites to prevent duplication. (Breaking)
 - Added Sparks logo as mns-icons font (Feature)
