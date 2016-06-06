@@ -21,7 +21,7 @@ html {
 body {
   @include rem(font-size, $base-font-size-sm * 1px);
   color: $color__brand--dark-grey;
-  font-family: $font__helvetica--system;
+  font-family: $font__mns-london;
   min-height: 100%;
   position: relative;
 
