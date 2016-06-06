@@ -1,8 +1,15 @@
 # fear-core-ui change log
 
+- Added 3 Sparks icons (offers, events, priority access) as mns-icons font (Feature)
+
 #### **INSERT NEW VERSION HERE**
 - removed helvetica fonts and no longer used fonts
 - added new fonts mns-london, mns-london-bold and mns-london-light
+
+#### **3.0.0**
+- Refactor sprites to prevent duplication. (Breaking)
+- Added Sparks logo as mns-icons font (Feature)
+- Refactor tooltip (Patch)
 
 #### **2.0.0**
 - improved more logical folder structure

@@ -10,7 +10,7 @@ module.exports = function() {
     gulp.task('sprites', function() {
         return sprity.src({
             src: 'app/imagesToSprite/**/*.{png,jpg}',
-            style: 'lib/sass/fear-core-ui/_sprites.scss',
+            style: 'lib/sass/fear-core-ui/_temp_sprites_generated.scss',
             processor: 'fear',
             cssPath: '/',
             split: true,

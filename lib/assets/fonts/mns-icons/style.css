@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'mns-icons';
-    src:    url('../mns-icons.eot?z3c1rr');
-    src:    url('../mns-icons.eot?z3c1rr#iefix') format('embedded-opentype'),
-        url('../mns-icons.ttf?z3c1rr') format('truetype'),
-        url('../mns-icons.woff?z3c1rr') format('woff'),
-        url('../mns-icons.svg?z3c1rr#mns-icons') format('svg');
+    src:    url('../mns-icons.eot?xdl22e');
+    src:    url('../mns-icons.eot?xdl22e#iefix') format('embedded-opentype'),
+        url('../mns-icons.ttf?xdl22e') format('truetype'),
+        url('../mns-icons.woff?xdl22e') format('woff'),
+        url('../mns-icons.svg?xdl22e#mns-icons') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,11 +24,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-clock-o:before {
-    content: "\f017";
+.icon-sparks-events:before {
+    content: "\e907";
 }
-.icon-map-marker:before {
-    content: "\f041";
+.icon-sparks-priority:before {
+    content: "\e908";
+}
+.icon-sparks-offers:before {
+    content: "\e909";
 }
 .icon-circle-arrow:before {
     content: "\e902";
@@ -207,4 +210,12 @@
 .icon-cancel-order:before {
     content: "\e631";
 }
-
+.icon-sparks-logo:before {
+    content: "\e906";
+}
+.icon-clock-o:before {
+    content: "\f017";
+}
+.icon-map-marker:before {
+    content: "\f041";
+}
