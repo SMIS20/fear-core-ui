@@ -3,8 +3,6 @@
 #### **4.0.0**
 - removed helvetica fonts and no longer used fonts (Breaking)
 - added new fonts mns-london, mns-london-bold and mns-london-light (Feature)
-
-#### **3.0.1**
 - Added 3 Sparks icons (offers, events, priority access) as mns-icons font (Feature)
 
 #### **3.0.0**
