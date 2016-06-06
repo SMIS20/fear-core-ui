@@ -274,7 +274,7 @@ input[type='search'] {
 }
 
 .form__label--light { // .control-label--light
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
 }
 
 .form__label--v-align {
@@ -313,7 +313,7 @@ input[type='search'] {
   @include rem(font-size, 13px);
   @include rem(line-height, 20px);
   margin: 0;
-  font-family: $font__helvetica--medium;
+  font-family: $font__mns-london--bold;
 }
 
 .fielditem__lbl--info {
@@ -410,6 +410,6 @@ fieldset {
 legend {
   @include rem(margin-bottom, 20px);
   @include rem(font-size, 18px);
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
 }
 

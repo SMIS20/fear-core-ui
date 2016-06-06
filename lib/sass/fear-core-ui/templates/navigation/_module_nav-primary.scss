@@ -216,7 +216,7 @@
   @include media-query-small {
     @include rem('font-size', 12px);
     @include rem('padding', 0 5px);
-    font-family: $font__helvetica--bold;
+    font-family: $font__mns-london--bold;
     width: 100%;
 
     @include media-query-medium {

@@ -23,12 +23,12 @@ h2,
 h3,
 .gamma-text {
   @extend %gamma-text;
-  font-family: $font__helvetica--medium;
+  font-family: $font__mns-london--bold;
 }
 
 .base-text {
   @include rem(font-size, $base-font-size-sm * 1px);
-  font-family: $font__helvetica--system;
+  font-family: $font__mns-london;
   margin: 0;
 
   @include media-query-small {
@@ -55,7 +55,7 @@ h1,
 .alpha-text,
 h2,
 .beta-text {
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
 }
 
 .small-text {

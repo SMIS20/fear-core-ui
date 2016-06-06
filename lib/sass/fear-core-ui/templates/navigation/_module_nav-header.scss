@@ -133,7 +133,7 @@
 
 .nav-header__text {
   display: none;
-  font-family: $font__helvetica--roman;
+  font-family: $font__mns-london;
   line-height: 14px;
 
   @include media-query-small {
@@ -227,7 +227,7 @@
 
 // Nav Header Bag Count
 .nav-header__bag-count {
-  font-family: $font__helvetica--roman;
+  font-family: $font__mns-london;
   /* could potentially be put in a mixin */
   @media only screen and (max-width: 991px) {
     @include rem('font-size', 10px);

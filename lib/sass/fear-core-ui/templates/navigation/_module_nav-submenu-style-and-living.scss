@@ -1,6 +1,6 @@
 .nav-submenu__style-and-living {
   @include rem(padding, 20px 15px 20px);
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
 
   &:first-of-type {
     @include rem(padding, 10px 15px 20px);
@@ -51,13 +51,13 @@
     @include rem('margin-bottom', 8px);
     @include rem('letter-spacing', 1px);
     color: $color__brand--dark-grey;
-    font-family: $font__helvetica--medium;
+    font-family: $font__mns-london--bold;
     text-transform: uppercase;
   }
 
   h3 {
     @include rem('font-size', 16px);
-    font-family: $font__helvetica--light;
+    font-family: $font__mns-london;
     text-transform: uppercase;
   }
 

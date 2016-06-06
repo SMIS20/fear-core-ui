@@ -22,20 +22,13 @@ $base-font-size-sm: 15;
 * Body font size for small devices (mobile/tablet)
 * @group Font families
 */
-
-$font__helvetica--system: Helvetica, Arial, sans-serif;
-$font__helvetica--ultra-light: 'helvetica-ultra-light', Helvetica, Arial, sans-serif;
-$font__helvetica--light: 'helvetica-light', Helvetica, Arial, sans-serif;
-$font__helvetica--roman: 'helvetica-roman', Helvetica, Arial, sans-serif;
-$font__helvetica--medium: 'helvetica-medium', Helvetica, Arial, sans-serif;
-$font__helvetica--bold: 'helvetica-bold', Helvetica, Arial, sans-serif;
-$font__london--semibold: 'london-semibold', Helvetica, Arial, sans-serif;
-$font__london--bold: 'london-bold', Helvetica, Arial, sans-serif;
 $font__didot--roman: 'didot-roman', Garamond, 'Times New Roman', serif;
 $font__didot--italic: 'didot-italic', Garamond, 'Times New Roman', serif;
 $font__didot--bold: 'didot-bold', Garamond, 'Times New Roman', serif;
 $font__didot--bold-italic: 'didot-bold-italic', Garamond, 'Times New Roman', serif;
-$font__leeds--light: 'leeds-light', Garamond, 'Times New Roman', serif;
-$font__mns-london: 'mns-london-regular', Helvetica, Arial, sans-serif;
-$font__mns-london--bold: 'mns-london-bold', Helvetica, Arial, sans-serif;
 $font__icons: 'mns-icons';
+// new fonts
+$font__mns-london: 'mns-london', Helvetica, Arial, sans-serif;
+$font__mns-london--bold: 'mns-london-bold', Helvetica, Arial, sans-serif;
+$font__mns-london--light: 'mns-london-light', Helvetica, Arial, sans-serif;
+

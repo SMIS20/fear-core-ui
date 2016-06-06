@@ -95,7 +95,7 @@
 .inpage-msg__title {
   @include rem(font-size, 16px);
   @include rem(margin, 0 0 12px 0);
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
 
   @include media-query-small {
     @include rem(font-size, 18px);
@@ -122,7 +122,7 @@
 .inpage-msg__content {
   @include rem(font-size, 14px);
   @include rem(line-height, 22px);
-  font-family: $font__helvetica--roman;
+  font-family: $font__mns-london;
 
   .inpage-msg--success & {
     color: $color__brand--dark-grey;

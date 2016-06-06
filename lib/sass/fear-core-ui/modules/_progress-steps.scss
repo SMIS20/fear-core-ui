@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
 }
 
 .progress-steps__item {
@@ -20,7 +20,7 @@
   @include rem(margin, 10px 10px 10px 0);
   color: $color__brand--light-grey;
   display: inline-block;
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
   line-height: 0;
   position: relative;
 
@@ -72,7 +72,7 @@
 
 .progress-steps--current {
   color: $color__brand--black;
-  font-family: $font__helvetica--medium;
+  font-family: $font__mns-london--bold;
 }
 
 .progress-steps--active {
