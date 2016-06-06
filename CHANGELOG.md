@@ -1,5 +1,9 @@
 # fear-core-ui change log
 
+#### **INSERT NEW VERSION HERE**
+- removed helvetica fonts and no longer used fonts
+- added new fonts mns-london, mns-london-bold and mns-london-light
+
 #### **2.0.0**
 - improved more logical folder structure
 - Finalised MNS-london regular and bold fonts.
