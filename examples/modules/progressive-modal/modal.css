@@ -1,0 +1,780 @@
+/** * @group Font size */
+/**
+* Body font size for large devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for tsop devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for small devices (desktop)
+* @group Font size
+ */
+/**
+* Body font size for small devices (mobile/tablet)
+* @group Font families
+*/
+/** * @group Font size */
+/**
+* Body font size for large devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for tsop devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for small devices (desktop)
+* @group Font size
+ */
+/**
+* Body font size for small devices (mobile/tablet)
+* @group Font families
+*/
+/* --------
+Functions
+-------- */
+/** * @group Font size */
+/**
+* Body font size for large devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for tsop devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for small devices (desktop)
+* @group Font size
+ */
+/**
+* Body font size for small devices (mobile/tablet)
+* @group Font families
+*/
+/* --------
+Functions
+-------- */
+/* line 5, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_extends.scss */
+h1,
+.alpha-text, h2,
+.beta-text, h3,
+.gamma-text,
+h4,
+.delta-text,
+h5,
+.epsilon-text,
+h6,
+.zeta-text {
+  color: #333333;
+  display: inline-block;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* line 21, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_extends.scss */
+h1,
+.alpha-text {
+  margin-top: -0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 21, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_extends.scss */
+  h1,
+  .alpha-text {
+    font-size: 3.6rem;
+    line-height: 4.3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* line 32, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_extends.scss */
+h3,
+.gamma-text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 32, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_extends.scss */
+  h3,
+  .gamma-text {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* line 41, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_extends.scss */
+h2,
+.beta-text {
+  margin-top: -0.2rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 41, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_extends.scss */
+  h2,
+  .beta-text {
+    margin-top: -0.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* line 57, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_extends.scss */
+strong {
+  font-family: "mns-london-bold", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #000000;
+}
+
+/** * @group Font size */
+/**
+* Body font size for large devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for tsop devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for small devices (desktop)
+* @group Font size
+ */
+/**
+* Body font size for small devices (mobile/tablet)
+* @group Font families
+*/
+/* line 16, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends.scss */
+.icon,
+[class^='icon-']::before,
+[class*=' icon-']::before {
+  font-family: "mns-icons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--edit::before, .icon--arrow-toggle::before {
+  content: '\e608';
+}
+
+/* line 9, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--delivery-store::before {
+  content: '\e60b';
+}
+
+/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--delivery-sdd::before, .icon--delivery-ndd::before, .icon--delivery-international::before, .icon--delivery-expressinternational::before {
+  content: '\e60c';
+}
+
+/* line 21, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--gift::before {
+  content: '\e616';
+}
+
+/* line 25, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--toilet::before {
+  content: '\e628';
+}
+
+/* line 29, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--no-toilet::before {
+  content: '\e629';
+}
+
+/* line 33, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--no-car-collect::before {
+  content: '\e62a';
+}
+
+/* line 37, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--no-park::before {
+  content: '\e62b';
+}
+
+/* line 41, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--no-baby-chng::before {
+  content: '\e62c';
+}
+
+/* line 45, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--car-collect::before {
+  content: '\e62d';
+}
+
+/* line 49, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--park::before {
+  content: '\e62e';
+}
+
+/* line 53, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--baby-chng::before {
+  content: '\e62f';
+}
+
+/* line 57, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--arrow-left::before {
+  content: '\e630';
+}
+
+/* line 61, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--arrow-down::before {
+  content: '\e625';
+}
+
+/* line 65, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--arrow-right::before {
+  content: '\e626';
+}
+
+/* line 69, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--locator-pin::before {
+  content: '\e627';
+}
+
+/* line 73, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--email::before {
+  content: '\e61b';
+}
+
+/* line 77, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--facebook::before {
+  content: '\e61c';
+}
+
+/* line 81, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--googleplus::before {
+  content: '\e61d';
+}
+
+/* line 85, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--instagram::before {
+  content: '\e61e';
+}
+
+/* line 89, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--pintrest::before {
+  content: '\e61f';
+}
+
+/* line 93, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--mobile::before {
+  content: '\e620';
+}
+
+/* line 97, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--twitter::before {
+  content: '\e621';
+}
+
+/* line 101, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--youtube::before {
+  content: '\e622';
+}
+
+/* line 105, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--checkout::before {
+  content: '\e614';
+}
+
+/* line 109, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--fave::before {
+  content: '\e615';
+}
+
+/* line 113, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--my-account::before {
+  content: '\e610';
+}
+
+/* line 117, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--arrow-light::before {
+  content: '\e60f';
+}
+
+/* line 121, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--disposal::before {
+  content: '\e60e';
+}
+
+/* line 125, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--tick::before {
+  content: '\e609';
+}
+
+/* line 129, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--bag::before {
+  content: '\e607';
+}
+
+/* line 133, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--close::before {
+  content: '\e603';
+}
+
+/* line 137, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--confirmation::before,
+.icon--success::before {
+  content: '\e604';
+}
+
+/* line 142, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--error::before {
+  content: '\e605';
+}
+
+/* line 146, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--tooltip-info::before, .icon--information::before {
+  content: '\e606';
+}
+
+/* line 154, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--logo::before {
+  content: '\e601';
+}
+
+/* line 162, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--location::before {
+  content: '\e613';
+}
+
+/* line 166, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--menu::before {
+  content: '\e611';
+}
+
+/* line 170, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--search::before {
+  content: '\e612';
+}
+
+/* line 190, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--fave-plus::before {
+  content: '\e623';
+}
+
+/* line 194, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--sign-in::before {
+  content: '\e624';
+}
+
+/* line 202, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--print::before {
+  content: '\e632';
+}
+
+/* line 206, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--sparks::before {
+  content: '\e633';
+}
+
+/* line 210, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--sparks-filled::before {
+  content: '\e901';
+}
+
+/* line 214, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--circle-arrow::before {
+  content: '\e902';
+}
+
+/* line 218, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--long-arrow::before {
+  content: '\e900';
+}
+
+/* line 222, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--gear::before {
+  content: '\e903';
+}
+
+/* line 226, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--gear-filled::before {
+  content: '\e904';
+}
+
+/* line 230, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--lock::before {
+  content: '\e905';
+}
+
+/* line 234, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--delivery-ed::before {
+  content: '\e634';
+}
+
+/* line 238, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--clock-o::before {
+  content: '\f017';
+}
+
+/* line 242, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--map-marker::before {
+  content: '\f041';
+}
+
+/* line 246, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--sparks-logo::before {
+  content: '\e906';
+}
+
+/* line 250, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--sparks-events::before {
+  content: '\e907';
+}
+
+/* line 254, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--sparks-priority::before {
+  content: '\e908';
+}
+
+/* line 258, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
+.icon--sparks-offers::before {
+  content: '\e909';
+}
+
+/** * @group Font size */
+/**
+* Body font size for large devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for tsop devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for small devices (desktop)
+* @group Font size
+ */
+/**
+* Body font size for small devices (mobile/tablet)
+* @group Font families
+*/
+/* --------
+Functions
+-------- */
+/** * @group Font size */
+/**
+* Body font size for large devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for tsop devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for small devices (desktop)
+* @group Font size
+ */
+/**
+* Body font size for small devices (mobile/tablet)
+* @group Font families
+*/
+/* --------
+  Fonts
+  -------- */
+/* -------- Icons -------- */
+@font-face {
+  font-family: "mns-icons";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../lib/assets/fonts/mns-icons.eot?#iefix") format("embedded-opentype"), url("../../../lib/assets/fonts/mns-icons.woff") format("woff"), url("../../../lib/assets/fonts/mns-icons.ttf") format("truetype"), url("../../../lib/assets/fonts/mns-icons.svg#mns-icons") format("svg");
+}
+
+/* -------- Typographic -------- */
+@font-face {
+  font-family: "didot-roman";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../lib/assets/fonts/didot-roman.eot?#iefix") format("embedded-opentype"), url("../../../lib/assets/fonts/didot-roman.woff") format("woff"), url("../../../lib/assets/fonts/didot-roman.ttf") format("truetype"), url("../../../lib/assets/fonts/didot-roman.svg#didot-roman") format("svg");
+}
+
+@font-face {
+  font-family: "didot-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../lib/assets/fonts/didot-italic.eot?#iefix") format("embedded-opentype"), url("../../../lib/assets/fonts/didot-italic.woff") format("woff"), url("../../../lib/assets/fonts/didot-italic.ttf") format("truetype"), url("../../../lib/assets/fonts/didot-italic.svg#didot-italic") format("svg");
+}
+
+@font-face {
+  font-family: "didot-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../lib/assets/fonts/didot-bold.eot?#iefix") format("embedded-opentype"), url("../../../lib/assets/fonts/didot-bold.woff") format("woff"), url("../../../lib/assets/fonts/didot-bold.ttf") format("truetype"), url("../../../lib/assets/fonts/didot-bold.svg#didot-bold") format("svg");
+}
+
+@font-face {
+  font-family: "didot-bold-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../lib/assets/fonts/didot-bold-italic.eot?#iefix") format("embedded-opentype"), url("../../../lib/assets/fonts/didot-bold-italic.woff") format("woff"), url("../../../lib/assets/fonts/didot-bold-italic.ttf") format("truetype"), url("../../../lib/assets/fonts/didot-bold-italic.svg#didot-bold-italic") format("svg");
+}
+
+@font-face {
+  font-family: "mns-london";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../lib/assets/fonts/mns-london-text/MSLondoneText-Semibold.woff2") format("woff2"), url("../../../lib/assets/fonts/mns-london-text/MSLondoneText-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "mns-london-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../lib/assets/fonts/mns-london-text/MSLondoneText-Demibold.woff2") format("woff2"), url("../../../lib/assets/fonts/mns-london-text/MSLondoneText-Demibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "mns-london-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../lib/assets/fonts/mns-london-text/MSLondoneText-Regular.woff2") format("woff2"), url("../../../lib/assets/fonts/mns-london-text/MSLondoneText-Regular.woff") format("woff");
+}
+
+/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_module_typography.scss */
+p {
+  margin: 0 0 1rem;
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_module_typography.scss */
+  p {
+    margin: 0 0 1.5rem;
+  }
+}
+
+/* line 9, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_module_typography.scss */
+i {
+  font-style: normal;
+}
+
+/* line 23, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_module_typography.scss */
+h3,
+.gamma-text {
+  font-family: "mns-london-bold", Helvetica, Arial, sans-serif;
+}
+
+/* line 29, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_module_typography.scss */
+.base-text {
+  font-size: 1.5rem;
+  font-family: "mns-london", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 29, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_module_typography.scss */
+  .base-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* line 54, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_module_typography.scss */
+h1,
+.alpha-text,
+h2,
+.beta-text {
+  font-family: "mns-london", Helvetica, Arial, sans-serif;
+}
+
+/* line 61, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_module_typography.scss */
+.small-text {
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+}
+
+/* line 2, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_module_quote.scss */
+.pseudo-quote {
+  quotes: '\201c' '\201d';
+}
+
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_module_quote.scss */
+.pseudo-quote::before {
+  content: open-quote;
+}
+
+/* line 10, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_module_quote.scss */
+.pseudo-quote::after {
+  content: close-quote;
+}
+
+/* line 14, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_module_quote.scss */
+.pseudo--break::after,
+.pseudo--break::before {
+  content: '\A';
+  white-space: pre;
+}
+
+/** * @group Font size */
+/**
+* Body font size for large devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for tsop devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for small devices (desktop)
+* @group Font size
+ */
+/**
+* Body font size for small devices (mobile/tablet)
+* @group Font families
+*/
+/* --------
+  M&S font icons
+  -------- */
+/* -------- Icons -------- */
+/* M&S font icon instructions
+--------------------------------------------------
+To add icons to the mns-icons font, follow the steps below:
+   - inside the FEAR project, go to the /app/assets/fonts/
+   - unzip the file mns-icons.zip
+   - go to https://icomoon.io/app/
+   - click on the hamburger menu
+   - click on New Project
+   - click Import Icons
+   - from the unzipped folder, select file 'selection.json'
+   - click Import Icons
+   - select your new SVG files to add to the font file
+   - make sure all icons are selected
+   - click on Generate Font
+   - rename new icons if necessary
+   - click Download and save .zip file
+   - unzip the newly created file
+   - copy all font files from /mns-icons/fonts/ (eot, svg, ttf, woff) to FEAR folder /app/assets/fonts/
+   - copy-paste the '.icon-.....' css rules from style.css into FEAR folder /sass/components/_icons.scss
+*/
+/* -------- Icon elements -------- */
+/* line 156, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_module_icons.scss */
+.icon__label {
+  font-style: normal;
+}
+
+/* -------- Icon modifiers -------- */
+/* line 163, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_module_icons.scss */
+.icon--button {
+  background: transparent;
+  border: none;
+}
+
+/* line 169, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_module_icons.scss */
+.icon--link {
+  text-decoration: none;
+}
+
+/* line 172, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/components/icons/_module_icons.scss */
+.icon--link span {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/modal-progressive/_module_modal.scss */
+.m-modal, .m-modal__overlay, .m-modal__popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 9, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/modal-progressive/_module_modal.scss */
+.m-modal {
+  display: none;
+}
+
+/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/modal-progressive/_module_modal.scss */
+.m-modal:target {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* line 19, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/modal-progressive/_module_modal.scss */
+.m-modal:target .m-modal__popup {
+  opacity: 1;
+  animation: modal-show .2s ease-in;
+}
+
+/* line 26, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/modal-progressive/_module_modal.scss */
+.m-modal__overlay {
+  z-index: 9000;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #000000;
+  opacity: .3;
+}
+
+/* line 36, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/modal-progressive/_module_modal.scss */
+.m-modal__popup {
+  z-index: 9010;
+  margin-top: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 36, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/modal-progressive/_module_modal.scss */
+  .m-modal__popup {
+    position: relative;
+    margin-top: 30px;
+    max-width: 90rem;
+    max-height: 61.5rem;
+  }
+}
+
+/* line 53, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/modal-progressive/_module_modal.scss */
+.popup__title {
+  margin: 0.6rem 0 3rem;
+  font-size: 2.4rem;
+  font-family: "mns-london", Helvetica, Arial, sans-serif;
+  line-height: 100%;
+}
+
+/* line 60, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/modal-progressive/_module_modal.scss */
+.popup__content {
+  padding: 2rem 3rem 3rem 3rem;
+}
+
+/* line 64, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/modal-progressive/_module_modal.scss */
+.popup__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9020;
+  margin: 1rem;
+  background-color: #FFFFFF;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modal-show {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: flex;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
