@@ -19,4 +19,11 @@ module.exports = function() {
                 .on('error', sass.logError))
             .pipe(gulp.dest('./build/css'));
     });
+
+    gulp.task('compile-examples-sass', function() {
+        gulp.src(['./examples/**/*.scss'])
+            .pipe(sass(sassOptions)
+                .on('error', sass.logError))
+            .pipe(gulp.dest('./examples/'));
+    });
 };
