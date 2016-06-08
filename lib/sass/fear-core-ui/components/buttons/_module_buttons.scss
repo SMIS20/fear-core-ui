@@ -22,6 +22,10 @@
     max-width: none;
     width: auto;
   }
+
+  & ~ .btn {
+    margin-left: 2rem;
+  }
 }
 
 /* -------- Button variations -------- */

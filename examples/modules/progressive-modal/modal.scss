@@ -1,8 +1,6 @@
-$fear-core-ui-font-dir: '../../../lib/assets/fonts';
-
-@import '../../../lib/sass/fear-core-ui/base';
-@import '../../../lib/sass/fear-core-ui/extends';
-@import '../../../lib/sass/fear-core-ui/normalize';
-@import '../../../lib/sass/fear-core-ui/typography';
+@import '../../example';
 @import '../../../lib/sass/fear-core-ui/components/icons';
+@import '../../../lib/sass/fear-core-ui/components/buttons';
+@import '../../../lib/sass/fear-core-ui/layout/positioning';
+@import '../../../lib/sass/fear-core-ui/layout/sections';
 @import '../../../lib/sass/fear-core-ui/modules/modal-progressive';
