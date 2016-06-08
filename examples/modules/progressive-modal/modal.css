@@ -1628,7 +1628,7 @@ Functions
   border-top: 1px solid #E0E0E0;
 }
 
-/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
+/* line 3, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
 .m-modal, .m-modal__overlay, .m-modal__popup {
   position: fixed;
   top: 0;
@@ -1637,12 +1637,12 @@ Functions
   left: 0;
 }
 
-/* line 9, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
+/* line 11, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
 .m-modal {
   display: none;
 }
 
-/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
+/* line 15, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
 .m-modal:target {
   display: table-cell;
   display: -webkit-box;
@@ -1664,14 +1664,14 @@ Functions
   justify-content: center;
 }
 
-/* line 20, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
+/* line 22, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
 .m-modal:target .m-modal__popup {
   opacity: 1;
   -webkit-animation: modal-show .2s ease-in;
   animation: modal-show .2s ease-in;
 }
 
-/* line 27, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
+/* line 29, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
 .m-modal__overlay {
   z-index: 9000;
   display: block;
@@ -1681,7 +1681,7 @@ Functions
   opacity: .3;
 }
 
-/* line 37, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
+/* line 39, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
 .m-modal__popup {
   z-index: 9010;
   margin: 0 auto;
@@ -1692,7 +1692,7 @@ Functions
 }
 
 @media only screen and (min-width: 48.0625em) {
-  /* line 37, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
+  /* line 39, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
   .m-modal__popup {
     position: relative;
     margin: 30px auto;
@@ -1701,20 +1701,20 @@ Functions
   }
 }
 
-/* line 53, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
+/* line 55, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
 .popup__title {
-  margin: 0.6rem 0 3rem;
+  margin: .6rem 0 3rem;
   font-size: 2.4rem;
   font-family: "mns-london", Helvetica, Arial, sans-serif;
   line-height: 100%;
 }
 
-/* line 60, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
+/* line 62, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
 .popup__content {
   padding: 2rem 3rem 3rem 3rem;
 }
 
-/* line 64, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
+/* line 66, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
 .popup__close {
   position: absolute;
   top: 0;
@@ -1730,7 +1730,7 @@ Functions
   cursor: pointer;
 }
 
-/* line 78, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
+/* line 80, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-modal/_module_modal.scss */
 .popup__close:hover {
   opacity: .6;
 }
