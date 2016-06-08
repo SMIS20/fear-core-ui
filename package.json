@@ -36,6 +36,7 @@
   "devDependencies": {
     "eslint": "1.2.1",
     "eslint-config-fear-core": "git+https://github.com/digitalinnovation/fear-core-eslint-config",
+    "fear-core-build": "^2.0.0",
     "fear-core-dev": "1.1.13",
     "gh-pages": "0.10.0",
     "gulp": "3.9.0",
