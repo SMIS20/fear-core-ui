@@ -9,3 +9,6 @@ deploy-package.tgz
 _gh_pages
 .DS_Store
 _temp_sprites_generated.scss
+.tmp
+css
+mock
