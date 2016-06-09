@@ -40,7 +40,7 @@ module.exports = function () {
 
     gulp.task('compile-examples-sass', tasks.sass.compile(['./examples/**/*.scss'], examplesOptions));
 
-    return gulp.task('build-sass', ['compile-core-sass', 'compile-module-sass'], function () {
+    return gulp.task('build-sass', ['compile-core-sass', 'compile-module-sass', 'compile-examples-sass'], function () {
         return gulp.src(path.join(config.get('paths.core.css'), config.get('paths.glob.css')))
             .pipe(gulp.dest(config.get('paths.temp.base')));
     });

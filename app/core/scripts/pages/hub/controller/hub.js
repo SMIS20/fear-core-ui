@@ -1,5 +1,5 @@
 define([
-    'angular',
+    'core/scripts/packages/angular-1.2.28.package',
     'common/scripts/config'
 ], function (angular) {
     'use strict';
