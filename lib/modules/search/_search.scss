@@ -28,7 +28,7 @@
   @include rem('font-size', 15px);
   width: 100%;
   float: left;
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
   font-style: normal;
   border: solid 1px $color__brand--light-grey;
   outline: none;
@@ -52,7 +52,7 @@
     @include rem('width', 326px);
     text-indent: 0;
     float: left;
-    font-family: $font__helvetica--light;
+    font-family: $font__mns-london;
     font-style: normal;
     border: solid 1px $color__brand--light-grey;
     outline: none;
@@ -78,7 +78,7 @@
   @include rem('font-size', 15px);
   @include rem('width', 326px);
   float: left;
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
   font-style: normal;
   border: solid 1px $color__brand--light-grey;
   outline: none;
