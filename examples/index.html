@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fear Core UI Examples</title>
+    <link rel="stylesheet" href="site.css" type="text/css"/>
+  </head>
+  <body>
+
+    <header>
+      <div class="l-header">
+        <img width="50px" height="50px" class="l-header__logo" src="assets/images/mns-digital-logo.png"/>
+        <h1>M&S Digital Experimental</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="l-main__layout">
+        <input id="screen-size-phone" type="radio" name="screen-size" value="phone" hidden/>
+        <input id="screen-size-tablet" type="radio" name="screen-size" value="desktop" hidden/>
+        <input id="screen-size-desktop" type="radio" name="screen-size" value="desktop" hidden checked/>
+        <nav>
+          <div class="l-screen-size__icon">
+            <label for="screen-size-phone" class="l-screen-size__icon--phone mns-d-ex-icon-phone"></label>
+            <label for="screen-size-tablet" class="l-screen-size__icon--tablet mns-d-ex-icon-tablet"></label>
+            <label for="screen-size-desktop" class="l-screen-size__icon--desktop mns-d-ex-icon-desktop"></label>
+          </div>
+
+          <ul class="l-main__nav">
+            <li>
+              <a href="#progressive__modal">Progresive Modal</a>
+            </li>
+            <li>
+              <a href="#progressive__toggle-pane">Progresive Toggle Pane</a>
+            </li>
+          </ul>
+        </nav>
+
+        <section>
+          <div class="l-screen-size__content l-main__content">
+            <h2 id="progressive__modal">Progressive Modal</h2>
+            <iframe src="modules/progressive-modal/modal.html"></iframe>
+
+            <h2 id="progressive__toggle-pane">Progressive Toggle Pane</h2>
+            <iframe src="modules/progressive-toggle-pane/toggle-pane.html"></iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

@@ -4,7 +4,7 @@ dist
 .idea
 .vscode
 app/generated
-build
+/build
 deploy-package.tgz
 _gh_pages
 .DS_Store
