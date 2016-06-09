@@ -1772,7 +1772,7 @@ Functions
 
 /* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-modal/_layout.scss */
 body > a {
-  display: block;
+  display: inline-block;
   margin: 20px;
 }
 
