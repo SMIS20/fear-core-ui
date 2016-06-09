@@ -24,7 +24,7 @@ Help menu
   @include rem(padding, 0 10px);
   border-right: 1px solid $color__brand--white;
   color: $color__brand--white;
-  font-family: $font__helvetica--roman;
+  font-family: $font__mns-london;
   text-decoration: none;
   display: inline-block;
 
@@ -42,7 +42,7 @@ Help menu
   @include rem(padding, 0 10px);
   border-right: 1px solid $color__brand--white;
   color: $color__brand--white;
-  font-family: $font__helvetica--roman;
+  font-family: $font__mns-london;
   text-decoration: none;
 
   .help-menu__item:last-child & {

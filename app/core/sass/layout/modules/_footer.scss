@@ -100,7 +100,7 @@ Footer
 }
 
 .global-footer__toolbar {
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
   background-color: $color__brand--black;
   color: $color__brand--white;
 
@@ -238,7 +238,7 @@ Footer
     @include rem(margin-bottom, 5px);
     text-align: center;
     list-style-type: none;
-    font-family: $font__helvetica--light;
+    font-family: $font__mns-london;
     border-top: 1px solid $color__brand--light-grey;
 
     a {
@@ -249,7 +249,7 @@ Footer
 
 .global-footer__menu--item {
   @include rem(padding, 5px);
-  font-family: $font__helvetica--light;
+  font-family: $font__mns-london;
 }
 
 .global-footer__menu--title {
