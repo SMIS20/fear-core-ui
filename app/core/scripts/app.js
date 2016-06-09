@@ -1,7 +1,7 @@
 /*jshint unused: vars, white:false */
 
 define([
-    'core/scripts/packages/angular-1.2.28.package'
+    'angular'
 ], function (angular) {
     'use strict';
 

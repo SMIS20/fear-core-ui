@@ -40,7 +40,7 @@
     "eslint": "1.2.1",
     "eslint-config-fear-core": "git+https://github.com/digitalinnovation/fear-core-eslint-config",
     "express": "4.13.4",
-    "fear-core": "3.0.2",
+    "fear-core": "3.0.3",
     "fear-core-build": "2.0.0",
     "fear-core-dev": "1.1.13",
     "gh-pages": "0.10.0",
