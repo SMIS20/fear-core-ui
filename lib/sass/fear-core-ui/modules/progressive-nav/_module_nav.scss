@@ -1,0 +1,20 @@
+.m-nav {
+
+  > li {
+    list-style: none;
+
+    &:hover {
+      > .m-nav__content {
+        display: block;
+      }
+    }
+  }
+}
+
+.m-nav__content {
+  display: none;
+
+  > li {
+    list-style: none;
+  }
+}

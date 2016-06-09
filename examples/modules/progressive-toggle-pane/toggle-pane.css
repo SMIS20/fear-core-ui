@@ -1618,7 +1618,7 @@ body {
 
 /* line 30, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
 .example-wrapper .gift-price__icon--confirmation, .example-wrapper .gift-price__icon--gift {
-  top: 0.4rem;
+  top: .4rem;
   margin-right: 20px;
   font-size: 3rem;
 }
