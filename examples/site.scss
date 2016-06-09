@@ -1,11 +1,104 @@
-@import 'example';
+$icomoon-font-path: '/fear-core-ui/examples/assets/fonts/mns-digital-experimental/fonts';
+
+@import 'example__base';
+@import 'assets/fonts/mns-digital-experimental/style';
+
+$spacing-default: 20px;
+$spacing-default-med: $spacing-default * 2;
 
 body {
-  margin: 40px;
+  padding: $spacing-default-med;
 }
 
 iframe {
+  margin-bottom: $spacing-default-med;
+  padding: $spacing-default;
   width: 100%;
   height: 400px;
-  margin-bottom: 40px;
+  border: 1px solid $color__brand--light-grey;
 }
+
+.m-header {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 $spacing-default-med 0;
+  padding-bottom: $spacing-default;
+  border-bottom: 1px solid $color__brand--dark-grey;
+  align-content: center;
+}
+
+.m-header__logo {
+  ~ h1 {
+    margin: 0 $spacing-default;
+  }
+}
+
+.l-main__layout {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  > nav {
+    margin-right: $spacing-default-med;
+    border-right: 1px solid $color__brand--dark-grey;
+  }
+}
+
+.m-home__nav {
+  margin: 0 $spacing-default-med 0 0;
+  padding: 0;
+
+  > li {
+    list-style: none;
+    line-height: 3rem;
+  }
+}
+
+.m-home__content {
+  overflow-y: auto;
+  padding-right: $spacing-default-med;
+  height: calc(100vh - 211px);
+}
+
+.m-home__screen-size {
+  margin: 0 $spacing-default-med $spacing-default 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+  text-align: center;
+  font-size: 3rem;
+}
+
+%screen-size-icon {
+  padding: 10px;
+  cursor: pointer;
+}
+
+%screen-size-icon-selected {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: $color__brand--green;
+}
+
+@mixin screen-size($name, $size) {
+
+  .m-home__screen-size--#{$name} {
+    @extend %screen-size-icon;
+  }
+
+  #screen-size-#{$name} {
+    &:checked {
+      ~ nav .m-home__screen-size--#{$name} {
+        @extend %screen-size-icon-selected;
+      }
+
+      ~ section .m-home__content {
+        width: $size;
+      }
+
+    }
+  }
+}
+
+@include screen-size(phone, 340px);
+@include screen-size(tablet, 800px);
+@include screen-size(desktop, 100%);

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** * @group Font size */
 /**
 * Body font size for large devices (desktop)
@@ -581,7 +582,7 @@ Functions
   font-family: "mns-icons";
   font-style: normal;
   font-weight: normal;
-  src: url("../../../lib/assets/fonts/mns-icons.eot?#iefix") format("embedded-opentype"), url("../../../lib/assets/fonts/mns-icons.woff") format("woff"), url("../../../lib/assets/fonts/mns-icons.ttf") format("truetype"), url("../../../lib/assets/fonts/mns-icons.svg#mns-icons") format("svg");
+  src: url("/fear-core-ui/lib/assets/fonts/mns-icons.eot?#iefix") format("embedded-opentype"), url("/fear-core-ui/lib/assets/fonts/mns-icons.woff") format("woff"), url("/fear-core-ui/lib/assets/fonts/mns-icons.ttf") format("truetype"), url("/fear-core-ui/lib/assets/fonts/mns-icons.svg#mns-icons") format("svg");
 }
 
 /* -------- Typographic -------- */
@@ -589,49 +590,49 @@ Functions
   font-family: "didot-roman";
   font-style: normal;
   font-weight: normal;
-  src: url("../../../lib/assets/fonts/didot-roman.eot?#iefix") format("embedded-opentype"), url("../../../lib/assets/fonts/didot-roman.woff") format("woff"), url("../../../lib/assets/fonts/didot-roman.ttf") format("truetype"), url("../../../lib/assets/fonts/didot-roman.svg#didot-roman") format("svg");
+  src: url("/fear-core-ui/lib/assets/fonts/didot-roman.eot?#iefix") format("embedded-opentype"), url("/fear-core-ui/lib/assets/fonts/didot-roman.woff") format("woff"), url("/fear-core-ui/lib/assets/fonts/didot-roman.ttf") format("truetype"), url("/fear-core-ui/lib/assets/fonts/didot-roman.svg#didot-roman") format("svg");
 }
 
 @font-face {
   font-family: "didot-italic";
   font-style: normal;
   font-weight: normal;
-  src: url("../../../lib/assets/fonts/didot-italic.eot?#iefix") format("embedded-opentype"), url("../../../lib/assets/fonts/didot-italic.woff") format("woff"), url("../../../lib/assets/fonts/didot-italic.ttf") format("truetype"), url("../../../lib/assets/fonts/didot-italic.svg#didot-italic") format("svg");
+  src: url("/fear-core-ui/lib/assets/fonts/didot-italic.eot?#iefix") format("embedded-opentype"), url("/fear-core-ui/lib/assets/fonts/didot-italic.woff") format("woff"), url("/fear-core-ui/lib/assets/fonts/didot-italic.ttf") format("truetype"), url("/fear-core-ui/lib/assets/fonts/didot-italic.svg#didot-italic") format("svg");
 }
 
 @font-face {
   font-family: "didot-bold";
   font-style: normal;
   font-weight: normal;
-  src: url("../../../lib/assets/fonts/didot-bold.eot?#iefix") format("embedded-opentype"), url("../../../lib/assets/fonts/didot-bold.woff") format("woff"), url("../../../lib/assets/fonts/didot-bold.ttf") format("truetype"), url("../../../lib/assets/fonts/didot-bold.svg#didot-bold") format("svg");
+  src: url("/fear-core-ui/lib/assets/fonts/didot-bold.eot?#iefix") format("embedded-opentype"), url("/fear-core-ui/lib/assets/fonts/didot-bold.woff") format("woff"), url("/fear-core-ui/lib/assets/fonts/didot-bold.ttf") format("truetype"), url("/fear-core-ui/lib/assets/fonts/didot-bold.svg#didot-bold") format("svg");
 }
 
 @font-face {
   font-family: "didot-bold-italic";
   font-style: normal;
   font-weight: normal;
-  src: url("../../../lib/assets/fonts/didot-bold-italic.eot?#iefix") format("embedded-opentype"), url("../../../lib/assets/fonts/didot-bold-italic.woff") format("woff"), url("../../../lib/assets/fonts/didot-bold-italic.ttf") format("truetype"), url("../../../lib/assets/fonts/didot-bold-italic.svg#didot-bold-italic") format("svg");
+  src: url("/fear-core-ui/lib/assets/fonts/didot-bold-italic.eot?#iefix") format("embedded-opentype"), url("/fear-core-ui/lib/assets/fonts/didot-bold-italic.woff") format("woff"), url("/fear-core-ui/lib/assets/fonts/didot-bold-italic.ttf") format("truetype"), url("/fear-core-ui/lib/assets/fonts/didot-bold-italic.svg#didot-bold-italic") format("svg");
 }
 
 @font-face {
   font-family: "mns-london";
   font-style: normal;
   font-weight: normal;
-  src: url("../../../lib/assets/fonts/mns-london-text/MSLondoneText-Semibold.woff2") format("woff2"), url("../../../lib/assets/fonts/mns-london-text/MSLondoneText-Semibold.woff") format("woff");
+  src: url("/fear-core-ui/lib/assets/fonts/mns-london-text/MSLondoneText-Semibold.woff2") format("woff2"), url("/fear-core-ui/lib/assets/fonts/mns-london-text/MSLondoneText-Semibold.woff") format("woff");
 }
 
 @font-face {
   font-family: "mns-london-bold";
   font-style: normal;
   font-weight: normal;
-  src: url("../../../lib/assets/fonts/mns-london-text/MSLondoneText-Demibold.woff2") format("woff2"), url("../../../lib/assets/fonts/mns-london-text/MSLondoneText-Demibold.woff") format("woff");
+  src: url("/fear-core-ui/lib/assets/fonts/mns-london-text/MSLondoneText-Demibold.woff2") format("woff2"), url("/fear-core-ui/lib/assets/fonts/mns-london-text/MSLondoneText-Demibold.woff") format("woff");
 }
 
 @font-face {
   font-family: "mns-london-light";
   font-style: normal;
   font-weight: normal;
-  src: url("../../../lib/assets/fonts/mns-london-text/MSLondoneText-Regular.woff2") format("woff2"), url("../../../lib/assets/fonts/mns-london-text/MSLondoneText-Regular.woff") format("woff");
+  src: url("/fear-core-ui/lib/assets/fonts/mns-london-text/MSLondoneText-Regular.woff2") format("woff2"), url("/fear-core-ui/lib/assets/fonts/mns-london-text/MSLondoneText-Regular.woff") format("woff");
 }
 
 /* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_module_typography.scss */
@@ -707,16 +708,160 @@ h2,
   white-space: pre;
 }
 
-/* line 3, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
-body {
-  margin: 40px;
+@font-face {
+  font-family: 'mns-digital-experimental';
+  src: url("/fear-core-ui/examples/assets/fonts/mns-digital-experimental/fonts/mns-digital-experimental.ttf?g30cer") format("truetype"), url("/fear-core-ui/examples/assets/fonts/mns-digital-experimental/fonts/mns-digital-experimental.woff?g30cer") format("woff"), url("/fear-core-ui/examples/assets/fonts/mns-digital-experimental/fonts/mns-digital-experimental.svg?g30cer#mns-digital-experimental") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* line 7, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/fonts/mns-digital-experimental/_style.scss */
+[class^="mns-d-ex-icon-"], [class*=" mns-d-ex-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mns-digital-experimental' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 29, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/fonts/mns-digital-experimental/_style.scss */
+.mns-d-ex-icon-desktop:before {
+  content: "";
+}
+
+/* line 34, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/fonts/mns-digital-experimental/_style.scss */
+.mns-d-ex-icon-phone:before {
+  content: "";
+}
+
+/* line 39, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/fonts/mns-digital-experimental/_style.scss */
+.mns-d-ex-icon-tablet:before {
+  content: "";
+}
+
+/* line 9, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+body {
+  padding: 40px;
+}
+
+/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
 iframe {
+  margin-bottom: 40px;
+  padding: 20px;
   width: 100%;
   height: 400px;
-  margin-bottom: 40px;
+  border: 1px solid #CCCCCC;
+}
+
+/* line 21, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+.m-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0 0 40px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333333;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+/* line 31, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+.m-header__logo ~ h1 {
+  margin: 0 20px;
+}
+
+/* line 36, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+.l-main__layout {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+/* line 41, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+.l-main__layout > nav {
+  margin-right: 40px;
+  border-right: 1px solid #333333;
+}
+
+/* line 47, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+.m-home__nav {
+  margin: 0 40px 0 0;
+  padding: 0;
+}
+
+/* line 51, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+.m-home__nav > li {
+  list-style: none;
+  line-height: 3rem;
+}
+
+/* line 57, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+.m-home__content {
+  overflow-y: auto;
+  padding-right: 40px;
+  height: -webkit-calc(100vh - 211px);
+  height: calc(100vh - 211px);
+}
+
+/* line 63, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+.m-home__screen-size {
+  margin: 0 40px 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* line 71, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+.m-home__screen-size--phone, .m-home__screen-size--tablet, .m-home__screen-size--desktop {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* line 76, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+#screen-size-phone:checked ~ nav .m-home__screen-size--phone, #screen-size-tablet:checked ~ nav .m-home__screen-size--tablet, #screen-size-desktop:checked ~ nav .m-home__screen-size--desktop {
+  padding: 10px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #BDD755;
+}
+
+/* line 94, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+#screen-size-phone:checked ~ section .m-home__content {
+  width: 340px;
+}
+
+/* line 94, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+#screen-size-tablet:checked ~ section .m-home__content {
+  width: 800px;
+}
+
+/* line 94, /Users/Caylam/Development/MS/code/fear-core-ui/examples/site.scss */
+#screen-size-desktop:checked ~ section .m-home__content {
+  width: 100%;
 }
 
 /*# sourceMappingURL=site.css.map */
