@@ -14,7 +14,7 @@ System.config({
         }
     },
     map: {
-        'angular': 'angular/angular',
+        'angular': 'node_modules/angular/angular',
         'systemjs': 'node_modules/systemjs/dist/system.js',
         'system-polyfills': 'node_modules/systemjs/dist/system-polyfills.js',
         'systemjs-babel-build': 'node_modules/systemjs-plugin-babel/systemjs-babel-browser',

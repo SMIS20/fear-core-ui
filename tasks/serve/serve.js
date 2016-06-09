@@ -7,6 +7,7 @@ module.exports = function () {
     var gulp = require('gulp');
     var mustacheConfig = config.get('mustache');
     var connectServer;
+    var baseFolder = require('yargs').argv.folder || 'app';
 
     //first path must be the base folder
     var staticPaths = [
@@ -32,13 +33,22 @@ module.exports = function () {
 
     gulp.task('start-server', ['build-sass', 'create-app-config'], function () {
 
+        var express = require('express');
+        var app = express();
+
+        //Only add middleware when serving from app folder
+        if (baseFolder === 'app') {
+            app.use('/node_modules', express.static('node_modules'));
+        }
+
         connectServer = serve.startServer(
             config.get('webserver.host'),
             config.get('webserver.port'),
             staticPaths,
             liveReloadConditions,
             mustacheConfig,
-            channelDefaults
+            channelDefaults,
+            [app]
         );
     });
 
