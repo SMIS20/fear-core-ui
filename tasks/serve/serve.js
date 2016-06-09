@@ -14,7 +14,8 @@ module.exports = function () {
         config.get('paths.' + config.get('cli.folder') + '.base'),
         config.get('paths.temp.base'),
         'node_modules',
-        'lib'
+        'lib',
+        'examples'
     ];
 
     var channelDefaults = require(process.cwd() + '/mock/src/channel');

@@ -17,5 +17,5 @@ $fear-core-ui-images-dir: '/common/assets/images/sprites';
 //needs to use pattern library
 @import 'fear-core-ui/templates/header';
 
-@import 'fear-core-ui/layout/content';
-@import 'fear-core-ui/components/logo';
+@import '../../modules/content';
+@import '../../modules/logo';

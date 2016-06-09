@@ -582,7 +582,7 @@ Functions
   font-family: "mns-icons";
   font-style: normal;
   font-weight: normal;
-  src: url("/fear-core-ui/lib/assets/fonts/mns-icons.eot?#iefix") format("embedded-opentype"), url("/fear-core-ui/lib/assets/fonts/mns-icons.woff") format("woff"), url("/fear-core-ui/lib/assets/fonts/mns-icons.ttf") format("truetype"), url("/fear-core-ui/lib/assets/fonts/mns-icons.svg#mns-icons") format("svg");
+  src: url("/assets/fonts/mns-icons.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/mns-icons.woff") format("woff"), url("/assets/fonts/mns-icons.ttf") format("truetype"), url("/assets/fonts/mns-icons.svg#mns-icons") format("svg");
 }
 
 /* -------- Typographic -------- */
@@ -590,49 +590,49 @@ Functions
   font-family: "didot-roman";
   font-style: normal;
   font-weight: normal;
-  src: url("/fear-core-ui/lib/assets/fonts/didot-roman.eot?#iefix") format("embedded-opentype"), url("/fear-core-ui/lib/assets/fonts/didot-roman.woff") format("woff"), url("/fear-core-ui/lib/assets/fonts/didot-roman.ttf") format("truetype"), url("/fear-core-ui/lib/assets/fonts/didot-roman.svg#didot-roman") format("svg");
+  src: url("/assets/fonts/didot-roman.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/didot-roman.woff") format("woff"), url("/assets/fonts/didot-roman.ttf") format("truetype"), url("/assets/fonts/didot-roman.svg#didot-roman") format("svg");
 }
 
 @font-face {
   font-family: "didot-italic";
   font-style: normal;
   font-weight: normal;
-  src: url("/fear-core-ui/lib/assets/fonts/didot-italic.eot?#iefix") format("embedded-opentype"), url("/fear-core-ui/lib/assets/fonts/didot-italic.woff") format("woff"), url("/fear-core-ui/lib/assets/fonts/didot-italic.ttf") format("truetype"), url("/fear-core-ui/lib/assets/fonts/didot-italic.svg#didot-italic") format("svg");
+  src: url("/assets/fonts/didot-italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/didot-italic.woff") format("woff"), url("/assets/fonts/didot-italic.ttf") format("truetype"), url("/assets/fonts/didot-italic.svg#didot-italic") format("svg");
 }
 
 @font-face {
   font-family: "didot-bold";
   font-style: normal;
   font-weight: normal;
-  src: url("/fear-core-ui/lib/assets/fonts/didot-bold.eot?#iefix") format("embedded-opentype"), url("/fear-core-ui/lib/assets/fonts/didot-bold.woff") format("woff"), url("/fear-core-ui/lib/assets/fonts/didot-bold.ttf") format("truetype"), url("/fear-core-ui/lib/assets/fonts/didot-bold.svg#didot-bold") format("svg");
+  src: url("/assets/fonts/didot-bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/didot-bold.woff") format("woff"), url("/assets/fonts/didot-bold.ttf") format("truetype"), url("/assets/fonts/didot-bold.svg#didot-bold") format("svg");
 }
 
 @font-face {
   font-family: "didot-bold-italic";
   font-style: normal;
   font-weight: normal;
-  src: url("/fear-core-ui/lib/assets/fonts/didot-bold-italic.eot?#iefix") format("embedded-opentype"), url("/fear-core-ui/lib/assets/fonts/didot-bold-italic.woff") format("woff"), url("/fear-core-ui/lib/assets/fonts/didot-bold-italic.ttf") format("truetype"), url("/fear-core-ui/lib/assets/fonts/didot-bold-italic.svg#didot-bold-italic") format("svg");
+  src: url("/assets/fonts/didot-bold-italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/didot-bold-italic.woff") format("woff"), url("/assets/fonts/didot-bold-italic.ttf") format("truetype"), url("/assets/fonts/didot-bold-italic.svg#didot-bold-italic") format("svg");
 }
 
 @font-face {
   font-family: "mns-london";
   font-style: normal;
   font-weight: normal;
-  src: url("/fear-core-ui/lib/assets/fonts/mns-london-text/MSLondoneText-Semibold.woff2") format("woff2"), url("/fear-core-ui/lib/assets/fonts/mns-london-text/MSLondoneText-Semibold.woff") format("woff");
+  src: url("/assets/fonts/mns-london-text/MSLondoneText-Semibold.woff2") format("woff2"), url("/assets/fonts/mns-london-text/MSLondoneText-Semibold.woff") format("woff");
 }
 
 @font-face {
   font-family: "mns-london-bold";
   font-style: normal;
   font-weight: normal;
-  src: url("/fear-core-ui/lib/assets/fonts/mns-london-text/MSLondoneText-Demibold.woff2") format("woff2"), url("/fear-core-ui/lib/assets/fonts/mns-london-text/MSLondoneText-Demibold.woff") format("woff");
+  src: url("/assets/fonts/mns-london-text/MSLondoneText-Demibold.woff2") format("woff2"), url("/assets/fonts/mns-london-text/MSLondoneText-Demibold.woff") format("woff");
 }
 
 @font-face {
   font-family: "mns-london-light";
   font-style: normal;
   font-weight: normal;
-  src: url("/fear-core-ui/lib/assets/fonts/mns-london-text/MSLondoneText-Regular.woff2") format("woff2"), url("/fear-core-ui/lib/assets/fonts/mns-london-text/MSLondoneText-Regular.woff") format("woff");
+  src: url("/assets/fonts/mns-london-text/MSLondoneText-Regular.woff2") format("woff2"), url("/assets/fonts/mns-london-text/MSLondoneText-Regular.woff") format("woff");
 }
 
 /* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/typography/_module_typography.scss */
@@ -724,7 +724,7 @@ iframe {
 
 @font-face {
   font-family: 'mns-digital-experimental';
-  src: url("/fear-core-ui/examples/assets/fonts/mns-digital-experimental/fonts/mns-digital-experimental.ttf?g30cer") format("truetype"), url("/fear-core-ui/examples/assets/fonts/mns-digital-experimental/fonts/mns-digital-experimental.woff?g30cer") format("woff"), url("/fear-core-ui/examples/assets/fonts/mns-digital-experimental/fonts/mns-digital-experimental.svg?g30cer#mns-digital-experimental") format("svg");
+  src: url("/assets/fonts/mns-digital-experimental/fonts/mns-digital-experimental.ttf?g30cer") format("truetype"), url("/assets/fonts/mns-digital-experimental/fonts/mns-digital-experimental.woff?g30cer") format("woff"), url("/assets/fonts/mns-digital-experimental/fonts/mns-digital-experimental.svg?g30cer#mns-digital-experimental") format("svg");
   font-weight: normal;
   font-style: normal;
 }
