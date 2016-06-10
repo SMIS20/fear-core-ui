@@ -1,18 +1,17 @@
 .l-main__layout {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
+  @include display(flex);
+  @include align-items(stretch);
 
   > nav {
     margin-right: $spacing-default-med;
-    border-right: 1px solid $color__brand--dark-grey;
     min-width: 240px;
+    border-right: 1px solid $color__brand--dark-grey;
   }
 
   > section {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
+    @include display(flex);
+    @include flex-grow(1);
+    @include justify-content(center);
   }
 }
 

@@ -9,9 +9,8 @@ $nav-height: 3rem;
 
 .m-nav {
   @extend %m-nav-list;
+  @include display(flex);
   position: relative;
-  display: table-cell; // IE9 Fallback
-  display: flex;
   height: $nav-height;
   align-items: center;
 
@@ -20,8 +19,7 @@ $nav-height: 3rem;
   }
 
   > li {
-    display: table-cell; // IE9 Fallback
-    display: flex;
+    @include display(flex);
     height: $nav-height;
     align-items: center;
   }

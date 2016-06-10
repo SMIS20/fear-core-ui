@@ -763,20 +763,26 @@ iframe {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0 0 40px 0;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #333333;
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  margin: 0 0 40px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333333;
 }
 
-/* line 11, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_header.scss */
+/* line 2, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_browser-check.scss */
+.ie9 .l-header {
+  display: table;
+  width: 100%;
+}
+
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+.ie9 .l-header > * {
+  display: table-cell;
+}
+
+/* line 10, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_header.scss */
 .l-header__logo ~ h1 {
   margin: 0 20px;
 }
@@ -787,25 +793,31 @@ iframe {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
 }
 
-/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
-.l-main__layout > nav {
-  margin-right: 40px;
-  border-right: 1px solid #333333;
-  min-width: 240px;
+/* line 2, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_browser-check.scss */
+.ie9 .l-main__layout {
+  display: table;
+  width: 100%;
 }
 
-/* line 12, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+.ie9 .l-main__layout > * {
+  display: table-cell;
+}
+
+/* line 5, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
+.l-main__layout > nav {
+  margin-right: 40px;
+  min-width: 240px;
+  border-right: 1px solid #333333;
+}
+
+/* line 11, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
 .l-main__layout > section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -821,19 +833,30 @@ iframe {
   justify-content: center;
 }
 
-/* line 19, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
+/* line 2, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_browser-check.scss */
+.ie9 .l-main__layout > section {
+  display: table;
+  width: 100%;
+}
+
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+.ie9 .l-main__layout > section > * {
+  display: table-cell;
+}
+
+/* line 18, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
 .l-main__nav {
   margin: 0 40px 0 0;
   padding: 0;
 }
 
-/* line 23, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
+/* line 22, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
 .l-main__nav > li {
   list-style: none;
   line-height: 3rem;
 }
 
-/* line 29, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
+/* line 28, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
 .l-main__content {
   overflow-y: auto;
   height: -webkit-calc(100vh - 211px);

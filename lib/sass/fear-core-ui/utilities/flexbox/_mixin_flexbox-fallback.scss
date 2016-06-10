@@ -1,0 +1,175 @@
+@mixin display-fallback($value) {
+  @if $value == flex {
+    display: table;
+    width: 100%;
+
+    > * {
+      display: table-cell;
+    }
+  }
+}
+
+@mixin flex-direction-fallback($direction) {
+  @if $direction == row {
+    display: inline-block;
+  }
+
+  @if $direction == row-reverse {
+
+    direction: rtl;
+
+    > * {
+      display: inline-block;
+    }
+
+  }
+
+  @if $direction == column {
+
+    display: block;
+
+  }
+
+  @if $direction == column-reverse {
+    @extend %flex-reverse-fallback;
+
+    > * {
+      @extend %flex-reverse-fallback;
+      display: block;
+    }
+
+  }
+}
+
+@mixin flex-wrap-fallback($wrap) {
+  @if $wrap == nowrap {
+    display: table;
+
+    > * {
+      display: table-cell;
+    }
+  }
+
+  @if $wrap == wrap {
+    display: inline-block;
+  }
+
+  @if $wrap == wrap-reverse {
+    @extend %flex-reverse-fallback;
+
+    > * {
+      @extend %flex-reverse-fallback;
+      display: inline-block;
+    }
+  }
+}
+
+@mixin justify-content-fallback($position) {
+  @if $position == flex-start {
+    display: inline-block;
+  }
+
+  @if $position == flex-end {
+    text-align: right;
+
+    > * {
+      display: inline-block;
+    }
+  }
+
+  @if $position == center {
+    text-align: center;
+
+    > * {
+      display: inline-block;
+    }
+  }
+
+  @if $position == space-between {
+    text-align: justify;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+
+    > * {
+      display: inline-block;
+    }
+  }
+
+  @if $position == space-around {
+    display: table;
+
+    > * {
+      display: table-cell;
+      text-align: center;
+    }
+  }
+}
+
+@mixin align-items-fallback($position) {
+  @if $position == flex-start {
+    display: inline-block;
+  }
+
+  @if $position == flex-end {
+    display: table;
+
+    > * {
+      display: table-cell;
+      vertical-align: bottom;
+    }
+  }
+
+  @if $position == center {
+    display: table;
+
+    > * {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  @if $position == stretch {
+    display: inline-block;
+    height: 100%;
+  }
+}
+
+@mixin align-content-fallback($position) {
+  @if $position == flex-start {
+    display: inline-block;
+  }
+
+  @if $position == flex-end {
+    display: table-cell;
+    vertical-align: bottom;
+
+    > * {
+      display: inline-block;
+    }
+  }
+
+  @if $position == center {
+    display: table-cell;
+    vertical-align: middle;
+
+    > * {
+      display: inline-block;
+    }
+  }
+}
+
+@mixin flex-grow-fallback {
+  width: 100%;
+}
+
+@mixin flex-shrink-fallback {
+  width: 1px;
+}
+
+@mixin align-self-fallback($position) {
+  vertical-align: $position;
+}

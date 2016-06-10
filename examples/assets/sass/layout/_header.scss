@@ -1,10 +1,9 @@
 .l-header {
-  display: flex;
-  flex-direction: row;
+  @include display(flex);
+  @include align-content(center);
   margin: 0 0 $spacing-default-med 0;
   padding-bottom: $spacing-default;
   border-bottom: 1px solid $color__brand--dark-grey;
-  align-content: center;
 }
 
 .l-header__logo {
