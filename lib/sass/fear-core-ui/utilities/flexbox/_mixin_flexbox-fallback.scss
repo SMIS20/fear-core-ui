@@ -5,17 +5,10 @@
       display: table;
     }
 
-    //display: table-row;
-
     > *:not([hidden]) {
-      //display: inline-block;
       display: table-cell;
       vertical-align: top;
       height: 100%;
-
-      * {
-        display: initial;
-      }
 
       &::before {
         display: table-cell;
@@ -98,7 +91,7 @@
 
     > * {
       text-align: left;
-      display: inline-block;
+      display: inline-block !important;
     }
   }
 

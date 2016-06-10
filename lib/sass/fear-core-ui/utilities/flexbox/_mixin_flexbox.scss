@@ -37,7 +37,7 @@
 
 @mixin align-content($position) {
   @include ie9-only {
-    @include align-content-fallback($position);
+    //@include align-content-fallback($position);
   }
   align-content: $position;
 }

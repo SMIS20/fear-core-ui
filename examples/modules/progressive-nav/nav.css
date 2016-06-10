@@ -1553,12 +1553,12 @@ Functions
 
 /* line 9, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav.scss */
 .m-nav > li:hover > .m-nav__content {
-  display: block;
+  display: block !important;
 }
 
 /* line 16, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav.scss */
 .m-nav__content {
-  display: none;
+  display: none !important;
 }
 
 /* line 5, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
@@ -1586,19 +1586,14 @@ Functions
   display: table;
 }
 
-/* line 10, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+/* line 8, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
 .ie9 .m-nav > *:not([hidden]) {
   display: table-cell;
   vertical-align: top;
   height: 100%;
 }
 
-/* line 16, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
-.ie9 .m-nav > *:not([hidden]) * {
-  display: initial;
-}
-
-/* line 20, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
 .ie9 .m-nav > *:not([hidden])::before {
   display: table-cell;
 }
@@ -1621,19 +1616,14 @@ Functions
   display: table;
 }
 
-/* line 10, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+/* line 8, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
 .ie9 .m-nav > li > *:not([hidden]) {
   display: table-cell;
   vertical-align: top;
   height: 100%;
 }
 
-/* line 16, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
-.ie9 .m-nav > li > *:not([hidden]) * {
-  display: initial;
-}
-
-/* line 20, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
 .ie9 .m-nav > li > *:not([hidden])::before {
   display: table-cell;
 }
@@ -1664,19 +1654,14 @@ Functions
   display: table;
 }
 
-/* line 10, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+/* line 8, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
 .ie9 .m-nav > li > *:not([hidden]) {
   display: table-cell;
   vertical-align: top;
   height: 100%;
 }
 
-/* line 16, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
-.ie9 .m-nav > li > *:not([hidden]) * {
-  display: initial;
-}
-
-/* line 20, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
 .ie9 .m-nav > li > *:not([hidden])::before {
   display: table-cell;
 }
@@ -1732,19 +1717,14 @@ Functions
   display: table;
 }
 
-/* line 10, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+/* line 8, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
 .ie9 .example-wrapper > *:not([hidden]) {
   display: table-cell;
   vertical-align: top;
   height: 100%;
 }
 
-/* line 16, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
-.ie9 .example-wrapper > *:not([hidden]) * {
-  display: initial;
-}
-
-/* line 20, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
 .ie9 .example-wrapper > *:not([hidden])::before {
   display: table-cell;
 }
@@ -1754,10 +1734,10 @@ Functions
   text-align: center;
 }
 
-/* line 99, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+/* line 92, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
 .ie9 .example-wrapper > * {
   text-align: left;
-  display: inline-block;
+  display: inline-block !important;
 }
 
 /*# sourceMappingURL=nav.css.map */

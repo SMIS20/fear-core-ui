@@ -7,12 +7,12 @@
   > li {
     &:hover {
       > .m-nav__content {
-        display: block;
+        display: block !important; // important is ony for IE9
       }
     }
   }
 }
 
 .m-nav__content {
-  display: none;
+  display: none !important; // important is ony for IE9
 }
