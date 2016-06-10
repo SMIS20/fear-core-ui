@@ -1,10 +1,25 @@
 @mixin display-fallback($value) {
   @if $value == flex {
-    display: table;
-    width: 100%;
 
-    > * {
+    &::before {
+      display: table;
+    }
+
+    //display: table-row;
+
+    > *:not([hidden]) {
+      //display: inline-block;
       display: table-cell;
+      vertical-align: top;
+      height: 100%;
+
+      * {
+        display: initial;
+      }
+
+      &::before {
+        display: table-cell;
+      }
     }
   }
 }
@@ -78,9 +93,11 @@
   }
 
   @if $position == center {
+
     text-align: center;
 
     > * {
+      text-align: left;
       display: inline-block;
     }
   }
@@ -153,11 +170,12 @@
   }
 
   @if $position == center {
-    display: table-cell;
-    vertical-align: middle;
+    //display: table-cell;
+    //vertical-align: middle;
 
     > * {
-      display: inline-block;
+      vertical-align: middle;
+      //display: inline-block;
     }
   }
 }

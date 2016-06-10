@@ -10,9 +10,9 @@ $nav-height: 3rem;
 .m-nav {
   @extend %m-nav-list;
   @include display(flex);
+  @include align-items(center);
   position: relative;
   height: $nav-height;
-  align-items: center;
 
   ul {
     @extend %m-nav-list;
@@ -20,8 +20,8 @@ $nav-height: 3rem;
 
   > li {
     @include display(flex);
+    @include align-items(center);
     height: $nav-height;
-    align-items: center;
   }
 }
 

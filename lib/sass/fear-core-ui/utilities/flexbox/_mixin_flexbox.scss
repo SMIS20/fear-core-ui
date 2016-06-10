@@ -23,7 +23,7 @@
 
 @mixin justify-content($position) {
   @include ie9-only {
-    //@include justify-content-fallback($position);
+    @include justify-content-fallback($position);
   }
   justify-content: $position;
 }
@@ -37,14 +37,14 @@
 
 @mixin align-content($position) {
   @include ie9-only {
-    //@include align-content-fallback($position);
+    @include align-content-fallback($position);
   }
   align-content: $position;
 }
 
 @mixin flex-grow($value) {
   @include ie9-only {
-    //@include flex-grow-fallback;
+    @include flex-grow-fallback;
   }
   flex-grow: $value;
 }

@@ -4,9 +4,9 @@ $nav-content-offset: .5rem;
 .m-nav {
 
   > li {
-    display: flex;
+    @include display(flex);
+    @include align-items(center);
     height: $nav-height;
-    align-items: center;
 
     &:hover {
       > a {
