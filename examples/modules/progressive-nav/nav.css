@@ -1547,28 +1547,120 @@ Functions
 }
 
 /* line 3, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav.scss */
-.m-nav > li {
+.m-nav li {
   list-style: none;
 }
 
-/* line 7, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav.scss */
+/* line 9, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav.scss */
 .m-nav > li:hover > .m-nav__content {
   display: block;
 }
 
-/* line 14, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav.scss */
+/* line 16, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav.scss */
 .m-nav__content {
   display: none;
 }
 
-/* line 17, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav.scss */
-.m-nav__content > li {
-  list-style: none;
+/* line 5, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
+.m-nav, .m-nav ul {
+  margin: 0;
+  padding: 0;
 }
 
-/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_theme.scss */
+/* line 10, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
 .m-nav {
-  display: block;
+  position: relative;
+  display: table-cell;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 22, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
+.m-nav > li {
+  display: table-cell;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 30, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
+.m-nav__content {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  width: 100%;
+}
+
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_theme.scss */
+.m-nav > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 12, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_theme.scss */
+.m-nav > li:hover > a {
+  color: #BDD755;
+}
+
+/* line 17, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_theme.scss */
+.m-nav > li > a {
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-family: "mns-london-bold", Helvetica, Arial, sans-serif;
+}
+
+/* line 27, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_theme.scss */
+.m-nav__content {
+  padding: 10px;
+  min-height: 200px;
+  border-top: 0.5rem solid #000000;
+  -webkit-box-shadow: 0 19px 27px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 19px 27px rgba(0, 0, 0, 0.1);
+}
+
+/* line 33, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_theme.scss */
+.m-nav__content h2 {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  border-bottom: 1px solid #CCCCCC;
+  font-size: 1.4rem;
+  font-family: "mns-london-bold", Helvetica, Arial, sans-serif;
+}
+
+/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-nav/_layout.scss */
+.example-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-bottom: 5px solid #000000;
 }
 
 /*# sourceMappingURL=nav.css.map */

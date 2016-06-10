@@ -1,0 +1,35 @@
+// scss-lint:disable DuplicateProperty
+
+$nav-height: 3rem;
+
+%m-nav-list {
+  margin: 0;
+  padding: 0;
+}
+
+.m-nav {
+  @extend %m-nav-list;
+  position: relative;
+  display: table-cell; // IE9 Fallback
+  display: flex;
+  height: $nav-height;
+  align-items: center;
+
+  ul {
+    @extend %m-nav-list;
+  }
+
+  > li {
+    display: table-cell; // IE9 Fallback
+    display: flex;
+    height: $nav-height;
+    align-items: center;
+  }
+}
+
+.m-nav__content {
+  position: absolute;
+  top: $nav-height;
+  left: 0;
+  width: 100%;
+}

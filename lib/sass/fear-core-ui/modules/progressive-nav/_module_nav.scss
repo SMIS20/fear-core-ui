@@ -1,8 +1,10 @@
 .m-nav {
 
-  > li {
+  li {
     list-style: none;
+  }
 
+  > li {
     &:hover {
       > .m-nav__content {
         display: block;
@@ -13,8 +15,4 @@
 
 .m-nav__content {
   display: none;
-
-  > li {
-    list-style: none;
-  }
 }
