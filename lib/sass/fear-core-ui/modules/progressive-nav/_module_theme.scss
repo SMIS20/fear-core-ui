@@ -1,12 +1,9 @@
-$nav-height: 3rem;
-$nav-content-offset: .5rem;
-
 .m-nav {
 
   > li {
-    @include display(flex);
-    @include align-items(center);
-    height: $nav-height;
+    //@include display(flex);
+    //@include align-items(center);
+    //height: $nav-height;
 
     &:hover {
       > a {

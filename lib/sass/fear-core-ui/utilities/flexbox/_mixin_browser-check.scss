@@ -1,5 +1,0 @@
-@mixin ie9-only {
-  .ie9 & {
-    @content;
-  }
-}

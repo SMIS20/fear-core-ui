@@ -1,0 +1,42 @@
+@mixin mobileMenu($id) {
+  ##{$id} {
+    &:checked {
+      + .m-nav {
+        @include display(flex);
+        display: block;
+      }
+    }
+
+    + .m-nav {
+      display: none;
+    }
+  }
+}
+
+@include mobileMenu(m-nav-trigger);
+
+.m-nav-hamburger {
+  display: block;
+}
+
+.m-nav {
+  @include flex-direction(column);
+  position: absolute;
+  top: $nav-height;
+  left: 0;
+  display: none;
+
+  //&:target {
+  //  @include display(flex);
+  //  //display: block;
+  //}
+
+  > li {
+    //@include pointer-events--none('> a ');
+
+    // hide desktop links
+    [href^="#"] {
+      display: block;
+    }
+  }
+}

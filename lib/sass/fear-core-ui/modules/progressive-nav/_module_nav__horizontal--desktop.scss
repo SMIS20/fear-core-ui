@@ -1,0 +1,31 @@
+// scss-lint:disable DuplicateProperty
+
+.m-nav-hamburger {
+  display: none;
+}
+
+.m-nav {
+  @include align-items(center);
+  position: relative;
+  height: $nav-height;
+
+  > li {
+    @include align-items(center);
+    height: $nav-height;
+
+    &:hover {
+      > .m-nav__content {
+        display: block !important; // important is ony for IE9
+      }
+    }
+
+    // hide mobile links
+    > a:not([href^="#"]) {
+      display: block;
+    }
+  }
+}
+
+.m-nav__content {
+  width: 100%;
+}

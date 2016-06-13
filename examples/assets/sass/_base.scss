@@ -6,7 +6,6 @@ $spacing-default-sm: $spacing-default / 2;
 $spacing-default-med: $spacing-default * 2;
 
 @import 'fear-core-ui/base';
-@import 'fear-core-ui/extends';
-@import 'fear-core-ui/normalize';
-@import 'fear-core-ui/typography';
+@import 'fear-core-ui/utilities/ie-only';
 @import 'fear-core-ui/utilities/flexbox';
+@import 'fear-core-ui/utilities/pointer-events';

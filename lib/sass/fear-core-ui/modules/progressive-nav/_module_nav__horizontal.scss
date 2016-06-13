@@ -1,18 +1,17 @@
 // scss-lint:disable DuplicateProperty
 
-$nav-height: 3rem;
-
 %m-nav-list {
   margin: 0;
   padding: 0;
 }
 
+.m-nav-hamburger {
+  display: none;
+}
+
 .m-nav {
   @extend %m-nav-list;
   @include display(flex);
-  @include align-items(center);
-  position: relative;
-  height: $nav-height;
 
   ul {
     @extend %m-nav-list;
@@ -20,8 +19,10 @@ $nav-height: 3rem;
 
   > li {
     @include display(flex);
-    @include align-items(center);
-    height: $nav-height;
+
+    > a {
+      display: none;
+    }
   }
 }
 
@@ -29,5 +30,4 @@ $nav-height: 3rem;
   position: absolute;
   top: $nav-height;
   left: 0;
-  width: 100%;
 }
