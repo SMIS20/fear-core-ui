@@ -97,12 +97,15 @@
   top: 0;
   left: 0;
   display: none;
+  padding: 20px;
   transition: 0.5s;
 
   > li {
     // hide desktop links
     > label {
       display: block;
+      width: 100%;
+      line-height: 3.2rem;
     }
   }
 }
@@ -119,5 +122,15 @@
 
 .nav__content {
   @extend %nav__panel;
+
+  > li {
+    padding-left: 20px;
+    border-bottom: 1px solid #ccc;
+    line-height: 4.5rem;
+  }
 }
 
+.menu__mobile-level2--back {
+  background-color: $color__brand--black;
+  color: $color__brand--white;
+}
