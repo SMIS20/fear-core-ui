@@ -6,12 +6,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Progressive Nav</title>
     <link rel="stylesheet" href="nav.css" type="text/css"/>
-    <link rel="stylesheet" href="nav__desktop.css" type="text/css" media="screen and (min-width: 1025px)" />
-    <link rel="stylesheet" href="nav__mobile.css" type="text/css" media="screen and (max-width: 1024px)" />
+    <link rel="stylesheet" href="nav__desktop.css" type="text/css" media="screen and (min-width: 1025px)"/>
+    <link rel="stylesheet" href="nav__mobile.css" type="text/css" media="screen and (max-width: 1024px)"/>
   </head>
   <body>
 
@@ -19,15 +19,18 @@
       <label class="m-nav-hamburger icon--menu" for="m-nav-trigger" role="button"></label>
     </nav>
 
-    <div class="example-wrapper">
-
+    <div class="nav-wrapper">
       <nav>
         <input type="checkbox" id="m-nav-trigger" aria-hidden="true" hidden/>
         <ul class="m-nav">
           <li>
             <a href="/c/style-and-living">Inspire Me</a>
-            <a href="#menu__mobile--style-and-living">Inspire Me</a>
+            <label for="menu__mobile--inspireme" role="button">Inspire Me</label>
+            <input class="m-nav__menu--trigger" type="checkbox" id="menu__mobile--inspireme" aria-hidden="true" hidden/>
             <ul id="menu__mobile--style-and-living" class="m-nav__content">
+              <li>
+                <label for="menu__mobile--inspireme" role="button">Back</label>
+              </li>
               <li>
                 My style content
 
@@ -36,7 +39,6 @@
           </li>
           <li>
             <a href="/c/women">Woman</a>
-            <a href="#menu__mobile--woman">Woman</a>
             <ul id="menu__mobile--woman" class="m-nav__content">
               <li>
                 My Woman content
@@ -45,7 +47,6 @@
           </li>
           <li>
             <a href="/c/lingerie">Lingerie</a>
-            <a href="#menu__mobile--lingerie">Lingerie</a>
             <ul id="menu__mobile--lingerie" class="m-nav__content">
               <li>
                 My Lingerie content
@@ -54,7 +55,6 @@
           </li>
           <li>
             <a href="/c/beauty">Beauty</a>
-            <a href="#menu__mobile--beauty">Beauty</a>
             <ul id="menu__mobile--beauty" class="m-nav__content">
               <li>
                 My Beauty content
@@ -64,7 +64,6 @@
           </li>
           <li>
             <a href="/c/men">Men</a>
-            <a href="#menu__mobile--men">Men</a>
             <ul id="menu__mobile--men" class="m-nav__content">
               <li>
                 My Men content

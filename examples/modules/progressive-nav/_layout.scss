@@ -1,5 +1,0 @@
-.example-wrapper {
-  @include display(flex);
-  @include justify-content(center);
-  border-bottom: 5px solid $color__brand--black;
-}

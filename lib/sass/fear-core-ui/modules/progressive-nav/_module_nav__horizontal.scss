@@ -20,7 +20,8 @@
   > li {
     @include display(flex);
 
-    > a {
+    > a,
+    > label {
       display: none;
     }
   }
@@ -28,6 +29,6 @@
 
 .m-nav__content {
   position: absolute;
-  top: $nav-height;
-  left: 0;
+  z-index: 1;
+  background-color: $color__brand--white;
 }

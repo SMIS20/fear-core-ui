@@ -16,13 +16,27 @@
 @include mobileMenu(m-nav-trigger);
 
 .m-nav-hamburger {
-  display: block;
+  display: inline-block;
+  padding: $spacing-default-sm;
+}
+
+.m-nav__menu--trigger {
+  ~ .m-nav__content {
+    display: none;
+  }
+
+  &:checked {
+    ~ .m-nav__content {
+      display: block;
+    }
+  }
 }
 
 .m-nav {
+  @extend %m-nav__panel;
   @include flex-direction(column);
   position: absolute;
-  top: $nav-height;
+  top: 0;
   left: 0;
   display: none;
 
@@ -35,8 +49,23 @@
     //@include pointer-events--none('> a ');
 
     // hide desktop links
-    [href^="#"] {
+    > label {
       display: block;
     }
   }
 }
+
+%m-nav__panel {
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  width: 80vw;
+  height: calc(100vh - #{$nav-height});
+  border-right: 1px solid $color__brand--light-grey;
+  border-bottom: 1px solid $color__brand--light-grey;
+}
+
+.m-nav__content {
+  @extend %m-nav__panel;
+}
+

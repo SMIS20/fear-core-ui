@@ -2802,7 +2802,7 @@ Functions
 
 /* line 16, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav.scss */
 .m-nav__content {
-  display: none !important;
+  display: none;
 }
 
 /* line 3, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
@@ -2839,15 +2839,16 @@ Functions
 }
 
 /* line 23, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
-.m-nav > li > a {
+.m-nav > li > a,
+.m-nav > li > label {
   display: none;
 }
 
-/* line 29, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
+/* line 30, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
 .m-nav__content {
   position: absolute;
-  top: 3rem;
-  left: 0;
+  z-index: 1;
+  background-color: #FFFFFF;
 }
 
 /* line 9, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_theme.scss */
@@ -2867,13 +2868,11 @@ Functions
 /* line 24, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_theme.scss */
 .m-nav__content {
   padding: 10px;
-  min-height: 200px;
-  border-top: 0.5rem solid #000000;
   -webkit-box-shadow: 0 19px 27px rgba(0, 0, 0, 0.1);
   box-shadow: 0 19px 27px rgba(0, 0, 0, 0.1);
 }
 
-/* line 30, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_theme.scss */
+/* line 28, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_theme.scss */
 .m-nav__content h2 {
   margin-bottom: 5px;
   padding-bottom: 5px;
@@ -2881,26 +2880,6 @@ Functions
   border-bottom: 1px solid #CCCCCC;
   font-size: 1.4rem;
   font-family: "mns-london-bold", Helvetica, Arial, sans-serif;
-}
-
-/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-nav/_layout.scss */
-.example-wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  border-bottom: 5px solid #000000;
 }
 
 /*# sourceMappingURL=nav.css.map */

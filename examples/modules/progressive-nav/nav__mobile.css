@@ -68,10 +68,21 @@ Functions
 
 /* line 18, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .m-nav-hamburger {
+  display: inline-block;
+  padding: 10px;
+}
+
+/* line 24, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+.m-nav__menu--trigger ~ .m-nav__content {
+  display: none;
+}
+
+/* line 29, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+.m-nav__menu--trigger:checked ~ .m-nav__content {
   display: block;
 }
 
-/* line 22, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 35, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .m-nav {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -79,14 +90,31 @@ Functions
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
-  top: 3rem;
+  top: 0;
   left: 0;
   display: none;
 }
 
-/* line 38, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
-.m-nav > li [href^="#"] {
+/* line 52, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+.m-nav > li > label {
   display: block;
+}
+
+/* line 58, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+.m-nav, .m-nav__content {
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  width: 80vw;
+  height: -webkit-calc(100vh - 3rem);
+  height: calc(100vh - 3rem);
+  border-right: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/* line 5, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-nav/nav__mobile.scss */
+.nav-wrapper {
+  position: relative;
 }
 
 /*# sourceMappingURL=nav__mobile.css.map */
