@@ -2796,28 +2796,28 @@ Functions
 }
 
 /* line 3, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav.scss */
-.m-nav li {
+.nav li {
   list-style: none;
 }
 
 /* line 16, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav.scss */
-.m-nav__content {
+.nav__content {
   display: none;
 }
 
 /* line 3, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
-.m-nav, .m-nav ul {
+.nav, .nav ul {
   margin: 0;
   padding: 0;
 }
 
 /* line 8, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
-.m-nav-hamburger {
+.menu__hamburger {
   display: none;
 }
 
 /* line 12, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
-.m-nav {
+.nav {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -2828,7 +2828,7 @@ Functions
 }
 
 /* line 20, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
-.m-nav > li {
+.nav > li {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -2839,25 +2839,25 @@ Functions
 }
 
 /* line 23, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
-.m-nav > li > a,
-.m-nav > li > label {
+.nav > li > a,
+.nav > li > label {
   display: none;
 }
 
 /* line 30, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
-.m-nav__content {
+.nav__content {
   position: absolute;
   z-index: 1;
   background-color: #FFFFFF;
 }
 
 /* line 9, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_theme.scss */
-.m-nav > li:hover > a {
+.nav > li:hover > a {
   color: #BDD755;
 }
 
 /* line 14, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_theme.scss */
-.m-nav > li > a {
+.nav > li > a {
   padding: 0 10px;
   text-decoration: none;
   text-transform: uppercase;
@@ -2866,14 +2866,14 @@ Functions
 }
 
 /* line 24, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_theme.scss */
-.m-nav__content {
+.nav__content {
   padding: 10px;
   -webkit-box-shadow: 0 19px 27px rgba(0, 0, 0, 0.1);
   box-shadow: 0 19px 27px rgba(0, 0, 0, 0.1);
 }
 
 /* line 28, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_theme.scss */
-.m-nav__content h2 {
+.nav__content h2 {
   margin-bottom: 5px;
   padding-bottom: 5px;
   width: 100%;

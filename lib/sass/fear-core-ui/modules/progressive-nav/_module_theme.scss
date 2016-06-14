@@ -1,4 +1,4 @@
-.m-nav {
+.nav {
 
   > li {
     //@include display(flex);
@@ -21,7 +21,7 @@
   }
 }
 
-.m-nav__content {
+.nav__content {
   padding: $spacing-default-sm;
   box-shadow: 0 19px 27px $color__shadow;
 

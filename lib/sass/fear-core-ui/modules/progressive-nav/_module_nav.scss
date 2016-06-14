@@ -1,4 +1,4 @@
-.m-nav {
+.nav {
 
   li {
     list-style: none;
@@ -6,13 +6,13 @@
 
   //> li {
   //  &:hover {
-  //    > .m-nav__content {
+  //    > .nav__content {
   //      display: block !important; // important is ony for IE9
   //    }
   //  }
   //}
 }
 
-.m-nav__content {
+.nav__content {
   display: none;
 }

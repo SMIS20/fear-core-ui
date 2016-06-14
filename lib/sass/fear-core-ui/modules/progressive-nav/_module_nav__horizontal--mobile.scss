@@ -1,87 +1,85 @@
 // scss-lint:disable all
 
-#m-nav__menu--level1 {
-  &:checked {
-    ~ .m-nav {
-      @include display(flex);
-      display: block;
+@mixin horizontal-menu($mobile-hide--sibling-for-hamburger, $mobile-hide--sibling-for-menu-items) {
+
+  #menu__mobile-level1--show {
+    &:checked {
+      ~ .nav {
+        @include display(flex);
+        display: block;
+      }
+    }
+
+    ~ .nav {
+      display: none;
     }
   }
 
-  ~ .m-nav {
-    display: none;
-  }
-}
-
-#m-nav__menu--hide {
-  &:checked {
-    ~ nav {
-      .m-nav__menu--hide {
-        display: none;
-      }
-      .m-nav__menu--level1 {
-        display: inline-block;
+  #menu__mobile--hide {
+    &:checked {
+      ~ #{$mobile-hide--sibling-for-hamburger} {
+        .menu__button--hide-menu {
+          display: none;
+        }
+        .menu__button--show-level1 {
+          display: inline-block;
+        }
       }
     }
-  }
 
-  &:not(:checked) {
-    ~ .nav-wrapper {
-      #m-nav__menu--level1 {
-        &:not(:checked) {
-          ~ .m-nav {
-            @include display(flex);
-            display: block;
+    &:not(:checked) {
+      ~ #{$mobile-hide--sibling-for-menu-items} {
+        #menu__mobile-level1--show {
+          &:not(:checked) {
+            ~ .nav {
+              @include display(flex);
+              display: block;
+            }
           }
         }
       }
     }
-  }
 
-  ~ nav {
-    .m-nav__menu--hide {
-      display: inline-block;
-    }
+    ~ #{$mobile-hide--sibling-for-hamburger} {
+      .menu__button--hide-menu {
+        display: inline-block;
+      }
 
-    .m-nav__menu--level1 {
-      display: none;
+      .menu__button--show-level1 {
+        display: none;
+      }
     }
   }
 }
 
-.m-nav-hamburger {
+@include horizontal-menu($mobile-hide--sibling-for-hamburger: 'nav', $mobile-hide--sibling-for-menu-items: '.nav-wrapper');
+
+.menu__hamburger {
   display: inline-block;
   padding: $spacing-default-sm;
 }
 
-.m-nav__menu--trigger {
-  ~ .m-nav__content {
+.menu__mobile-level2--show {
+  ~ .nav__content {
     display: none;
   }
 
   &:checked {
-    ~ .m-nav__content {
+    ~ .nav__content {
       display: block;
     }
   }
 }
 
-.m-nav {
-  @extend %m-nav__panel;
+.nav {
+  @extend %nav__panel;
   @include flex-direction(column);
   position: absolute;
   top: 0;
   left: 0;
   display: none;
 
-  //&:target {
-  //  @include display(flex);
-  //  //display: block;
-  //}
-
   > li {
-    //@include pointer-events--none('> a ');
-
     // hide desktop links
     > label {
       display: block;
@@ -89,7 +87,7 @@
   }
 }
 
-%m-nav__panel {
+%nav__panel {
   top: 0;
   left: 0;
   overflow-y: scroll;
@@ -99,7 +97,7 @@
   border-bottom: 1px solid $color__brand--light-grey;
 }
 
-.m-nav__content {
-  @extend %m-nav__panel;
+.nav__content {
+  @extend %nav__panel;
 }
 

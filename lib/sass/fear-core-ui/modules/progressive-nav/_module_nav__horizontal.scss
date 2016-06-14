@@ -1,20 +1,20 @@
 // scss-lint:disable DuplicateProperty
 
-%m-nav-list {
+%nav-list {
   margin: 0;
   padding: 0;
 }
 
-.m-nav-hamburger {
+.menu__hamburger {
   display: none;
 }
 
-.m-nav {
-  @extend %m-nav-list;
+.nav {
+  @extend %nav-list;
   @include display(flex);
 
   ul {
-    @extend %m-nav-list;
+    @extend %nav-list;
   }
 
   > li {
@@ -27,7 +27,7 @@
   }
 }
 
-.m-nav__content {
+.nav__content {
   position: absolute;
   z-index: 1;
   background-color: $color__brand--white;
