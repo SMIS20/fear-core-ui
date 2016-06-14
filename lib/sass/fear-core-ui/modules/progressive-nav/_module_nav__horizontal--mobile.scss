@@ -1,17 +1,28 @@
 // scss-lint:disable all
 
+%show-level1 {
+  transform: translate3d(0, 0, 0);
+}
+
+%hide-level1 {
+  display: block;
+  transform: translate3d(-100%, 0, 0);
+}
+
 @mixin horizontal-menu($mobile-hide--sibling-for-hamburger, $mobile-hide--sibling-for-menu-items) {
 
   #menu__mobile-level1--show {
     &:checked {
       ~ .nav {
-        @include display(flex);
-        display: block;
+        //@include display(flex);
+        //display: block;
+        @extend %show-level1;
       }
     }
 
     ~ .nav {
-      display: none;
+      //display: none;
+      @extend %hide-level1;
     }
   }
 
@@ -32,8 +43,9 @@
         #menu__mobile-level1--show {
           &:not(:checked) {
             ~ .nav {
-              @include display(flex);
-              display: block;
+              //@include display(flex);
+              //display: block;
+              @extend %show-level1;
             }
           }
         }
@@ -52,7 +64,7 @@
   }
 }
 
-@include horizontal-menu($mobile-hide--sibling-for-hamburger: 'nav', $mobile-hide--sibling-for-menu-items: '.nav-wrapper');
+@include horizontal-menu($mobile-hide--sibling-for-hamburger: 'header', $mobile-hide--sibling-for-menu-items: '.nav__wrapper');
 
 .menu__hamburger {
   display: inline-block;
@@ -61,14 +73,21 @@
 
 .menu__mobile-level2--show {
   ~ .nav__content {
-    display: none;
+    //display: none;
+    @extend %hide-level1;
+    transition: 0.5s;
   }
 
   &:checked {
     ~ .nav__content {
-      display: block;
+      //display: block;
+      @extend %show-level1;
     }
   }
+}
+
+.menu__mobile-level2--back {
+  display: block;
 }
 
 .nav {
@@ -78,6 +97,7 @@
   top: 0;
   left: 0;
   display: none;
+  transition: 0.5s;
 
   > li {
     // hide desktop links

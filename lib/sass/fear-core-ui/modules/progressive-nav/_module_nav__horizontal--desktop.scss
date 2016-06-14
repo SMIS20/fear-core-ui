@@ -1,9 +1,5 @@
 // scss-lint:disable DuplicateProperty
 
-.menu__hamburger {
-  display: none;
-}
-
 .nav {
   @include align-items(center);
   position: relative;
@@ -32,4 +28,5 @@
   min-height: 200px;
   width: 100%;
   border-top: $nav-content-offset solid $color__brand--black;
+  box-shadow: 0 19px 27px $color__shadow;
 }
