@@ -1,19 +1,53 @@
-@mixin mobileMenu($id) {
-  ##{$id} {
-    &:checked {
-      + .m-nav {
-        @include display(flex);
-        display: block;
+// scss-lint:disable all
+
+#m-nav__menu--level1 {
+  &:checked {
+    ~ .m-nav {
+      @include display(flex);
+      display: block;
+    }
+  }
+
+  ~ .m-nav {
+    display: none;
+  }
+}
+
+#m-nav__menu--hide {
+  &:checked {
+    ~ nav {
+      .m-nav__menu--hide {
+        display: none;
+      }
+      .m-nav__menu--level1 {
+        display: inline-block;
       }
     }
+  }
 
-    + .m-nav {
+  &:not(:checked) {
+    ~ .nav-wrapper {
+      #m-nav__menu--level1 {
+        &:not(:checked) {
+          ~ .m-nav {
+            @include display(flex);
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  ~ nav {
+    .m-nav__menu--hide {
+      display: inline-block;
+    }
+
+    .m-nav__menu--level1 {
       display: none;
     }
   }
 }
-
-@include mobileMenu(m-nav-trigger);
 
 .m-nav-hamburger {
   display: inline-block;

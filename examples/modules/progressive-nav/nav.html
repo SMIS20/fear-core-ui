@@ -14,22 +14,24 @@
     <link rel="stylesheet" href="nav__mobile.css" type="text/css" media="screen and (max-width: 1024px)"/>
   </head>
   <body>
-
+    <input type="radio" id="m-nav__menu--hide" name="menu" aria-hidden="true" hidden checked/>
     <nav>
-      <label class="m-nav-hamburger icon--menu" for="m-nav-trigger" role="button"></label>
+      <label class="m-nav__menu--hide m-nav-hamburger icon--menu" for="m-nav__menu--hide" role="button"></label>
+      <label class="m-nav__menu--level1 m-nav-hamburger icon--menu" for="m-nav__menu--level1" role="button"></label>
     </nav>
 
     <div class="nav-wrapper">
       <nav>
-        <input type="checkbox" id="m-nav-trigger" aria-hidden="true" hidden/>
+        <input type="radio" id="m-nav__menu--level1" name="menu" aria-hidden="true" hidden/>
         <ul class="m-nav">
           <li>
             <a href="/c/style-and-living">Inspire Me</a>
             <label for="menu__mobile--inspireme" role="button">Inspire Me</label>
-            <input class="m-nav__menu--trigger" type="checkbox" id="menu__mobile--inspireme" aria-hidden="true" hidden/>
+            <input class="m-nav__menu--trigger" type="radio" name="menu" id="menu__mobile--inspireme" aria-hidden="true"
+                   hidden/>
             <ul id="menu__mobile--style-and-living" class="m-nav__content">
               <li>
-                <label for="menu__mobile--inspireme" role="button">Back</label>
+                <label for="m-nav__menu--level1" role="button">Back</label>
               </li>
               <li>
                 My style content
@@ -39,7 +41,13 @@
           </li>
           <li>
             <a href="/c/women">Woman</a>
-            <ul id="menu__mobile--woman" class="m-nav__content">
+            <label for="menu__mobile--woman" role="button">Woman</label>
+            <input class="m-nav__menu--trigger" type="radio" name="menu" id="menu__mobile--woman" aria-hidden="true"
+                   hidden/>
+            <ul class="m-nav__content">
+              <li>
+                <label for="m-nav__menu--level1" role="button">Back</label>
+              </li>
               <li>
                 My Woman content
               </li>
@@ -47,7 +55,7 @@
           </li>
           <li>
             <a href="/c/lingerie">Lingerie</a>
-            <ul id="menu__mobile--lingerie" class="m-nav__content">
+            <ul class="m-nav__content">
               <li>
                 My Lingerie content
               </li>
@@ -55,7 +63,7 @@
           </li>
           <li>
             <a href="/c/beauty">Beauty</a>
-            <ul id="menu__mobile--beauty" class="m-nav__content">
+            <ul class="m-nav__content">
               <li>
                 My Beauty content
 
@@ -64,7 +72,7 @@
           </li>
           <li>
             <a href="/c/men">Men</a>
-            <ul id="menu__mobile--men" class="m-nav__content">
+            <ul class="m-nav__content">
               <li>
                 My Men content
 

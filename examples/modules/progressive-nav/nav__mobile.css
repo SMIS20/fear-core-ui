@@ -35,8 +35,8 @@
 /* --------
 Functions
 -------- */
-/* line 4, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
-#m-nav-trigger:checked + .m-nav {
+/* line 5, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+#m-nav__menu--level1:checked ~ .m-nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -45,44 +45,90 @@ Functions
 }
 
 /* line 4, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
-.ie9 #m-nav-trigger:checked + .m-nav::before {
+.ie9 #m-nav__menu--level1:checked ~ .m-nav::before {
   display: table;
 }
 
 /* line 8, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
-.ie9 #m-nav-trigger:checked + .m-nav > *:not([hidden]) {
+.ie9 #m-nav__menu--level1:checked ~ .m-nav > *:not([hidden]) {
   display: table-cell;
   vertical-align: top;
   height: 100%;
 }
 
 /* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
-.ie9 #m-nav-trigger:checked + .m-nav > *:not([hidden])::before {
+.ie9 #m-nav__menu--level1:checked ~ .m-nav > *:not([hidden])::before {
   display: table-cell;
 }
 
-/* line 10, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
-#m-nav-trigger + .m-nav {
+/* line 11, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+#m-nav__menu--level1 ~ .m-nav {
   display: none;
 }
 
-/* line 18, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 19, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+#m-nav__menu--hide:checked ~ nav .m-nav__menu--hide {
+  display: none;
+}
+
+/* line 22, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+#m-nav__menu--hide:checked ~ nav .m-nav__menu--level1 {
+  display: inline-block;
+}
+
+/* line 32, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+#m-nav__menu--hide:not(:checked) ~ .nav-wrapper #m-nav__menu--level1:not(:checked) ~ .m-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  display: block;
+}
+
+/* line 4, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+.ie9 #m-nav__menu--hide:not(:checked) ~ .nav-wrapper #m-nav__menu--level1:not(:checked) ~ .m-nav::before {
+  display: table;
+}
+
+/* line 8, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+.ie9 #m-nav__menu--hide:not(:checked) ~ .nav-wrapper #m-nav__menu--level1:not(:checked) ~ .m-nav > *:not([hidden]) {
+  display: table-cell;
+  vertical-align: top;
+  height: 100%;
+}
+
+/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
+.ie9 #m-nav__menu--hide:not(:checked) ~ .nav-wrapper #m-nav__menu--level1:not(:checked) ~ .m-nav > *:not([hidden])::before {
+  display: table-cell;
+}
+
+/* line 42, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+#m-nav__menu--hide ~ nav .m-nav__menu--hide {
+  display: inline-block;
+}
+
+/* line 46, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+#m-nav__menu--hide ~ nav .m-nav__menu--level1 {
+  display: none;
+}
+
+/* line 52, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .m-nav-hamburger {
   display: inline-block;
   padding: 10px;
 }
 
-/* line 24, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 58, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .m-nav__menu--trigger ~ .m-nav__content {
   display: none;
 }
 
-/* line 29, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 63, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .m-nav__menu--trigger:checked ~ .m-nav__content {
   display: block;
 }
 
-/* line 35, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 69, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .m-nav {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -95,12 +141,12 @@ Functions
   display: none;
 }
 
-/* line 52, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 86, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .m-nav > li > label {
   display: block;
 }
 
-/* line 58, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 92, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .m-nav, .m-nav__content {
   top: 0;
   left: 0;
