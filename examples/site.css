@@ -1957,12 +1957,12 @@ BEM Naming Convention for Bootstrap Grid
   }
 }
 
-/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/_normalize.scss */
+/* line 1, ./examples/assets/sass/ui-examples/_normalize.scss */
 body {
   padding: 40px;
 }
 
-/* line 5, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/_normalize.scss */
+/* line 5, ./examples/assets/sass/ui-examples/_normalize.scss */
 iframe {
   margin-bottom: 40px;
   width: 100%;
@@ -2006,7 +2006,7 @@ iframe {
   content: "";
 }
 
-/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_header.scss */
+/* line 1, ./examples/assets/sass/ui-examples/layout/_header.scss */
 .l-header {
   display: -webkit-box;
   display: -moz-box;
@@ -2023,12 +2023,12 @@ iframe {
   border-bottom: 1px solid #333333;
 }
 
-/* line 10, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_header.scss */
+/* line 10, ./examples/assets/sass/ui-examples/layout/_header.scss */
 .l-header__logo ~ h1 {
   margin: 0 20px;
 }
 
-/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
+/* line 1, ./examples/assets/sass/ui-examples/layout/_main.scss */
 .l-main__layout {
   display: -webkit-box;
   display: -moz-box;
@@ -2047,14 +2047,14 @@ iframe {
   -ms-flex-align: stretch;
 }
 
-/* line 5, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
+/* line 5, ./examples/assets/sass/ui-examples/layout/_main.scss */
 .l-main__layout > nav {
   margin-right: 40px;
   min-width: 240px;
   border-right: 1px solid #333333;
 }
 
-/* line 11, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
+/* line 11, ./examples/assets/sass/ui-examples/layout/_main.scss */
 .l-main__layout > section {
   display: -webkit-box;
   display: -moz-box;
@@ -2079,31 +2079,31 @@ iframe {
   overflow-y: auto;
 }
 
-/* line 19, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
+/* line 19, ./examples/assets/sass/ui-examples/layout/_main.scss */
 .l-main__nav {
   margin: 0 40px 0 0;
   padding: 0;
 }
 
-/* line 23, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
+/* line 23, ./examples/assets/sass/ui-examples/layout/_main.scss */
 .l-main__nav > li {
   list-style: none;
   line-height: 3rem;
 }
 
-/* line 29, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/layout/_main.scss */
+/* line 29, ./examples/assets/sass/ui-examples/layout/_main.scss */
 .l-main__content {
   height: -webkit-calc(100vh - 211px);
   height: calc(100vh - 211px);
 }
 
-/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/screen-size/_extends.scss */
+/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/ui-examples/screen-size/_extends.scss */
 .l-screen-size__icon--phone, .l-screen-size__icon--tablet, .l-screen-size__icon--desktop {
   padding: 10px;
   cursor: pointer;
 }
 
-/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/screen-size/_extends.scss */
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/ui-examples/screen-size/_extends.scss */
 #screen-size-phone:checked ~ nav .l-screen-size__icon--phone, #screen-size-tablet:checked ~ nav .l-screen-size__icon--tablet, #screen-size-desktop:checked ~ nav .l-screen-size__icon--desktop {
   padding: 10px;
   -webkit-border-radius: 6px;
@@ -2111,7 +2111,7 @@ iframe {
   background-color: #BDD755;
 }
 
-/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/screen-size/_module_screen-size.scss */
+/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/ui-examples/screen-size/_module_screen-size.scss */
 .l-screen-size__icon {
   margin: 0 40px 20px 0;
   padding-bottom: 20px;
@@ -2120,17 +2120,17 @@ iframe {
   font-size: 3rem;
 }
 
-/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/screen-size/_mixins.scss */
+/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/ui-examples/screen-size/_mixins.scss */
 #screen-size-phone:checked ~ section .l-screen-size__content {
   width: 320px;
 }
 
-/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/screen-size/_mixins.scss */
+/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/ui-examples/screen-size/_mixins.scss */
 #screen-size-tablet:checked ~ section .l-screen-size__content {
   width: 768px;
 }
 
-/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/screen-size/_mixins.scss */
+/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/ui-examples/screen-size/_mixins.scss */
 #screen-size-desktop:checked ~ section .l-screen-size__content {
   width: 100%;
 }

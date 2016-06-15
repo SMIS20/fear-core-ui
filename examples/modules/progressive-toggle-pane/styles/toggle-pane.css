@@ -2795,7 +2795,7 @@ Functions
   top: -3px;
 }
 
-/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
+/* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/styles/_layout.scss */
 body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2811,13 +2811,13 @@ body {
   align-items: center;
 }
 
-/* line 7, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
+/* line 7, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/styles/_layout.scss */
 .example-wrapper {
   max-width: 850px;
   width: 100%;
 }
 
-/* line 11, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
+/* line 11, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/styles/_layout.scss */
 .example-wrapper .m-toggle-pane__1,
 .example-wrapper .m-toggle-pane__2 {
   -webkit-box-orient: horizontal;
@@ -2839,7 +2839,7 @@ body {
 }
 
 @media only screen and (min-width: 48.0625em) {
-  /* line 11, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
+  /* line 11, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/styles/_layout.scss */
   .example-wrapper .m-toggle-pane__1,
   .example-wrapper .m-toggle-pane__2 {
     -webkit-flex-wrap: nowrap;
@@ -2848,7 +2848,7 @@ body {
   }
 }
 
-/* line 22, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
+/* line 22, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/styles/_layout.scss */
 .example-wrapper .m-toggle-pane__1 > div,
 .example-wrapper .m-toggle-pane__2 > div {
   display: -webkit-box;
@@ -2865,14 +2865,14 @@ body {
   align-items: center;
 }
 
-/* line 30, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
+/* line 30, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/styles/_layout.scss */
 .example-wrapper .gift-price__icon--confirmation, .example-wrapper .gift-price__icon--gift {
   top: .4rem;
   margin-right: 20px;
   font-size: 3rem;
 }
 
-/* line 36, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
+/* line 36, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-toggle-pane/styles/_layout.scss */
 .example-wrapper .gift-price__icon--confirmation {
   color: #BDD755;
 }
