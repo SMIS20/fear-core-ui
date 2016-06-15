@@ -77,10 +77,6 @@ Functions
 
 /* line 5, /Users/Caylam/Development/MS/code/fear-core-ui/examples/modules/progressive-nav/styles/nav__desktop.scss */
 .nav__wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -88,21 +84,9 @@ Functions
   border-bottom: 5px solid #000000;
 }
 
-/* line 4, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
-.ie9 .nav__wrapper::before {
-  display: table;
-}
-
-/* line 8, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
-.ie9 .nav__wrapper > *:not([hidden]) {
-  display: table-cell;
-  vertical-align: top;
-  height: 100%;
-}
-
-/* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox-fallback.scss */
-.ie9 .nav__wrapper > *:not([hidden])::before {
-  display: table-cell;
+/* line 7, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/flexbox/_mixin_flexbox.scss */
+.nav__wrapper .kevin {
+  display: none;
 }
 
 /* line 17, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */

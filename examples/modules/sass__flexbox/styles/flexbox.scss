@@ -1,0 +1,59 @@
+@import 'ui-examples/base';
+@import 'fear-core-ui/extends';
+
+$font__code: 100% courier, monospace;
+$color__code--background: #fff7f0;
+
+body {
+  padding: $spacing-default;
+}
+
+pre {
+  font: $font__code;
+  border: 1px solid $color__brand--light-grey;
+  overflow-x: scroll;
+  width: 90%;
+  padding: 2rem 0 1rem 0;
+  margin: 1rem auto 2rem auto;
+  background: $color__code--background;
+  color: $color__brand--black;
+}
+
+hr {
+  margin: $spacing-default-med 0;
+  border: 1px solid $color__brand--light-grey;
+}
+
+
+.example-wrapper {
+
+  margin: $spacing-default;
+
+  > div {
+    width: 100px;
+    height: 100px;
+
+    &:first-child {
+      background-color: $color__brand--dark-grey;
+    }
+
+    &:nth-child(2) {
+      background-color: $color__brand--green;
+    }
+
+    &:last-child {
+      background-color: $color__brand--information-blue;
+    }
+
+
+  }
+}
+
+.flx-row-example {
+  @include display(flex);
+}
+
+.flx-column-example {
+  @include display(flex);
+  @include flex-direction(column);
+}
