@@ -1,13 +1,10 @@
-$icomoon-font-path: '/assets/fonts/mns-digital-experimental/fonts';
-$spacing-default: 20px;
-$spacing-default-med: $spacing-default * 2;
-
-@import 'assets/sass/base';
-@import 'assets/sass/normalize';
+@import 'ui-examples/base';
+@import 'ui-examples/once';
+@import 'ui-examples/normalize';
 @import 'assets/fonts/mns-digital-experimental/style';
-@import 'assets/sass/layout/header';
-@import 'assets/sass/layout/main';
-@import 'assets/sass/screen-size';
+@import 'ui-examples/layout/header';
+@import 'ui-examples/layout/main';
+@import 'ui-examples/screen-size';
 
 @include screen-size(phone, 320px);
 @include screen-size(tablet, 768px);

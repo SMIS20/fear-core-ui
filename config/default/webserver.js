@@ -1,6 +1,7 @@
 'use strict';
+var ip = require('ip');
 
 module.exports = {
-    'host': '127.0.0.1',
+    'host': ip.address(),
     'port': '8000'
 };

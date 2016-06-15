@@ -1,0 +1,9 @@
+@import 'ui-examples/base';
+@import 'fear-core-ui/modules/progressive-nav/variables';
+@import 'fear-core-ui/modules/progressive-nav/module_nav__horizontal--desktop';
+
+.nav__wrapper {
+  @include display(flex);
+  @include justify-content(center);
+  border-bottom: 5px solid $color__brand--black;
+}

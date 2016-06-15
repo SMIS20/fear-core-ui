@@ -1,0 +1,20 @@
+@mixin ie-only($versions...) {
+
+  $versionList: '';
+
+  @if length($versions) == 0 {
+    $versionList: '.ie &';
+  } @else {
+    @each $version in $versions {
+      @if $versionList != '' {
+        $versionList: $versionList + ', ';
+      }
+
+      $versionList: $versionList + '.ie' + $version + ' &';
+    }
+  }
+
+  #{$versionList} {
+    @content;
+  }
+}

@@ -5,6 +5,15 @@ module.exports = {
         tasks: 'core/tasks',
         specs: 'test/tasks'
     },
+    lib: {
+        base: 'lib',
+        sass: 'lib/**/*.scss'
+    },
+    examples: {
+        base: 'examples',
+        sass: 'examples/**/*.scss',
+        views: 'examples/**/*.html'
+    },
     app: {
         base: 'app',
         sass: 'app/**/sass',

@@ -1,0 +1,11 @@
+$icomoon-font-path: '/assets/fonts/mns-digital-experimental/fonts';
+$fear-core-ui-font-dir: '/assets/fonts';
+
+$spacing-default: 20px;
+$spacing-default-sm: $spacing-default / 2;
+$spacing-default-med: $spacing-default * 2;
+
+@import 'fear-core-ui/base';
+@import 'fear-core-ui/utilities/ie-only';
+@import 'fear-core-ui/utilities/flexbox';
+@import 'fear-core-ui/utilities/pointer-events';
