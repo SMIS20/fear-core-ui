@@ -12,6 +12,7 @@
     @include display(flex);
     @include flex-grow(1);
     @include justify-content(center);
+    overflow-y: auto;
   }
 }
 
@@ -26,6 +27,5 @@
 }
 
 .l-main__content {
-  overflow-y: auto;
   height: calc(100vh - 211px);
 }
