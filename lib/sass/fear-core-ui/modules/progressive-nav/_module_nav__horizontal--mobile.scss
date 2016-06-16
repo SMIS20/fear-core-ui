@@ -2,11 +2,19 @@
 
 %show-level1 {
   transform: translate3d(0, 0, 0);
+
+  @include ie-only(9) {
+    transform: translateX(0);
+  }
 }
 
 %hide-level1 {
   display: block;
   transform: translate3d(-100%, 0, 0);
+
+  @include ie-only(9) {
+    transform: translateX(-100%);
+  }
 }
 
 @mixin horizontal-menu($mobile-hide--sibling-for-hamburger, $mobile-hide--sibling-for-menu-items) {

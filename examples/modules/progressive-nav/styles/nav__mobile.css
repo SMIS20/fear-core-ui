@@ -41,53 +41,67 @@ Functions
   transform: translate3d(0, 0, 0);
 }
 
-/* line 7, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 17, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+.ie9 #menu__mobile-level1--show:checked ~ .nav, .ie9 #menu__mobile--hide:not(:checked) ~ .nav__wrapper #menu__mobile-level1--show:not(:checked) ~ .nav, #menu__mobile--hide:not(:checked) ~ .nav__wrapper .ie9 #menu__mobile-level1--show:not(:checked) ~ .nav, .ie9 .menu__mobile-level2--show:checked ~ .nav__content {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 11, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 #menu__mobile-level1--show ~ .nav, .menu__mobile-level2--show ~ .nav__content {
   display: block;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 29, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 17, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+.ie9 #menu__mobile-level1--show ~ .nav, .ie9 .menu__mobile-level2--show ~ .nav__content {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 37, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 #menu__mobile--hide:checked ~ header .menu__button--hide-menu {
   display: none;
 }
 
-/* line 33, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 41, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 #menu__mobile--hide:checked ~ header .menu__button--show-level1 {
   display: inline-block;
 }
 
-/* line 52, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 60, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 #menu__mobile--hide ~ header .menu__button--hide-menu {
   display: inline-block;
 }
 
-/* line 56, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 64, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 #menu__mobile--hide ~ header .menu__button--show-level1 {
   display: none;
 }
 
-/* line 65, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 73, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .menu__hamburger {
   display: inline-block;
   padding: 10px;
 }
 
-/* line 71, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 79, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .menu__mobile-level2--show ~ .nav__content {
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-/* line 83, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 91, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .menu__mobile-level2--back {
   display: block;
   background-color: #000000;
   color: #FFFFFF;
 }
 
-/* line 89, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 97, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .nav {
   position: absolute;
   top: 0;
@@ -103,14 +117,14 @@ Functions
   transition: .5s;
 }
 
-/* line 101, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 109, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .nav > li > label {
   display: block;
   width: 100%;
   line-height: 3.2rem;
 }
 
-/* line 109, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 117, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .nav, .nav__content {
   top: 0;
   left: 0;
@@ -122,7 +136,7 @@ Functions
   border-bottom: 1px solid #CCCCCC;
 }
 
-/* line 122, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
+/* line 130, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
 .nav__content > li {
   padding-left: 20px;
   border-bottom: 1px solid #CCCCCC;

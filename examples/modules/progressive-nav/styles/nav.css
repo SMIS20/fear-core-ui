@@ -2819,31 +2819,28 @@ Functions
   display: flex;
 }
 
-/* line 22, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
+/* line 17, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+.ie9 .nav {
+  display: table-cell;
+}
+
+/* line 26, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
 .nav li {
   list-style: none;
 }
 
-/* line 26, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
-.nav > li {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/* line 29, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
+/* line 32, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
 .nav > li > a,
 .nav > li > label {
   display: none;
 }
 
-/* line 35, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
+/* line 38, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
 .nav > li:hover > a {
   color: #BDD755;
 }
 
-/* line 40, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
+/* line 43, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
 .nav > li > a {
   padding: 0 10px;
   text-decoration: none;
@@ -2852,7 +2849,7 @@ Functions
   font-family: "mns-london-bold", Helvetica, Arial, sans-serif;
 }
 
-/* line 52, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
+/* line 55, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
 .nav__content {
   position: absolute;
   z-index: 1;
@@ -2861,7 +2858,7 @@ Functions
   background-color: #FFFFFF;
 }
 
-/* line 59, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
+/* line 62, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal.scss */
 .nav__content h2 {
   margin-bottom: 5px;
   padding-bottom: 5px;

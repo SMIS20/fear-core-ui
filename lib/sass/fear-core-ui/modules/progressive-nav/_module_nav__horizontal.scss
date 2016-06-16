@@ -15,6 +15,10 @@
   @extend %nav-list;
   display: flex;
 
+  @include ie-only(9) {
+    display: table-cell;
+  }
+
   ul {
     @extend %nav-list;
   }
@@ -24,7 +28,6 @@
   }
 
   > li {
-    display: flex;
 
     > a,
     > label {
