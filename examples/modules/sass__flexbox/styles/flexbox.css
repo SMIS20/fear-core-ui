@@ -183,7 +183,7 @@ h3 {
   display: table-cell;
 }
 
-/* line 17, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
 .ie9 .flx__row--reverse {
   direction: rtl;
 }
@@ -271,7 +271,7 @@ h3 {
   display: table-cell;
 }
 
-/* line 17, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
 .ie9 .flx__justify-content--center {
   text-align: center;
   vertical-align: top;

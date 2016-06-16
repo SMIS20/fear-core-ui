@@ -2819,7 +2819,7 @@ Functions
   display: flex;
 }
 
-/* line 17, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
 .ie9 .nav {
   display: table-cell;
 }

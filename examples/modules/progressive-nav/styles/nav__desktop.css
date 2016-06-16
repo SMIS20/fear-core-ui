@@ -45,7 +45,7 @@ Functions
   align-items: center;
 }
 
-/* line 17, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
 .ie9 .nav {
   vertical-align: middle;
 }
@@ -63,7 +63,7 @@ Functions
   align-items: center;
 }
 
-/* line 17, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
 .ie9 .nav > li {
   display: table-cell;
   vertical-align: middle;
@@ -103,7 +103,7 @@ Functions
   justify-content: center;
 }
 
-/* line 17, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
 .ie9 .nav__wrapper {
   text-align: center;
 }

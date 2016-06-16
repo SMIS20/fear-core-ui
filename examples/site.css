@@ -2020,9 +2020,25 @@ iframe {
   align-content: center;
 }
 
-/* line 10, ./examples/assets/sass/ui-examples/layout/_header.scss */
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+.ie9 .l-header {
+  vertical-align: middle;
+}
+
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+.ie9 .l-header__logo {
+  vertical-align: middle;
+}
+
+/* line 18, ./examples/assets/sass/ui-examples/layout/_header.scss */
 .l-header__logo ~ h1 {
   margin: 0 20px;
+}
+
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+.ie9 .l-header__logo ~ h1 {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* line 1, ./examples/assets/sass/ui-examples/layout/_main.scss */
@@ -2037,14 +2053,25 @@ iframe {
   align-items: stretch;
 }
 
-/* line 5, ./examples/assets/sass/ui-examples/layout/_main.scss */
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+.ie9 .l-main__layout {
+  display: table;
+}
+
+/* line 9, ./examples/assets/sass/ui-examples/layout/_main.scss */
 .l-main__layout > nav {
   margin-right: 40px;
   min-width: 240px;
   border-right: 1px solid #333333;
 }
 
-/* line 11, ./examples/assets/sass/ui-examples/layout/_main.scss */
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+.ie9 .l-main__layout > nav {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* line 20, ./examples/assets/sass/ui-examples/layout/_main.scss */
 .l-main__layout > section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2061,22 +2088,40 @@ iframe {
   justify-content: center;
 }
 
-/* line 19, ./examples/assets/sass/ui-examples/layout/_main.scss */
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+.ie9 .l-main__layout > section {
+  display: table-cell;
+  padding-left: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 32, ./examples/assets/sass/ui-examples/layout/_main.scss */
+.ie9 .l-main__layout > section > * {
+  text-align: left;
+}
+
+/* line 39, ./examples/assets/sass/ui-examples/layout/_main.scss */
 .l-main__nav {
   margin: 0 40px 0 0;
   padding: 0;
 }
 
-/* line 23, ./examples/assets/sass/ui-examples/layout/_main.scss */
+/* line 43, ./examples/assets/sass/ui-examples/layout/_main.scss */
 .l-main__nav > li {
   list-style: none;
   line-height: 3rem;
 }
 
-/* line 29, ./examples/assets/sass/ui-examples/layout/_main.scss */
+/* line 49, ./examples/assets/sass/ui-examples/layout/_main.scss */
 .l-main__content {
   height: -webkit-calc(100vh - 211px);
   height: calc(100vh - 211px);
+}
+
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_ie-only.scss */
+.ie9 .l-main__content {
+  display: inline-block;
 }
 
 /* line 1, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/ui-examples/screen-size/_extends.scss */
@@ -2115,6 +2160,14 @@ iframe {
 /* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/ui-examples/screen-size/_mixins.scss */
 #screen-size-desktop:checked ~ section .l-screen-size__content {
   width: 100%;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 13, /Users/Caylam/Development/MS/code/fear-core-ui/examples/assets/sass/ui-examples/screen-size/_mixins.scss */
+  #screen-size-desktop:checked ~ section .l-screen-size__content {
+    width: -webkit-calc(100vw - 380px);
+    width: calc(100vw - 380px);
+  }
 }
 
 /*# sourceMappingURL=site.css.map */

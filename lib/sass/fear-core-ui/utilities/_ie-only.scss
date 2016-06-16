@@ -1,20 +1,17 @@
-@mixin ie-only($versions...) {
+@mixin ie-only($version) {
 
   $versionList: '';
 
-  @if length($versions) == 0 {
-    $versionList: '.ie &';
-  } @else {
-    @each $version in $versions {
-      @if $versionList != '' {
-        $versionList: $versionList + ', ';
-      }
-
-      $versionList: $versionList + '.ie' + $version + ' &';
+  @if $version == 9 {
+    .ie9 & {
+      @content;
     }
   }
 
-  #{$versionList} {
-    @content;
+  @if $version >= 10 {
+    // IE10+ check
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      @content;
+    }
   }
 }
