@@ -24,14 +24,28 @@ hr {
   border: 1px solid $color__brand--light-grey;
 }
 
+h3 {
+  display: block;
+}
+
+.example__position {
+  display: inline-block;
+  vertical-align: top;
+}
+
 
 .example-wrapper {
 
+  height: 200px;
+  width: 200px;
+  background-color: $color__brand--background-grey;
   margin: $spacing-default;
 
+  $size: 50px;
+
   > div {
-    width: 100px;
-    height: 100px;
+    width: $size;
+    height: $size;
 
     &:first-child {
       background-color: $color__brand--dark-grey;
@@ -49,11 +63,26 @@ hr {
   }
 }
 
-.flx-row-example {
-  @include display(flex);
+.flx__row {
+  @include mns-display(flex);
 }
 
-.flx-column-example {
-  @include display(flex);
-  @include flex-direction(column);
+.flx__row--reverse {
+  @include mns-display(flex);
+  @include mns-flex-direction(row-reverse);
+}
+
+.flx__column {
+  @include mns-display(flex);
+  @include mns-flex-direction(column);
+}
+
+.flx__column--reverse {
+  @include mns-display(flex);
+  @include mns-flex-direction(column-reverse);
+}
+
+.flx__justify-content--center {
+  @include mns-display(flex);
+  @include mns-justify-content(center);
 }

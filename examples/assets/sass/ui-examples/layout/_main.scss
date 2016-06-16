@@ -1,6 +1,6 @@
 .l-main__layout {
-  @include display(flex);
-  @include align-items(stretch);
+  display: flex;
+  align-items: stretch;
 
   > nav {
     margin-right: $spacing-default-med;
@@ -9,10 +9,10 @@
   }
 
   > section {
-    @include display(flex);
-    @include flex-grow(1);
-    @include justify-content(center);
+    display: flex;
     overflow-y: auto;
+    flex-grow: 1;
+    justify-content: center;
   }
 }
 

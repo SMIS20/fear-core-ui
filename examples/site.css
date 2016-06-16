@@ -2009,18 +2009,15 @@ iframe {
 /* line 1, ./examples/assets/sass/ui-examples/layout/_header.scss */
 .l-header {
   display: -webkit-box;
-  display: -moz-box;
-  display: box;
   display: -webkit-flex;
-  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-content: center;
-  align-content: center;
-  -ms-flex-line-pack: center;
   margin: 0 0 40px 0;
   padding-bottom: 20px;
   border-bottom: 1px solid #333333;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
 
 /* line 10, ./examples/assets/sass/ui-examples/layout/_header.scss */
@@ -2031,20 +2028,13 @@ iframe {
 /* line 1, ./examples/assets/sass/ui-examples/layout/_main.scss */
 .l-main__layout {
   display: -webkit-box;
-  display: -moz-box;
-  display: box;
   display: -webkit-flex;
-  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: stretch;
-  box-align: stretch;
   -webkit-align-items: stretch;
-  -moz-align-items: stretch;
-  -ms-align-items: stretch;
-  -o-align-items: stretch;
-  align-items: stretch;
   -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 /* line 5, ./examples/assets/sass/ui-examples/layout/_main.scss */
@@ -2057,26 +2047,18 @@ iframe {
 /* line 11, ./examples/assets/sass/ui-examples/layout/_main.scss */
 .l-main__layout > section {
   display: -webkit-box;
-  display: -moz-box;
-  display: box;
   display: -webkit-flex;
-  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-grow: 1;
-  -moz-flex-grow: 1;
-  -webkit-box-flex: 1;
-  flex-grow: 1;
-  -ms-flex-positive: 1;
-  -webkit-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
   overflow-y: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /* line 19, ./examples/assets/sass/ui-examples/layout/_main.scss */

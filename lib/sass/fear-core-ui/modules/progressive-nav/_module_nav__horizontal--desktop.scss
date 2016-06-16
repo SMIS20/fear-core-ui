@@ -1,17 +1,17 @@
 // scss-lint:disable DuplicateProperty
 
 .nav {
-  @include align-items(center);
   position: relative;
   height: $nav-height;
+  align-items: center;
 
   > li {
-    @include align-items(center);
     height: $nav-height;
+    align-items: center;
 
     &:hover {
       > .nav__content {
-        display: block !important; // important is ony for IE9
+        display: block;
       }
     }
 

@@ -1,62 +1,63 @@
 // scss-lint:disable EmptyLineBetweenBlocks
 
-@mixin display($value) {
+@mixin mns-display($value) {
   @include ie-only(9) {
     @include display-fallback($value);
   }
+
   display: $value;
 }
 
-@mixin flex-direction($direction) {
+@mixin mns-flex-direction($direction) {
   @include ie-only(9) {
-    //@include flex-direction-fallback($direction);
+    @include flex-direction-fallback($direction);
   }
   flex-direction: $direction;
 }
 
-@mixin flex-wrap($wrap) {
+@mixin mns-flex-wrap($wrap) {
   @include ie-only(9) {
     //@include flex-wrap-fallback($wrap);
   }
   flex-wrap: $wrap;
 }
 
-@mixin justify-content($position) {
+@mixin mns-justify-content($position) {
   @include ie-only(9) {
     @include justify-content-fallback($position);
   }
   justify-content: $position;
 }
 
-@mixin align-items($position) {
+@mixin mns-align-items($position) {
   @include ie-only(9) {
     //@include align-items-fallback($position);
   }
   align-items: $position;
 }
 
-@mixin align-content($position) {
+@mixin mns-align-content($position) {
   @include ie-only(9) {
     //@include align-content-fallback($position);
   }
   align-content: $position;
 }
 
-@mixin flex-grow($value) {
+@mixin mns-flex-grow($value) {
   @include ie-only(9) {
     @include flex-grow-fallback;
   }
   flex-grow: $value;
 }
 
-@mixin flex-shrink($value) {
+@mixin mns-flex-shrink($value) {
   @include ie-only(9) {
     //@include flex-shrink-fallback;
   }
   flex-shrink: $value;
 }
 
-@mixin align-self($position) {
+@mixin mns-align-self($position) {
   @include ie-only(9) {
     //@include align-self-fallback($position);
   }

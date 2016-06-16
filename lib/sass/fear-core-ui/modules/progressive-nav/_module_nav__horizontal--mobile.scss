@@ -92,11 +92,11 @@
 
 .nav {
   @extend %nav__panel;
-  @include flex-direction(column);
   position: absolute;
   top: 0;
   left: 0;
   display: none;
+  flex-direction: column;
   padding: 20px;
   transition: 0.5s;
 
