@@ -1,4 +1,4 @@
-// scss-lint:disable all
+// scss-lint:disable IdSelector NestingDepth
 
 %show-level1 {
   transform: translate3d(0, 0, 0);
@@ -14,14 +14,11 @@
   #menu__mobile-level1--show {
     &:checked {
       ~ .nav {
-        //@include display(flex);
-        //display: block;
         @extend %show-level1;
       }
     }
 
     ~ .nav {
-      //display: none;
       @extend %hide-level1;
     }
   }
@@ -32,6 +29,7 @@
         .menu__button--hide-menu {
           display: none;
         }
+
         .menu__button--show-level1 {
           display: inline-block;
         }
@@ -43,8 +41,6 @@
         #menu__mobile-level1--show {
           &:not(:checked) {
             ~ .nav {
-              //@include display(flex);
-              //display: block;
               @extend %show-level1;
             }
           }
@@ -73,14 +69,12 @@
 
 .menu__mobile-level2--show {
   ~ .nav__content {
-    //display: none;
     @extend %hide-level1;
-    transition: 0.5s;
+    transition: .5s;
   }
 
   &:checked {
     ~ .nav__content {
-      //display: block;
       @extend %show-level1;
     }
   }
@@ -88,6 +82,8 @@
 
 .menu__mobile-level2--back {
   display: block;
+  background-color: $color__brand--black;
+  color: $color__brand--white;
 }
 
 .nav {
@@ -98,7 +94,7 @@
   display: none;
   flex-direction: column;
   padding: 20px;
-  transition: 0.5s;
+  transition: .5s;
 
   > li {
     // hide desktop links
@@ -125,12 +121,7 @@
 
   > li {
     padding-left: 20px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $color__brand--light-grey;
     line-height: 4.5rem;
   }
-}
-
-.menu__mobile-level2--back {
-  background-color: $color__brand--black;
-  color: $color__brand--white;
 }
