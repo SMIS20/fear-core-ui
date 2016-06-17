@@ -119,9 +119,9 @@
   left: 0;
   overflow-y: scroll;
   width: 80vw;
-  height: calc(100vh - #{$nav-height});
+  height: calc(100vh - #{$nav-content-top});
   border-right: 1px solid $color__brand--light-grey;
-  border-bottom: 1px solid $color__brand--light-grey;
+  //border-bottom: 1px solid $color__brand--light-grey;
 }
 
 .nav__content {

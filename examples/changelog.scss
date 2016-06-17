@@ -1,0 +1,18 @@
+@import 'ui-examples/base';
+@import 'ui-examples/once';
+
+body {
+  padding: $spacing-default;
+}
+
+dl {
+  column-count: 4;
+  column-gap: 40px;
+  column-rule: 1px solid $color__brand--light-grey;
+}
+
+dt {
+  font-family: $font__mns-london--bold;
+}
+
+

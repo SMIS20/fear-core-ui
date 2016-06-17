@@ -130,10 +130,9 @@ Functions
   left: 0;
   overflow-y: scroll;
   width: 80vw;
-  height: -webkit-calc(100vh - 3rem);
-  height: calc(100vh - 3rem);
+  height: -webkit-calc(100vh - 4rem);
+  height: calc(100vh - 4rem);
   border-right: 1px solid #CCCCCC;
-  border-bottom: 1px solid #CCCCCC;
 }
 
 /* line 130, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-nav/_module_nav__horizontal--mobile.scss */
