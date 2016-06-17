@@ -12,6 +12,12 @@
 
       ~ section .l-screen-size__content {
         width: $size;
+
+        @if $size == 100% {
+          @include ie-only(10) {
+            width: calc(100vw - 380px);
+          }
+        }
       }
 
     }

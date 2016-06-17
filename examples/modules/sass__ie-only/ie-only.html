@@ -15,21 +15,6 @@
 
     <h3>SCSS</h3>
     <pre>
-      @include ie-only {
-        .my-class {
-
-        }
-      }
-    </pre>
-    <h3>CSS</h3>
-    <pre>
-      .ie .my-class {
-
-      }
-    </pre>
-    <hr/>
-    <h3>SCSS</h3>
-    <pre>
       @include ie-only(9) {
         .my-class {
 
@@ -45,7 +30,7 @@
     <hr/>
     <h3>SCSS</h3>
     <pre>
-      @include ie-only(9, 10) {
+      @include ie-only(10) {
         .my-class {
 
         }
@@ -53,9 +38,11 @@
     </pre>
     <h3>CSS</h3>
     <pre>
-      .ie9 .my-class,
-      .ie10 .my-class {
+      // IE10+
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .my-class {
 
+        }
       }
     </pre>
 

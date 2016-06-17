@@ -39,15 +39,15 @@ module.exports = function registerTasks () {
     });
 
     // app watchers
-    function watchAppScripts () {
-
-        var files = [
-            path.join(config.get('paths.app.scripts'), config.get('paths.glob.scripts')),
-            path.join('!app/jspm_components', config.get('paths.glob.scripts'))
-        ];
-
-        tasks.watch(files, ['test-unit', 'live-reload'], tasks.lint.onChange);
-    }
+    // function watchAppScripts () {
+    //
+    //     var files = [
+    //         path.join(config.get('paths.app.scripts'), config.get('paths.glob.scripts')),
+    //         path.join('!app/jspm_components', config.get('paths.glob.scripts'))
+    //     ];
+    //
+    //     tasks.watch(files, ['test-unit', 'live-reload'], tasks.lint.onChange);
+    // }
 
     function watchViews () {
 
@@ -75,31 +75,31 @@ module.exports = function registerTasks () {
     }
 
     // config watchers
-    function watchConfig () {
-        tasks.watch(['config/**/*.js'], [], tasks.lint.onChange);
-    }
+    // function watchConfig () {
+    //     tasks.watch(['config/**/*.js'], [], tasks.lint.onChange);
+    // }
 
     // mock watchers
-    function watchMock () {
-        tasks.watch(['mock/**/*.js'], [], tasks.lint.onChange);
-    }
+    // function watchMock () {
+    //     tasks.watch(['mock/**/*.js'], [], tasks.lint.onChange);
+    // }
 
     // tasks watchers
-    function watchTasks () {
-        tasks.watch(['tasks/**/*.js', 'gulpfile.js'], ['test-tasks'], tasks.lint.onChange);
-    }
+    // function watchTasks () {
+    //     tasks.watch(['tasks/**/*.js', 'gulpfile.js'], ['test-tasks'], tasks.lint.onChange);
+    // }
 
     // test watchers
-    function watchTestSpec () {
-        tasks.watch(['test/spec/**/*.js'], ['run-unit-test-suite'], tasks.lint.onChange);
-    }
-
-    function watchTestTasks () {
-        tasks.watch(['test/tasks/**/*.js'], ['test-tasks'], tasks.lint.onChange);
-    }
-
-    function watchTestHtml () {
-        tasks.watch(['test/spec/**/*.html'], ['run-unit-test-suite']);
-    }
+    // function watchTestSpec () {
+    //     tasks.watch(['test/spec/**/*.js'], ['run-unit-test-suite'], tasks.lint.onChange);
+    // }
+    //
+    // function watchTestTasks () {
+    //     tasks.watch(['test/tasks/**/*.js'], ['test-tasks'], tasks.lint.onChange);
+    // }
+    //
+    // function watchTestHtml () {
+    //     tasks.watch(['test/spec/**/*.html'], ['run-unit-test-suite']);
+    // }
 
 };

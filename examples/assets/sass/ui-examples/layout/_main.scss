@@ -1,18 +1,38 @@
 .l-main__layout {
-  @include display(flex);
-  @include align-items(stretch);
+  display: flex;
+  align-items: stretch;
+
+  @include ie-only(9) {
+    display: table;
+  }
 
   > nav {
     margin-right: $spacing-default-med;
     min-width: 240px;
     border-right: 1px solid $color__brand--dark-grey;
+
+    @include ie-only(9) {
+      display: table-cell;
+      vertical-align: top;
+    }
   }
 
   > section {
-    @include display(flex);
-    @include flex-grow(1);
-    @include justify-content(center);
+    display: flex;
     overflow-y: auto;
+    flex-grow: 1;
+    justify-content: center;
+
+    @include ie-only(9) {
+      display: table-cell;
+      padding-left: $spacing-default-med;
+      width: 100%;
+      text-align: center;
+
+      > * {
+        text-align: left;
+      }
+    }
   }
 }
 
@@ -28,4 +48,8 @@
 
 .l-main__content {
   height: calc(100vh - 211px);
+
+  @include ie-only(9) {
+    display: inline-block;
+  }
 }

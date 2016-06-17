@@ -1,5 +1,3 @@
-// scss-lint:disable DuplicateProperty
-
 %nav-list {
   margin: 0;
   padding: 0;
@@ -15,7 +13,11 @@
 
 .nav {
   @extend %nav-list;
-  @include display(flex);
+  display: flex;
+
+  @include ie-only(9) {
+    display: table-cell;
+  }
 
   ul {
     @extend %nav-list;
@@ -26,7 +28,6 @@
   }
 
   > li {
-    @include display(flex);
 
     > a,
     > label {
