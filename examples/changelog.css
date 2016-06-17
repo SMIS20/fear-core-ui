@@ -1963,9 +1963,9 @@ body {
 
 /* line 8, /Users/Caylam/Development/MS/code/fear-core-ui/examples/changelog.scss */
 dl {
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
@@ -1974,7 +1974,25 @@ dl {
   column-rule: 1px solid #CCCCCC;
 }
 
-/* line 14, /Users/Caylam/Development/MS/code/fear-core-ui/examples/changelog.scss */
+@media only screen and (min-width: 321px) {
+  /* line 8, /Users/Caylam/Development/MS/code/fear-core-ui/examples/changelog.scss */
+  dl {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  /* line 8, /Users/Caylam/Development/MS/code/fear-core-ui/examples/changelog.scss */
+  dl {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+}
+
+/* line 22, /Users/Caylam/Development/MS/code/fear-core-ui/examples/changelog.scss */
 dt {
   font-family: "mns-london-bold", Helvetica, Arial, sans-serif;
 }
