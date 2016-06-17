@@ -6,6 +6,6 @@
 @import 'ui-examples/layout/main';
 @import 'ui-examples/screen-size';
 
-@include screen-size(phone, 320px);
-@include screen-size(tablet, 768px);
-@include screen-size(desktop, 100%);
+@include screen-size(phone, $screen-size__phone);
+@include screen-size(tablet, $screen-size__tablet);
+@include screen-size(desktop, $screen-size__desktop);
