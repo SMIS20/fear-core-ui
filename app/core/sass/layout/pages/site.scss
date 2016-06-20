@@ -1,0 +1,14 @@
+$icomoon-font-path: 'assets/fonts/mns-digital-experimental/fonts';
+$spacing-default: 20px;
+$spacing-default-med: $spacing-default * 2;
+
+@import '../base';
+@import '../normalize';
+@import '../../../assets/fonts/mns-digital-experimental/style';
+@import '../header';
+@import '../main';
+@import '../screen-size';
+
+@include screen-size(phone, 320px);
+@include screen-size(tablet, 768px);
+@include screen-size(desktop, 100%);

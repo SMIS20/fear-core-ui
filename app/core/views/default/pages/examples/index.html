@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fear Core UI Examples</title>
+    <link rel="stylesheet" href="css/layout/pages/site.css" type="text/css"/>
+  </head>
+  <body>
+
+    <header>
+      <div class="l-header">
+        <img width="50px" height="50px" class="l-header__logo" src="assets/images/mns-digital-logo.png"/>
+        <h1>M&S Digital Experimental</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="l-main__layout">
+        {{> core/views/default/pages/examples/navigation }}
+
+        <section>
+          <div class="l-screen-size__content l-main__content">
+            <h2 id="progressive__modal">Progressive Modal</h2>
+            <iframe src="/examples/modules/progressive-modal/modal.html" height="400px"></iframe>
+
+            <h2 id="progressive__toggle-pane">Progressive Toggle Pane</h2>
+            <iframe src="/examples/modules/progressive-toggle-pane/toggle-pane.html" height="140px"></iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

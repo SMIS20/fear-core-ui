@@ -1,3 +1,4 @@
+/* Base */
 /** * @group Font size */
 /**
 * Body font size for large devices (desktop)
@@ -35,6 +36,17 @@
 /* --------
 Functions
 -------- */
+/* line 3, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/layout/positioning/_extends.scss */
+.footer__inner::before, .global-footer__inner::before, .footer__inner::after, .global-footer__inner::after {
+  content: ' ';
+  display: table;
+}
+
+/* line 9, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/layout/positioning/_extends.scss */
+.footer__inner::after, .global-footer__inner::after {
+  clear: both;
+}
+
 /** * @group Font size */
 /**
 * Body font size for large devices (desktop)
@@ -149,7 +161,7 @@ strong {
 * @group Font families
 */
 /* line 16, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends.scss */
-.btn__icon::before, .icon,
+.btn__icon::before, .checkbox-accordion + .checkbox-accordion__section .checkbox-accordion__heading::before, .icon,
 [class^='icon-']::before,
 [class*=' icon-']::before {
   font-family: "mns-icons";
@@ -245,7 +257,7 @@ strong {
 }
 
 /* line 65, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/icons/_extends_content.scss */
-.icon--arrow-right::before {
+.icon--arrow-right::before, .checkbox-accordion + .checkbox-accordion__section .checkbox-accordion__heading::before {
   content: '\e626';
 }
 
@@ -480,394 +492,6 @@ strong {
 /* --------
 Functions
 -------- */
-/* --------
-  Normalize
-  -------- */
-/* line 23, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/* line 30, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-body {
-  margin: 0;
-}
-
-/* line 40, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-
-/* line 57, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
-}
-
-/* line 67, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/* line 74, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-[hidden],
-template {
-  display: none;
-}
-
-/* line 83, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-a {
-  background: transparent;
-}
-
-/* line 88, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-a:active,
-a:hover {
-  outline: 0;
-}
-
-/* line 97, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/* line 102, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-b,
-strong {
-  font-weight: bold;
-}
-
-/* line 108, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-dfn {
-  font-style: italic;
-}
-
-/* line 116, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-/* line 122, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-small {
-  font-size: 80%;
-}
-
-/* line 127, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 135, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-sup {
-  top: -.5em;
-}
-
-/* line 139, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-sub {
-  bottom: -.25em;
-}
-
-/* line 147, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-img {
-  border: 0;
-}
-
-/* line 152, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* line 160, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-figure {
-  margin: 1em 40px;
-}
-
-/* line 165, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-hr {
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-/* line 172, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-pre {
-  overflow: auto;
-}
-
-/* line 177, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-/* line 195, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-  margin: 0;
-  /* 3 */
-}
-
-/* line 206, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-button {
-  overflow: visible;
-}
-
-/* line 214, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-button,
-select {
-  text-transform: none;
-}
-
-/* line 224, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-
-/* line 234, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-/* line 240, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/* line 248, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-input {
-  line-height: normal;
-}
-
-/* line 257, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-input[type="checkbox"],
-input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/* line 266, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/* line 274, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-input[type="search"] {
-  -webkit-appearance: none;
-  /* 1 */
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  /* 2 */
-  box-sizing: border-box;
-}
-
-/* line 284, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/* line 290, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-
-@media only screen and (max-width: 48em) {
-  /* line 299, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  select {
-    font-size: 1.6rem;
-  }
-}
-
-/* line 309, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: .35em .625em .75em;
-}
-
-/* line 317, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/* line 323, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-textarea {
-  overflow: auto;
-}
-
-/* line 329, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-optgroup {
-  font-weight: bold;
-}
-
-/* line 337, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 342, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_normalize.scss */
-td,
-th {
-  padding: 0;
-}
-
-/* --------
-  Core
-  -------- */
-/* line 8, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_mns-normalize.scss */
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 10px;
-  height: 100%;
-}
-
-/* line 15, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_mns-normalize.scss */
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-/* line 21, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_mns-normalize.scss */
-body {
-  font-size: 1.5rem;
-  color: #333333;
-  font-family: "mns-london", Helvetica, Arial, sans-serif;
-  min-height: 100%;
-  position: relative;
-}
-
-@media only screen and (min-width: 48.0625em) {
-  /* line 21, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_mns-normalize.scss */
-  body {
-    font-size: 1.5rem;
-  }
-}
-
-/* line 34, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_mns-normalize.scss */
-.body-debug * {
-  outline: 1px dashed #EA122A;
-}
-
-/* line 38, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_mns-normalize.scss */
-.wrapper {
-  margin: 0 auto;
-  max-width: 120rem;
-}
-
-/* -------- Links -------- */
-/* line 44, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_mns-normalize.scss */
-a {
-  color: inherit;
-}
-
-/* line 48, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_mns-normalize.scss */
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
-/* -------- Angular -------- */
-/* line 55, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/normalize/_module_mns-normalize.scss */
-[ng\:cloak],
-[ng-cloak],
-[data-ng-cloak],
-[x-ng-cloak],
-.ng-cloak,
-.x-ng-cloak,
-.ng-hide {
-  display: none !important;
-}
-
-/** * @group Font size */
-/**
-* Body font size for large devices (desktop)
-* @group Font size
-*/
-/**
-* Body font size for tsop devices (desktop)
-* @group Font size
-*/
-/**
-* Body font size for small devices (desktop)
-* @group Font size
- */
-/**
-* Body font size for small devices (mobile/tablet)
-* @group Font families
-*/
-/* --------
-Functions
--------- */
 /** * @group Font size */
 /**
 * Body font size for large devices (desktop)
@@ -893,7 +517,7 @@ Functions
   font-family: "mns-icons";
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/fonts/mns-icons.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/mns-icons.woff") format("woff"), url("/assets/fonts/mns-icons.ttf") format("truetype"), url("/assets/fonts/mns-icons.svg#mns-icons") format("svg");
+  src: url("/common/assets/fonts/mns-icons.eot?#iefix") format("embedded-opentype"), url("/common/assets/fonts/mns-icons.woff") format("woff"), url("/common/assets/fonts/mns-icons.ttf") format("truetype"), url("/common/assets/fonts/mns-icons.svg#mns-icons") format("svg");
 }
 
 /* -------- Typographic -------- */
@@ -901,49 +525,49 @@ Functions
   font-family: "didot-roman";
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/fonts/didot-roman.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/didot-roman.woff") format("woff"), url("/assets/fonts/didot-roman.ttf") format("truetype"), url("/assets/fonts/didot-roman.svg#didot-roman") format("svg");
+  src: url("/common/assets/fonts/didot-roman.eot?#iefix") format("embedded-opentype"), url("/common/assets/fonts/didot-roman.woff") format("woff"), url("/common/assets/fonts/didot-roman.ttf") format("truetype"), url("/common/assets/fonts/didot-roman.svg#didot-roman") format("svg");
 }
 
 @font-face {
   font-family: "didot-italic";
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/fonts/didot-italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/didot-italic.woff") format("woff"), url("/assets/fonts/didot-italic.ttf") format("truetype"), url("/assets/fonts/didot-italic.svg#didot-italic") format("svg");
+  src: url("/common/assets/fonts/didot-italic.eot?#iefix") format("embedded-opentype"), url("/common/assets/fonts/didot-italic.woff") format("woff"), url("/common/assets/fonts/didot-italic.ttf") format("truetype"), url("/common/assets/fonts/didot-italic.svg#didot-italic") format("svg");
 }
 
 @font-face {
   font-family: "didot-bold";
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/fonts/didot-bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/didot-bold.woff") format("woff"), url("/assets/fonts/didot-bold.ttf") format("truetype"), url("/assets/fonts/didot-bold.svg#didot-bold") format("svg");
+  src: url("/common/assets/fonts/didot-bold.eot?#iefix") format("embedded-opentype"), url("/common/assets/fonts/didot-bold.woff") format("woff"), url("/common/assets/fonts/didot-bold.ttf") format("truetype"), url("/common/assets/fonts/didot-bold.svg#didot-bold") format("svg");
 }
 
 @font-face {
   font-family: "didot-bold-italic";
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/fonts/didot-bold-italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/didot-bold-italic.woff") format("woff"), url("/assets/fonts/didot-bold-italic.ttf") format("truetype"), url("/assets/fonts/didot-bold-italic.svg#didot-bold-italic") format("svg");
+  src: url("/common/assets/fonts/didot-bold-italic.eot?#iefix") format("embedded-opentype"), url("/common/assets/fonts/didot-bold-italic.woff") format("woff"), url("/common/assets/fonts/didot-bold-italic.ttf") format("truetype"), url("/common/assets/fonts/didot-bold-italic.svg#didot-bold-italic") format("svg");
 }
 
 @font-face {
   font-family: "mns-london";
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/fonts/mns-london-text/MSLondoneText-Semibold.woff2") format("woff2"), url("/assets/fonts/mns-london-text/MSLondoneText-Semibold.woff") format("woff");
+  src: url("/common/assets/fonts/mns-london-text/MSLondoneText-Semibold.woff2") format("woff2"), url("/common/assets/fonts/mns-london-text/MSLondoneText-Semibold.woff") format("woff");
 }
 
 @font-face {
   font-family: "mns-london-bold";
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/fonts/mns-london-text/MSLondoneText-Demibold.woff2") format("woff2"), url("/assets/fonts/mns-london-text/MSLondoneText-Demibold.woff") format("woff");
+  src: url("/common/assets/fonts/mns-london-text/MSLondoneText-Demibold.woff2") format("woff2"), url("/common/assets/fonts/mns-london-text/MSLondoneText-Demibold.woff") format("woff");
 }
 
 @font-face {
   font-family: "mns-london-light";
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/fonts/mns-london-text/MSLondoneText-Regular.woff2") format("woff2"), url("/assets/fonts/mns-london-text/MSLondoneText-Regular.woff") format("woff");
+  src: url("/common/assets/fonts/mns-london-text/MSLondoneText-Regular.woff2") format("woff2"), url("/common/assets/fonts/mns-london-text/MSLondoneText-Regular.woff") format("woff");
 }
 
 /* line 1, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/typography/_module_typography.scss */
@@ -1019,6 +643,16 @@ h2,
   white-space: pre;
 }
 
+/***************************************
+    file: sprites/_variables.scss
+***************************************/
+/***************************************
+    file: sprites/_mixins.scss
+***************************************/
+/***************************************
+    file: sprites/_extends.scss
+***************************************/
+/* Components */
 /** * @group Font size */
 /**
 * Body font size for large devices (desktop)
@@ -1546,114 +1180,691 @@ Functions
   top: -3px;
 }
 
-/* line 1, /Users/b8173803/Sites/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
-body {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+/* line 2, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/borders/_module_borders.scss */
+.border-btm--drk {
+  border-bottom: 1px solid #333333;
 }
 
-/* line 7, /Users/b8173803/Sites/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
-.example-wrapper {
-  max-width: 850px;
-  width: 100%;
+/* line 6, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/borders/_module_borders.scss */
+.border-top--drk {
+  border-top: 1px solid #333333;
 }
 
-/* line 11, /Users/b8173803/Sites/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
-.example-wrapper .m-toggle-pane__1,
-.example-wrapper .m-toggle-pane__2 {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+/* line 10, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/borders/_module_borders.scss */
+.border-btm--lgt {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/* line 14, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/borders/_module_borders.scss */
+.border-top--lgt {
+  border-top: 1px solid #CCCCCC;
+}
+
+/* line 2, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/borders/_module_pipe.scss */
+.pipe--left::after,
+.pipe--right::after {
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 2px;
+  border-right: solid 1px #CCCCCC;
+}
+
+/* line 12, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/borders/_module_pipe.scss */
+.pipe--left::after {
+  left: 0;
+}
+
+/* line 16, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/borders/_module_pipe.scss */
+.pipe--right::after {
+  right: 0;
+}
+
+/* line 20, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/borders/_module_pipe.scss */
+.pipe--rel::after {
+  position: relative;
+}
+
+/* line 2, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/_list.scss */
+.list--no-bullets {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 9, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/_list.scss */
+.horizontal-list li {
+  float: left;
+}
+
+/* line 1, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/_help-menu.scss */
+.help-menu__list {
+  padding: 1.5rem 1rem;
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media only screen and (min-width: 48.0625em) {
-  /* line 11, /Users/b8173803/Sites/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
-  .example-wrapper .m-toggle-pane__1,
-  .example-wrapper .m-toggle-pane__2 {
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+  /* line 1, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/_help-menu.scss */
+  .help-menu__list {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
   }
 }
 
-/* line 22, /Users/b8173803/Sites/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
-.example-wrapper .m-toggle-pane__1 > div,
-.example-wrapper .m-toggle-pane__2 > div {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+/* line 13, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/_help-menu.scss */
+.help-menu__item {
+  padding: 0.3rem 0;
+  display: inline-block;
 }
 
-/* line 30, /Users/b8173803/Sites/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
-.example-wrapper .gift-price__icon--confirmation, .example-wrapper .gift-price__icon--gift {
-  top: .4rem;
-  margin-right: 20px;
-  font-size: 3rem;
+/* line 18, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/_help-menu.scss */
+.help-menu__link {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  border-right: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-family: "mns-london", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  display: inline-block;
 }
 
-/* line 36, /Users/b8173803/Sites/fear-core-ui/examples/modules/progressive-toggle-pane/_layout.scss */
-.example-wrapper .gift-price__icon--confirmation {
-  color: #BDD755;
+/* line 27, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/_help-menu.scss */
+.help-menu__link:hover {
+  text-decoration: underline;
 }
 
-/* line 3, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-toggle-pane/_mixins.scss */
-#my-toggle-pane ~ .m-toggle-pane__1 {
-  display: table-cell;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+/* line 31, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/_help-menu.scss */
+.help-menu__item:last-child .help-menu__link {
+  border-right: 0;
 }
 
-/* line 9, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-toggle-pane/_mixins.scss */
-#my-toggle-pane ~ .m-toggle-pane__1 ~ .m-toggle-pane__2 {
+/* line 36, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/_help-menu.scss */
+.help-menu__text {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  border-right: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-family: "mns-london", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+/* line 44, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/components/_help-menu.scss */
+.help-menu__item:last-child .help-menu__text {
+  border-right: 0;
+}
+
+/* line 1, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/modules/_checkbox-accordion.scss */
+.checkbox-accordion {
+  height: 6rem;
+  min-height: 6rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  min-width: 100%;
+}
+
+/* line 18, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/modules/_checkbox-accordion.scss */
+.checkbox-accordion + .checkbox-accordion__section {
+  height: 6rem;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 30em) {
+  /* line 18, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/modules/_checkbox-accordion.scss */
+  .checkbox-accordion + .checkbox-accordion__section {
+    padding-left: 2.6rem;
+  }
+}
+
+/* line 26, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/modules/_checkbox-accordion.scss */
+.checkbox-accordion + .checkbox-accordion__section .checkbox-accordion__header {
+  height: 6.2rem;
+}
+
+/* line 30, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/modules/_checkbox-accordion.scss */
+.checkbox-accordion + .checkbox-accordion__section .checkbox-accordion__heading {
+  padding-left: 2.6rem;
+  top: 3rem;
+  position: relative;
+  max-width: 70%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+@media only screen and (min-width: 30em) {
+  /* line 30, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/modules/_checkbox-accordion.scss */
+  .checkbox-accordion + .checkbox-accordion__section .checkbox-accordion__heading {
+    left: -2.6rem;
+  }
+}
+
+/* line 43, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/modules/_checkbox-accordion.scss */
+.checkbox-accordion + .checkbox-accordion__section .checkbox-accordion__heading::before {
+  font-size: 1.6rem;
+  margin-top: -0.8rem;
+  top: 50%;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  position: absolute;
+}
+
+/* line 62, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/modules/_checkbox-accordion.scss */
+.checkbox-accordion:checked + .checkbox-accordion__section {
+  height: 100%;
+  display: block;
+}
+
+/* line 68, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/modules/_checkbox-accordion.scss */
+.checkbox-accordion:checked + .checkbox-accordion__section .checkbox-accordion__heading::before {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* --------
+Footer
+-------- */
+@media only screen and (min-width: 48.0625em) {
+  /* line 4, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .footer {
+    padding-bottom: 5.6rem;
+  }
+}
+
+/* line 10, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.footer__inner {
+  margin: 0 auto;
+  max-width: 120rem;
+  background-color: #333333;
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 16, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer {
+    padding-bottom: 7rem;
+  }
+}
+
+/* line 22, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__inner {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 10px;
+}
+
+/* line 28, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__menu {
+  margin-top: 2rem;
+}
+
+/* line 32, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social--list {
+  padding: 1rem;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 30em) {
+  /* line 32, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__toolbar-social--list {
+    text-align: left;
+    padding: 0;
+  }
+}
+
+/* line 44, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social--facebook {
+  display: inline-block;
+}
+
+/* line 47, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social--facebook a:hover {
+  color: #2C4386;
+}
+
+/* line 52, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social--twitter {
+  display: inline-block;
+}
+
+/* line 55, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social--twitter a:hover {
+  color: #0097EF;
+}
+
+/* line 60, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social--pintrest {
+  display: inline-block;
+}
+
+/* line 63, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social--pintrest a:hover {
+  color: #D9001B;
+}
+
+/* line 68, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social--youtube {
+  display: inline-block;
+}
+
+/* line 71, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social--youtube a:hover {
+  color: #D9001B;
+}
+
+/* line 76, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social--instagram {
+  display: inline-block;
+}
+
+/* line 79, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social--instagram a:hover {
+  color: #2C4386;
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 84, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__menu--second-row {
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  /* line 84, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__menu--second-row {
+    padding: 0;
+  }
+}
+
+/* line 94, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social--googleplus {
+  display: inline-block;
+}
+
+/* line 97, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social--googleplus a:hover {
+  color: #D9001B;
+}
+
+/* line 102, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar {
+  font-family: "mns-london", Helvetica, Arial, sans-serif;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 30em) {
+  /* line 102, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__toolbar {
+    height: 5.5rem;
+  }
+}
+
+@media only screen and (min-width: 30em) {
+  /* line 112, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .flexbox .row.global-footer__toolbar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 0;
+  }
+}
+
+/* line 121, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.email-signup__global-footer {
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 30em) {
+  /* line 121, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .email-signup__global-footer {
+    padding-right: 2rem;
+    margin: 0;
+    text-align: right;
+    width: 50%;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 121, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .email-signup__global-footer {
+    width: 33.33%;
+  }
+}
+
+/* line 138, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.email-signup__global-footer ::before {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (min-width: 30em) {
+  /* line 144, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .flexbox .email-signup__global-footer a {
+    padding-left: 0.5rem;
+  }
+}
+
+/* line 150, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-sms {
   display: none;
+  text-align: center;
 }
 
-/* line 15, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-toggle-pane/_mixins.scss */
-#my-toggle-pane:checked ~ .m-toggle-pane__1 {
+@media only screen and (min-width: 48.0625em) {
+  /* line 150, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__toolbar-sms {
+    display: block;
+    width: 33.33%;
+  }
+}
+
+/* line 159, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-sms ::before {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 165, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .flexbox .global-footer__toolbar-sms > span {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 173, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .flexbox .global-footer__toolbar-sms a {
+    padding-left: 0.5rem;
+  }
+}
+
+/* line 179, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social--icon {
+  margin-right: 1rem;
+}
+
+/* line 183, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 30em) {
+  /* line 183, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__toolbar-social {
+    padding-left: 2rem;
+    text-align: left;
+    width: 50%;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 183, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__toolbar-social {
+    width: 33%;
+  }
+}
+
+/* line 197, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__toolbar-social a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 30em) {
+  /* line 202, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .flexbox .global-footer__toolbar-social {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* line 208, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__copyright--text {
+  margin-top: 0.5rem;
+  padding: 1.2rem;
+  border-top: 1px solid #CCCCCC;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+/* line 217, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__copyright {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* line 222, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__menu--buisness {
   display: none;
+  margin-top: 0;
+  padding: 0;
 }
 
-/* line 18, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/modules/progressive-toggle-pane/_mixins.scss */
-#my-toggle-pane:checked ~ .m-toggle-pane__1 ~ .m-toggle-pane__2 {
-  display: table-cell;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+@media only screen and (min-width: 48.0625em) {
+  /* line 222, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__menu--buisness {
+    display: block;
+  }
 }
 
-/*# sourceMappingURL=toggle-pane.css.map */
+/* line 231, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__menu--buisness li:last-child {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/* line 235, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__menu--buisness li {
+  height: 4rem;
+  line-height: 4rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  list-style-type: none;
+  font-family: "mns-london", Helvetica, Arial, sans-serif;
+  border-top: 1px solid #CCCCCC;
+}
+
+/* line 244, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__menu--buisness li a {
+  text-decoration: none;
+}
+
+/* line 250, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__menu--item {
+  padding: 0.5rem;
+  font-family: "mns-london", Helvetica, Arial, sans-serif;
+}
+
+/* line 255, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__menu--title {
+  padding: 0.5rem;
+  margin: 0;
+}
+
+@media only screen and (min-width: 75em) {
+  /* line 255, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__menu--title {
+    padding-top: 0;
+  }
+}
+
+/* line 264, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__menu--list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 269, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__menu--list a {
+  text-decoration: none;
+}
+
+/* line 274, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__menu--col8 {
+  padding-left: 2rem;
+  width: 100%;
+  overflow: hidden;
+  float: left;
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 274, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__menu--col8 {
+    width: 80%;
+  }
+}
+
+/* line 285, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__menu--cols {
+  padding-top: 1rem;
+  width: 100%;
+}
+
+@media only screen and (min-width: 30em) {
+  /* line 285, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__menu--cols {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 285, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__menu--cols {
+    padding-top: 0;
+  }
+}
+
+/* line 299, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__menu--col2 {
+  padding-right: 2rem;
+  width: 100%;
+  overflow: hidden;
+  float: left;
+}
+
+@media only screen and (min-width: 30em) {
+  /* line 299, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__menu--col2 {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 48.0625em) {
+  /* line 299, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__menu--col2 {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 29.9375em) {
+  /* line 314, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__newsletter {
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 30em) {
+  /* line 314, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__newsletter {
+    padding-right: 2rem;
+    width: 50%;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  /* line 314, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__newsletter {
+    text-align: right;
+    width: 33.333%;
+  }
+}
+
+/* line 334, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__newsletter-wrap {
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 339, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__newsletter-icon {
+  margin-right: 1rem;
+  font-size: 2.5rem;
+  vertical-align: middle;
+}
+
+/* line 345, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__newsletter-email {
+  height: 3rem;
+  width: 18.5rem;
+  padding: 0 1rem;
+  border: 1px solid #CCCCCC;
+  color: #333333;
+}
+
+@media only screen and (min-width: 30em) {
+  /* line 345, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+  .global-footer__newsletter-email {
+    width: 67%;
+  }
+}
+
+/* line 357, /Users/b8173803/Sites/fear-core-ui/lib/sass/fear-core-ui/templates/_footer.scss */
+.global-footer__newsletter-save-btn {
+  height: 3rem;
+  border: 1px solid #CCCCCC;
+  background: #F8F8F8;
+  color: #999999;
+}
+
+/* line 23, /Users/b8173803/Sites/fear-core-ui/app/core/sass/layout/pages/hub/non-critical.scss */
+.margin-top {
+  margin-top: 1.5rem;
+}
+
+/*# sourceMappingURL=non-critical.css.map */

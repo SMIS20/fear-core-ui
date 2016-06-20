@@ -40,6 +40,8 @@ module.exports = function () {
         //Only add middleware when serving from app folder
         if (baseFolder === 'app') {
             app.use('/node_modules', express.static('node_modules'));
+            app.use('/examples', express.static('examples'));
+            app.use('/lib', express.static('lib'));
         }
 
         connectServer = serve.startServer(
