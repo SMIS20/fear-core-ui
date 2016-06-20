@@ -22,12 +22,6 @@
     max-width: none;
     width: auto;
   }
-
-  ~ .btn {
-    @include media-query-xsmall {
-      margin-left: 2rem;
-    }
-  }
 }
 
 /* -------- Button variations -------- */

@@ -14,37 +14,41 @@ module.exports = function() {
         cascade: false
     };
 
-    var options = {
-        destination: 'css',
+    var includePaths = JSON.parse(JSON.stringify(ui.sassPaths));
+    includePaths.push(path.join(process.cwd(), 'app/core/sass'));
+
+    var defaultOptions = Object.freeze({
         autoPrefix: autoPrefixOptions,
-        includePaths: ui.sassPaths
-    };
+        includePaths: includePaths
+    });
+
+    function compileOptions(options) {
+        var temp = JSON.parse(JSON.stringify(defaultOptions));
+        return Object.assign(temp, options);
+    }
 
     /**
      * compile-core-sass
      */
     var toProcessCore = path.join(config.get('paths.core.sass'), config.get('paths.glob.sass'));
 
-    gulp.task('compile-core-sass', tasks.sass.compile(toProcessCore, options));
+    gulp.task('compile-core-sass', tasks.sass.compile(toProcessCore, compileOptions({destination: 'css'})));
 
     /**
      * compile-module-sass
      */
-    gulp.task('compile-module-sass', tasks.sass.compile('lib/modules/**/*.scss', options));
+    gulp.task('compile-module-sass', tasks.sass.compile('./lib/modules/**/*.scss', defaultOptions));
 
+    /**
+     * compile-examples-sass
+     */
+    gulp.task('compile-examples-sass', tasks.sass.compile(['./examples/**/*.scss'], compileOptions({destination: 'examples/css'})));
 
-    var examplesIncludePath = JSON.parse(JSON.stringify(ui.sassPaths));
-    examplesIncludePath.push('./examples/assets/sass');
-
-    var examplesOptions = {
-        destination: './examples/',
-        autoPrefix: autoPrefixOptions,
-        includePaths: examplesIncludePath
-    };
-
-    gulp.task('compile-examples-sass', tasks.sass.compile(['./examples/**/*.scss'], examplesOptions));
-
-    return gulp.task('build-sass', ['compile-core-sass', 'compile-module-sass', 'compile-examples-sass'], function() {
+    return gulp.task('build-sass', [
+        'compile-core-sass',
+        'compile-module-sass',
+        'compile-examples-sass'
+    ], function() {
         return gulp.src(path.join(config.get('paths.core.css'), config.get('paths.glob.css')))
             .pipe(gulp.dest(config.get('paths.temp.base')));
     });
