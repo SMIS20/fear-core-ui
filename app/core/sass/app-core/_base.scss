@@ -1,5 +1,8 @@
 @import 'app-core/variables';
 @import 'fear-core-ui/base';
-@import 'fear-core-ui/utilities/ie-only';
-@import 'fear-core-ui/utilities/flexbox';
-@import 'fear-core-ui/utilities/pointer-events';
+
+@import 'fear-core-ui/experimental/base';
+
+@import 'fear-core-ui/experimental/utilities/ie-only';
+@import 'fear-core-ui/experimental/utilities/flexbox';
+@import 'fear-core-ui/experimental/utilities/pointer-events';
