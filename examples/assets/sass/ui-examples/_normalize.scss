@@ -1,0 +1,9 @@
+body {
+  padding: $spacing-default-med;
+}
+
+iframe {
+  margin-bottom: $spacing-default-med;
+  width: 100%;
+  border: 1px solid $color__brand--light-grey;
+}

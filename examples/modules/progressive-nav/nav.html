@@ -1,0 +1,117 @@
+<!doctype html>
+<!--[if IE 9]>
+<html class="no-js ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Progressive Nav</title>
+    <link rel="stylesheet" href="styles/nav.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/nav__desktop.css" type="text/css" media="screen and (min-width: 1025px)"/>
+    <link rel="stylesheet" href="styles/nav__mobile.css" type="text/css" media="screen and (max-width: 1024px)"/>
+  </head>
+  <body>
+    <!--When this radio is checked then the menu is hidden -->
+    <input type="radio" id="menu__mobile--hide" name="menu" aria-hidden="true" hidden checked/>
+    <header>
+      <div class="example-header">
+        <nav>
+          <label class="menu__button--hide-menu menu__hamburger icon--menu" for="menu__mobile--hide"
+                 role="button"></label>
+          <label class="menu__button--show-level1 menu__hamburger icon--menu" for="menu__mobile-level1--show"
+                 role="button"></label>
+        </nav>
+      </div>
+    </header>
+    <div class="nav__wrapper">
+      <nav>
+        <!-- When this radio checked then the level 1 menu is shown -->
+        <input type="radio" id="menu__mobile-level1--show" name="menu" aria-hidden="true" hidden/>
+        <ul class="nav">
+          <li>
+            <a href="/c/style-and-living">Inspire Me</a>
+            <!-- When this radio is checked then the level 2 menu is shown -->
+            <label for="menu__mobile-level2__inspireme--show" role="button">Inspire Me</label>
+            <input class="menu__mobile-level2--show" type="radio" name="menu" id="menu__mobile-level2__inspireme--show"
+                   aria-hidden="true" hidden/>
+            <ul id="menu__mobile--style-and-living" class="nav__content">
+              <li class="menu__mobile-level2--back">
+                <label for="menu__mobile-level1--show" role="button">Back</label>
+              </li>
+              <li>
+                My style content
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/c/women">Woman</a>
+            <label for="menu__mobile-level2__woman--show" role="button">Woman</label>
+            <input class="menu__mobile-level2--show" type="radio" name="menu" id="menu__mobile-level2__woman--show"
+                   aria-hidden="true"
+                   hidden/>
+            <ul class="nav__content">
+              <li class="menu__mobile-level2--back">
+                <label for="menu__mobile-level1--show" role="button">Back</label>
+              </li>
+              <li>
+                My Woman content
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/c/lingerie">Lingerie</a>
+            <label for="menu__mobile-level2__lingerie--show" role="button">Lingerie</label>
+            <input class="menu__mobile-level2--show" type="radio" name="menu" id="menu__mobile-level2__lingerie--show"
+                   aria-hidden="true"
+                   hidden/>
+            <ul class="nav__content">
+              <li class="menu__mobile-level2--back">
+                <label for="menu__mobile-level1--show" role="button">Back</label>
+              </li>
+              <li>
+                My Lingerie content
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/c/beauty">Beauty</a>
+            <label for="menu__mobile-level2__beauty--show" role="button">Beauty</label>
+            <input class="menu__mobile-level2--show" type="radio" name="menu" id="menu__mobile-level2__beauty--show"
+                   aria-hidden="true"
+                   hidden/>
+            <ul class="nav__content">
+              <li class="menu__mobile-level2--back">
+                <label for="menu__mobile-level1--show" role="button">Back</label>
+              </li>
+              <li>
+                My Beauty content
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/c/men">Men</a>
+            <label for="menu__mobile-level2__men--show" role="button">Men</label>
+            <input class="menu__mobile-level2--show" type="radio" name="menu" id="menu__mobile-level2__men--show"
+                   aria-hidden="true"
+                   hidden/>
+            <ul class="nav__content">
+              <li class="menu__mobile-level2--back">
+                <label for="menu__mobile-level1--show" role="button">Back</label>
+              </li>
+              <li>
+                My Men content
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </body>
+</html>
+
+
+

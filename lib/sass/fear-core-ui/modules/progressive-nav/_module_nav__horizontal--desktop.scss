@@ -1,0 +1,40 @@
+.nav {
+  position: relative;
+  height: $nav-height;
+  align-items: center;
+
+  @include ie-only(9) {
+    vertical-align: middle;
+  }
+
+  > li {
+    display: flex;
+    height: $nav-height;
+    align-items: center;
+
+    @include ie-only(9) {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      > .nav__content {
+        display: block;
+      }
+    }
+
+    // hide mobile links
+    > a {
+      display: block;
+    }
+  }
+}
+
+.nav__content {
+  top: $nav-height;
+  left: 0;
+  min-height: 200px;
+  width: 100%;
+  border-top: $nav-content-offset solid $color__brand--black;
+  box-shadow: 0 19px 27px $color__shadow;
+}

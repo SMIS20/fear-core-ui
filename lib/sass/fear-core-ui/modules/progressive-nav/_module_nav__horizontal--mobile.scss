@@ -1,0 +1,135 @@
+// scss-lint:disable IdSelector NestingDepth
+
+%show-level1 {
+  transform: translate3d(0, 0, 0);
+
+  @include ie-only(9) {
+    transform: translateX(0);
+  }
+}
+
+%hide-level1 {
+  display: block;
+  transform: translate3d(-100%, 0, 0);
+
+  @include ie-only(9) {
+    transform: translateX(-100%);
+  }
+}
+
+@mixin horizontal-menu($mobile-hide--sibling-for-hamburger, $mobile-hide--sibling-for-menu-items) {
+
+  #menu__mobile-level1--show {
+    &:checked {
+      ~ .nav {
+        @extend %show-level1;
+      }
+    }
+
+    ~ .nav {
+      @extend %hide-level1;
+    }
+  }
+
+  #menu__mobile--hide {
+    &:checked {
+      ~ #{$mobile-hide--sibling-for-hamburger} {
+        .menu__button--hide-menu {
+          display: none;
+        }
+
+        .menu__button--show-level1 {
+          display: inline-block;
+        }
+      }
+    }
+
+    &:not(:checked) {
+      ~ #{$mobile-hide--sibling-for-menu-items} {
+        #menu__mobile-level1--show {
+          &:not(:checked) {
+            ~ .nav {
+              @extend %show-level1;
+            }
+          }
+        }
+      }
+    }
+
+    ~ #{$mobile-hide--sibling-for-hamburger} {
+      .menu__button--hide-menu {
+        display: inline-block;
+      }
+
+      .menu__button--show-level1 {
+        display: none;
+      }
+    }
+  }
+}
+
+@include horizontal-menu($mobile-hide--sibling-for-hamburger: 'header', $mobile-hide--sibling-for-menu-items: '.nav__wrapper');
+
+.menu__hamburger {
+  display: inline-block;
+  padding: $spacing-default-sm;
+}
+
+.menu__mobile-level2--show {
+  ~ .nav__content {
+    @extend %hide-level1;
+    transition: .5s;
+  }
+
+  &:checked {
+    ~ .nav__content {
+      @extend %show-level1;
+    }
+  }
+}
+
+.menu__mobile-level2--back {
+  display: block;
+  background-color: $color__brand--black;
+  color: $color__brand--white;
+}
+
+.nav {
+  @extend %nav__panel;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  transition: .5s;
+
+  > li {
+    // hide desktop links
+    > label {
+      display: block;
+      width: 100%;
+      line-height: 3.2rem;
+    }
+  }
+}
+
+%nav__panel {
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  width: 80vw;
+  height: calc(100vh - #{$nav-content-top});
+  border-right: 1px solid $color__brand--light-grey;
+  //border-bottom: 1px solid $color__brand--light-grey;
+}
+
+.nav__content {
+  @extend %nav__panel;
+
+  > li {
+    padding-left: 20px;
+    border-bottom: 1px solid $color__brand--light-grey;
+    line-height: 4.5rem;
+  }
+}

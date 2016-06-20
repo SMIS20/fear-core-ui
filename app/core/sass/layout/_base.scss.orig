@@ -1,0 +1,6 @@
+$fear-core-ui-font-dir: '/assets/fonts';
+
+@import 'fear-core-ui/base';
+@import 'fear-core-ui/extends';
+@import 'fear-core-ui/normalize';
+@import 'fear-core-ui/typography';

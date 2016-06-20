@@ -1,0 +1,15 @@
+<<<<<<< HEAD:examples/modules/progressive-toggle-pane/toggle-pane.scss
+@import '../../../app/core/sass/layout/base';
+=======
+@import 'ui-examples/base';
+@import 'ui-examples/once';
+>>>>>>> 879ff80db6abe89549a962233ed7017f4a78a8f6:examples/modules/progressive-toggle-pane/styles/toggle-pane.scss
+@import 'fear-core-ui/components/icons';
+@import 'fear-core-ui/components/buttons';
+@import 'fear-core-ui/modules/progressive-toggle-pane';
+@import 'layout';
+
+/// Create a toggle pane
+/// $pane-id is the ID of the checkbox. Required
+/// $display-show-value is the value used when displaying a pane
+@include toggle-pane($pane-id: 'my-toggle-pane', $display-show-value: flex);

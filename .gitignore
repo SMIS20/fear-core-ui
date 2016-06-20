@@ -13,3 +13,5 @@ _temp_sprites_generated.scss
 css
 mock
 npm-debug.log
+*.orig
+

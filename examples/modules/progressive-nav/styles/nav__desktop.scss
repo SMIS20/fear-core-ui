@@ -1,0 +1,19 @@
+@import 'ui-examples/base';
+@import 'fear-core-ui/modules/progressive-nav/variables';
+@import 'fear-core-ui/modules/progressive-nav/module_nav__horizontal--desktop';
+
+.nav__wrapper {
+  display: flex;
+  border-bottom: 5px solid $color__brand--black;
+  justify-content: center;
+
+  @include ie-only(9) {
+    text-align: center;
+
+    > nav {
+      text-align: left;
+      display: table;
+      margin: auto;
+    }
+  }
+}
