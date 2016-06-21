@@ -19,7 +19,7 @@
     display: table-cell;
   }
 
-  ul {
+  > ul {
     @extend %nav-list;
   }
 
@@ -56,7 +56,6 @@
   position: absolute;
   z-index: 1;
   display: none;
-  padding: $spacing-default-sm;
   background-color: $color__brand--white;
 
   h2 {
