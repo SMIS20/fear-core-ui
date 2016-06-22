@@ -1,3 +1,5 @@
+// scss-lint:disable IdSelector NestingDepth all
+
 @mixin mobile-nav($mobile-hide--sibling-for-hamburger, $mobile-hide--sibling-for-menu-items) {
   #menu__mobile--hide {
     &:checked {
@@ -17,7 +19,7 @@
         #menu__mobile-level1--show {
           &:not(:checked) {
             ~ .nav {
-              @extend %show-level1;
+              @extend %level1--show;
             }
           }
         }
@@ -40,12 +42,12 @@
   #menu__mobile-level1--show {
     &:checked {
       ~ .nav {
-        @extend %show-level1;
+        @extend %level1--show;
       }
     }
 
     ~ .nav {
-      @extend %hide-level1;
+      @extend %level1--hide;
     }
   }
 }
@@ -53,14 +55,36 @@
 @mixin mobile-nav__level2 {
   .menu__mobile-level2--show {
     ~ .nav__content {
-      @extend %hide-level1;
-      transition: .5s;
+      @extend %level1--hide;
     }
 
     &:checked {
       ~ .nav__content {
-        @extend %show-level1;
+        @extend %level1--show;
       }
     }
+  }
+}
+
+@mixin mobile-nav__level3 {
+  .menu__mobile-level3 {
+    + h2 + .nav__content-group {
+      @extend %level3--hide;
+    }
+
+    &:checked {
+
+      + h2 {
+        + .nav__content-group {
+          @extend %level3--show;
+        }
+
+        &::before {
+          // flip the arrow icon
+          transform: scaleY(-1);
+        }
+      }
+    }
+
   }
 }

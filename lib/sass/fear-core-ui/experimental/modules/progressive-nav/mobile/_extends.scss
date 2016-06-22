@@ -1,4 +1,5 @@
-%show-level1 {
+// scss-lint:disable ZeroUnit
+%level1--show {
   transform: translate3d(0, 0, 0);
 
   @include ie-only(9) {
@@ -6,12 +7,29 @@
   }
 }
 
-%hide-level1 {
+%level1--hide {
   display: block;
+  transition: .15s ease;
   transform: translate3d(-100%, 0, 0);
 
   @include ie-only(9) {
     transform: translateX(-100%);
+  }
+}
+
+%level3--show {
+  > li {
+    line-height: $menu__level3-height;
+    opacity: 1;
+  }
+}
+
+%level3--hide {
+  > li {
+    overflow: hidden;
+    line-height: 0rem;
+    opacity: 0;
+    transition: all .15s;
   }
 }
 
@@ -27,7 +45,7 @@
 %nav__list-item {
   margin: 0;
   padding-left: 20px;
-  line-height: 3.7rem;
+  line-height: $menu__level3-height;
 }
 
 %nav__list {

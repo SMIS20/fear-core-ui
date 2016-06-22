@@ -1,3 +1,5 @@
+// scss-lint:disable SelectorDepth
+
 .menu__hamburger {
   display: inline-block;
   padding: $spacing-default-sm;
@@ -8,6 +10,11 @@
   display: block;
   background-color: $color__brand--black;
   color: $color__brand--white;
+}
+
+.menu__button--hide-menu {
+  border: 0;
+  background-color: $color__trasparent;
 }
 
 .nav {
@@ -34,13 +41,13 @@
   @extend %nav__panel;
 
   > li {
-    border-bottom: 1px solid $color__brand--light-grey;
     line-height: 4.5rem;
   }
 }
 
 .nav__content-group {
   @extend %nav__list;
+  padding-left: $spacing-default;
   border-bottom: 1px solid $color__brand--light-grey;
 
   > li {
@@ -49,7 +56,25 @@
 }
 
 .nav__content-items {
-  > li > h2 {
-    @extend %nav__list-item;
+  > li {
+    > h2 {
+      @extend %nav__list-item;
+      @extend %icon-arrow-down;
+      @extend %mns-icons;
+
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: calc(#{$menu__level3-height} - 25px);
+        right: $spacing-default-sm;
+        z-index: -1;
+        transition: all .15s ease;
+      }
+
+      > label {
+        display: block;
+      }
+    }
   }
 }
