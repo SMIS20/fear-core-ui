@@ -224,17 +224,33 @@ _normalize.scss
 
 <p># fear-core-ui change log</p>
 
+<h4><strong>4.0.1</strong></h4>
+
+<ul>
+<li>new font assets - fixes 1/2 and 1/4 reversal</li>
+</ul>
+
+<h4><strong>4.0.0</strong></h4>
+
+<ul>
+<li>removed helvetica fonts and no longer used fonts (Breaking)</li>
+<li>added new fonts mns-london, mns-london-bold and mns-london-light (Feature)</li>
+<li>Added 3 Sparks icons (offers, events, priority access) as mns-icons font (Feature)</li>
+</ul>
+
+<h4><strong>3.0.0</strong></h4>
+
+<ul>
+<li>Refactor sprites to prevent duplication. (Breaking)</li>
+<li>Added Sparks logo as mns-icons font (Feature)</li>
+<li>Refactor tooltip (Patch)</li>
+</ul>
+
 <h4><strong>2.0.0</strong></h4>
 
 <ul>
 <li>improved more logical folder structure</li>
 <li>Finalised MNS-london regular and bold fonts.</li>
-</ul>
-
-<h2>1.1.8</h2>
-
-<ul>
-<li>Install sassdoc-theme-mns from github using SSH, as repo is now private</li>
 </ul>
 
 <h4><strong>1.1.11</strong></h4>
@@ -307,17 +323,22 @@ _normalize.scss
 
 <p>Here&#39;s the most direct way to get your work merged into the project:</p>
 
+<p>If your work is a new feature or a patch then follow the following workflow</p>
+
 <ul>
 <li>Fork the project.</li>
 <li>Clone down your fork ( <code>git clone git@github.com:[username]/fear-core-ui.git</code> ).</li>
 <li>Create a topic branch to contain your change ( <code>git checkout -b my_awesome_feature</code> ).</li>
-<li>Hack away, add tests. Not necessarily in that order.</li>
+<li>Code away and add tests if applicable. Not necessarily in that order.</li>
 <li>Make sure everything still passes by running <code>npm run test</code>.</li>
+<li>Update the change log with details of the change under the corresponding heading (new feature/patch) - create the heading if it doesnt already exist. The version of the next published version will then be decided by this.</li>
 <li>If necessary, rebase your commits into logical chunks, without errors.</li>
 <li>Push the branch up ( <code>git push origin my_awesome_feature</code> ).</li>
-<li>Create a pull request against fear-core-ui/develop and describe what your change
+<li>Create a pull request against fear-core-ui/master and describe what your change
 does and the why you think it should be merged.</li>
 </ul>
+
+<p>If your work is a breaking change please come to talk to the core team before commencing development.</p>
 
                     </div>
                 </div>
