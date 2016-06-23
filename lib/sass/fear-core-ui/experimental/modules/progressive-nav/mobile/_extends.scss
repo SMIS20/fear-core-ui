@@ -9,7 +9,7 @@
 
 %level1--hide {
   display: block;
-  transition: .15s ease;
+  transition: .15s ease-in-out;
   transform: translate3d(-100%, 0, 0);
 
   @include ie-only(9) {
@@ -29,7 +29,7 @@
     overflow: hidden;
     line-height: 0rem;
     opacity: 0;
-    transition: all .15s;
+    transition: all .15s ease-in-out;
   }
 }
 

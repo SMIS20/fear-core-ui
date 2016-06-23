@@ -32,7 +32,7 @@ module.exports = function () {
         return isDev() && !isTestsRunning();
     }
 
-    gulp.task('start-server', ['build-sass', 'create-app-config'], function () {
+    gulp.task('start-server', ['build-sass', 'build-mustache', 'create-app-config'], function () {
 
         var express = require('express');
         var app = express();

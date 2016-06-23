@@ -47,6 +47,7 @@
     "gulp": "3.9.0",
     "gulp-if": "2.0.0",
     "gulp-livereload": "3.8.1",
+    "gulp-mustache": "2.2.0",
     "gulp-sass": "git+https://github.com/digitalinnovation/gulp-sass.git",
     "gulp-util": "3.0.7",
     "ip": "1.1.3",

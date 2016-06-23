@@ -6,12 +6,13 @@ var tasks = require('fear-core-dev');
 var config = require('fear-core').utils.config();
 var path = require('path');
 
-module.exports = function registerTasks () {
+module.exports = function registerTasks() {
 
-    gulp.task('watch', function () {
+    gulp.task('watch', function() {
 
         // app
         // watchAppScripts();
+        watchMustache();
         watchViews();
         watchSass();
 
@@ -34,7 +35,7 @@ module.exports = function registerTasks () {
         });
     });
 
-    gulp.task('live-reload', function () {
+    gulp.task('live-reload', function() {
         livereload.reload();
     });
 
@@ -49,7 +50,16 @@ module.exports = function registerTasks () {
     //     tasks.watch(files, ['test-unit', 'live-reload'], tasks.lint.onChange);
     // }
 
-    function watchViews () {
+    function watchMustache() {
+        var files = [
+            path.join(config.get('paths.examples.base'), '**/partials/**/*.html'),
+            path.join(config.get('paths.examples.mustache'))
+        ];
+
+        tasks.watch(files, ['build-mustache']);
+    }
+
+    function watchViews() {
 
         var files = [
             config.get('paths.examples.views'),
@@ -60,11 +70,11 @@ module.exports = function registerTasks () {
         tasks.watch(files, ['live-reload']);
     }
 
-    function lintOnChange () {
-        return tasks.lint.sassOnChange({config: process.cwd()+'/.scss-lint.yml'});
+    function lintOnChange() {
+        return tasks.lint.sassOnChange({config: process.cwd() + '/.scss-lint.yml'});
     }
 
-    function watchSass () {
+    function watchSass() {
 
         var files = [
             config.get('paths.lib.sass'),
