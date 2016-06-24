@@ -46,7 +46,12 @@
 
   > li {
     padding: $spacing-default;
-    width: 100%; // makes columns equal width
+    flex: 1;
+
+    @include ie-only(9) {
+      display: table-cell;
+      width: auto;
+    }
 
     > h2 {
       margin-bottom: 5px;

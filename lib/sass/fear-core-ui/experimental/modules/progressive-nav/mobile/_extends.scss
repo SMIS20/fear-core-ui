@@ -34,15 +34,18 @@
 }
 
 %nav__panel {
+  @include scrollbars(auto);
   top: 0;
   left: 0;
-  overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
   width: 80vw;
   height: calc(100vh - #{$nav-content-top});
   border-right: 1px solid $color__brand--light-grey;
 }
 
 %nav__list-item {
+  display: block;
   margin: 0;
   padding-left: 20px;
   line-height: $menu__level3-height;
