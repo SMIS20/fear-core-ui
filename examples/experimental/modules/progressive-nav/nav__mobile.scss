@@ -1,7 +1,14 @@
 @import 'app-core/base';
 @import 'fear-core-ui/extends';
 @import 'fear-core-ui/experimental/modules/progressive-nav/variables';
-@import 'fear-core-ui/experimental/modules/progressive-nav/module_nav__horizontal--mobile';
+@import 'fear-core-ui/experimental/modules/progressive-nav/mobile/extends';
+@import 'fear-core-ui/experimental/modules/progressive-nav/mobile/mixins';
+@import 'fear-core-ui/experimental/modules/progressive-nav/mobile/module_nav';
+
+@include mobile-nav($mobile-hide--sibling-for-hamburger: 'header', $mobile-hide--sibling-for-menu-items: '.nav__wrapper');
+@include mobile-nav__level1;
+@include mobile-nav__level2;
+@include mobile-nav__level3;
 
 .nav__wrapper {
   position: relative;

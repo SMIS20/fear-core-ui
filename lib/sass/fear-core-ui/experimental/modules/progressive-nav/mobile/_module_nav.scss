@@ -6,7 +6,7 @@
 }
 
 .menu__mobile-level2--back {
-  @extend %nav__list-item;
+  @extend %mobile__list-item;
   display: block;
   background-color: $color__brand--black;
   color: $color__brand--white;
@@ -18,7 +18,7 @@
 }
 
 .nav {
-  @extend %nav__panel;
+  @extend %mobile__panel;
   position: absolute;
   top: 0;
   left: 0;
@@ -38,7 +38,7 @@
 }
 
 .nav__content {
-  @extend %nav__panel;
+  @extend %mobile__panel;
 
   > li {
     line-height: 4.5rem;
@@ -46,19 +46,19 @@
 }
 
 .nav__content-group {
-  @extend %nav__list;
+  @extend %mobile__list;
   padding-left: $spacing-default;
   border-bottom: 1px solid $color__brand--light-grey;
 
   > li {
-    @extend %nav__list-item;
+    @extend %mobile__list-item;
   }
 }
 
 .nav__content-items {
   > li {
     > h2 {
-      @extend %nav__list-item;
+      @extend %mobile__list-item;
       @extend %icon-arrow-down;
       @extend %mns-icons;
 
