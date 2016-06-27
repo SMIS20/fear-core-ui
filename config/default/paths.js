@@ -12,7 +12,8 @@ module.exports = {
     examples: {
         base: 'examples',
         sass: 'examples/**/*.scss',
-        views: 'examples/**/*.html'
+        views: 'examples/**/*.html',
+        mustache: 'examples/**/*.mustache'
     },
     app: {
         base: 'app',
