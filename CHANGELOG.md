@@ -1,5 +1,8 @@
 # fear-core-ui change log
 
+#### **4.0.1**
+- new font assets - fixes 1/2 and 1/4 reversal
+
 #### **4.0.0**
 - removed helvetica fonts and no longer used fonts (Breaking)
 - added new fonts mns-london, mns-london-bold and mns-london-light (Feature)
