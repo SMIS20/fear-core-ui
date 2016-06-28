@@ -51,7 +51,8 @@ module.exports = function () {
             liveReloadConditions,
             mustacheConfig,
             channelDefaults,
-            [app]
+            [app],
+            ['^\/core\/module\/([a-zA-Z-_]*)$ /core/views/default/pages/module/index.html?module=$1 [L,QSA]']
         );
     });
 

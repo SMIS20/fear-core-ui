@@ -5,7 +5,7 @@ module.exports = function () {
         {
             'name': 'Modules',
             'links': [
-                { 'name': 'Search input', 'url': 'core/module?module=search' }
+                { 'name': 'Search input', 'url': 'core/module/search' }
             ]
         },
         {
