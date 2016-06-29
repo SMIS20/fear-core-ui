@@ -73,10 +73,11 @@
     }
 
     &:checked {
-
       + h2 {
-        + .nav__content-group {
-          @extend %mobile-level3--show;
+        @include -webkit-sibling-fix {
+          + .nav__content-group {
+            @extend %mobile-level3--show;
+          }
         }
 
         &::before {
