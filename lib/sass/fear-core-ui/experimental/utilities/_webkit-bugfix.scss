@@ -5,7 +5,7 @@
   &:nth-child(n) {
     @content;
 
-    &::before {
+    &::after {
       transform: translateZ(0);
     }
   }

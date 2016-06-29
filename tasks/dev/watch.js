@@ -11,7 +11,7 @@ module.exports = function registerTasks() {
     gulp.task('watch', function() {
 
         // app
-        // watchAppScripts();
+        watchAppScripts();
         watchMustache();
         watchViews();
         watchSass();
@@ -40,15 +40,16 @@ module.exports = function registerTasks() {
     });
 
     // app watchers
-    // function watchAppScripts () {
-    //
-    //     var files = [
-    //         path.join(config.get('paths.app.scripts'), config.get('paths.glob.scripts')),
-    //         path.join('!app/jspm_components', config.get('paths.glob.scripts'))
-    //     ];
-    //
-    //     tasks.watch(files, ['test-unit', 'live-reload'], tasks.lint.onChange);
-    // }
+    function watchAppScripts() {
+
+        var files = [
+            path.join(config.get('paths.app.scripts'), config.get('paths.glob.scripts')),
+            path.join('!app/jspm_components', config.get('paths.glob.scripts')),
+            path.join(config.get('paths.lib.base'), '**/*/js')
+        ];
+
+        tasks.watch(files, ['test-unit', 'live-reload'], tasks.lint.onChange);
+    }
 
     function watchMustache() {
         var files = [

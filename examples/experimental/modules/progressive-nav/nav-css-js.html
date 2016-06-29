@@ -9,7 +9,22 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
 <title>Progressive Nav</title>
+<link rel="stylesheet" href="/css/experimental/modules/progressive-nav/site.css" type="text/css"/>
+<link rel="stylesheet" href="/css/experimental/modules/progressive-nav/nav__all.css" type="text/css"/>
+<link rel="stylesheet" href="/css/experimental/modules/progressive-nav/nav__desktop.css" type="text/css"
+      media="screen and (min-width: 1025px)"/>
+<link rel="stylesheet" href="/css/experimental/modules/progressive-nav/nav__mobile.css" type="text/css"
+      media="screen and (max-width: 1024px)"/>
 
+<!-- TODO: check screen width to load -->
+<script type="text/javascript" src="/lib/modules/experimental/progressive-nav/nav.js"></script>
+<!--
+<script>
+    if (screen && screen.width < 1025) {
+        document.write('<script type="text/javascript" src="/lib/modules/experimental/progressive-nav/nav.js"><\/script>');
+    }
+</script>
+-->
 </head><body>
   <!--When this radio is checked then the menu is hidden -->
   <input type="radio" id="menu__mobile--hide" name="menu" aria-hidden="true" hidden checked/>

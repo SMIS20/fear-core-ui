@@ -1,0 +1,27 @@
+{{> ../../partials/html__start.html }}
+ {{> ../../partials/head__start.html }}
+
+<title>Progressive Nav</title>
+<link rel="stylesheet" href="/css/experimental/modules/progressive-nav/site.css" type="text/css"/>
+<link rel="stylesheet" href="/css/experimental/modules/progressive-nav/nav__all.css" type="text/css"/>
+<link rel="stylesheet" href="/css/experimental/modules/progressive-nav/nav__desktop.css" type="text/css"
+      media="screen and (min-width: 1025px)"/>
+<link rel="stylesheet" href="/css/experimental/modules/progressive-nav/nav__mobile.css" type="text/css"
+      media="screen and (max-width: 1024px)"/>
+
+<!-- TODO: check screen width to load -->
+<script type="text/javascript" src="/lib/modules/experimental/progressive-nav/nav.js"></script>
+<!--
+<script>
+    if (screen && screen.width < 1025) {
+        document.write('<script type="text/javascript" src="/lib/modules/experimental/progressive-nav/nav.js"><\/script>');
+    }
+</script>
+-->
+{{> ../../partials/head__end.html }}
+{{> ./partials/nav__body.html }}
+{{> ../../partials/html__end.html }}
+
+
+
+
