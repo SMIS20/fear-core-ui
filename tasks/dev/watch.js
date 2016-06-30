@@ -11,7 +11,7 @@ module.exports = function registerTasks() {
     gulp.task('watch', function() {
 
         // app
-        watchAppScripts();
+        watchScripts();
         watchMustache();
         watchViews();
         watchSass();
@@ -40,12 +40,12 @@ module.exports = function registerTasks() {
     });
 
     // app watchers
-    function watchAppScripts() {
+    function watchScripts() {
 
         var files = [
             path.join(config.get('paths.app.scripts'), config.get('paths.glob.scripts')),
-            path.join('!app/jspm_components', config.get('paths.glob.scripts')),
-            path.join(config.get('paths.lib.base'), '**/*/js')
+            path.join(config.get('paths.lib.base'), '**/*.js'),
+            path.join(config.get('paths.examples.base'), '**/*.js')
         ];
 
         tasks.watch(files, ['test-unit', 'live-reload'], tasks.lint.onChange);
