@@ -1,3 +1,3 @@
-import MobileNav from 'modules/experimental/progressive-nav/nav';
+import MobileNav from 'modules/experimental/progressive-nav/mobileNav';
 
 new MobileNav();
