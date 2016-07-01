@@ -44,8 +44,8 @@ module.exports = function registerTasks() {
 
         var files = [
             path.join(config.get('paths.app.scripts'), config.get('paths.glob.scripts')),
-            path.join(config.get('paths.lib.base'), '**/*.js'),
-            path.join(config.get('paths.examples.base'), '**/*.js')
+            path.join(config.get('paths.lib.base'), config.get('paths.glob.scripts')),
+            path.join(config.get('paths.examples.base'), config.get('paths.glob.scripts'))
         ];
 
         tasks.watch(files, ['test-unit', 'live-reload'], tasks.lint.onChange);
