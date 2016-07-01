@@ -20,6 +20,7 @@
           &:not(:checked) {
             ~ .nav {
               @extend %mobile-level1--show;
+              overflow-y: hidden; // stop first panel from scroll when 2nd panel is visible
             }
           }
         }
