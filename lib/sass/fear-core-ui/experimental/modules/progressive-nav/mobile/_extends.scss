@@ -27,13 +27,15 @@
 %mobile-level3--hide {
   > li {
     overflow: hidden;
-    line-height: 0rem; // DO NOT REMOVE `rem`. It need to have the rem for the animation to work!
+    line-height: 0rem; // DO NOT REMOVE `rem`. It needs to have the rem for the animation to work!
     opacity: 0;
     transition: all .15s ease-in-out;
   }
 }
 // scss-lint:enable ZeroUnit
 
+
+// scss-lint:disable DuplicateProperty
 %mobile__panel {
   @include scrollbars(auto);
   @include momentum-scrolling;
@@ -43,9 +45,11 @@
   overflow-y: auto;
   max-width: $screen-size__phone;
   width: 100%;
+  height: 100vh; //fallback for android browser
   height: calc(100vh - #{$nav-content-top});
   border-right: 1px solid $color__brand--light-grey;
 }
+// scss-lint:enable DuplicateProperty
 
 %mobile__list-item {
   display: block;
