@@ -37,7 +37,8 @@
 }
 
 .l-main__nav {
-  margin: 0 $spacing-default-med 0 0;
+  position: fixed;
+  margin: #{$spacing-default-med * 2} $spacing-default-med 0 0;
   padding: 0;
 
   > li {
@@ -47,7 +48,6 @@
 }
 
 .l-main__content {
-  height: calc(100vh - 211px);
 
   @include ie-only(9) {
     display: inline-block;
