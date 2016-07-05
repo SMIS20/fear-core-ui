@@ -1,3 +1,4 @@
-import MobileNav from 'modules/experimental/progressive-nav/mobileNav';
+import MobileNav from 'modules/experimental/nav/mobileNav';
 
-new MobileNav();
+let mobileNav = new MobileNav();
+mobileNav.bind();
