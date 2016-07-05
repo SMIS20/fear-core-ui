@@ -1,6 +1,6 @@
 @import 'app-core/base';
-@import 'fear-core-ui/experimental/modules/progressive-nav/variables';
-@import 'fear-core-ui/experimental/modules/progressive-nav/desktop/module_nav';
+@import 'modules/experimental/nav/sass/variables';
+@import 'modules/experimental/nav/sass/desktop/module_nav';
 
 .nav__wrapper {
   display: flex;

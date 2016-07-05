@@ -16,6 +16,7 @@ module.exports = function() {
 
     var includePaths = JSON.parse(JSON.stringify(ui.sassPaths));
     includePaths.push(path.join(process.cwd(), 'app/core/sass'));
+    includePaths.push(path.join(process.cwd(), 'lib'));
 
     var defaultOptions = Object.freeze({
         autoPrefix: autoPrefixOptions,

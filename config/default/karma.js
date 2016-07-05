@@ -14,7 +14,7 @@ module.exports = {
         channel: 'default',
         mustacheModule: 'connect-mustache-middleware/index',
         mustacheOpts: mustacheConfig,
-        defaultsModule: process.cwd() + '/test/mock/src/channel'
+        defaultsModule: process.cwd() + '/mock/src/channel'
     },
     ngHtml2JsPreprocessor: {
         moduleName: 'templates'
