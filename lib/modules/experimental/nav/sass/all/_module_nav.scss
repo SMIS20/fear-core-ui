@@ -55,7 +55,7 @@
 
 .nav__content {
   position: absolute;
-  z-index: 1;
+  z-index: $nav-content-z-index;
   display: none;
   padding: 0;
   background-color: $color__brand--white;
@@ -85,4 +85,8 @@
       text-decoration: none;
     }
   }
+}
+
+.menu__mobile-level2__overlay {
+  display: none;
 }
