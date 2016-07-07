@@ -1,13 +1,60 @@
+// scss-lint:disable SelectorDepth
+
 .nav {
 
   > li {
     > a {
       display: none;
+
+      > h1 {
+        line-height: initial;
+      }
     }
 
     > label {
       display: block;
       text-transform: uppercase;
+      font-size: 1.4rem;
+    }
+  }
+
+  .menu__mobile-level2--back {
+    display: block;
+    text-align: right;
+
+    label {
+      @extend %icon-close;
+      @extend %mns-icons;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      padding: $spacing-default-sm;
+    }
+
+    span {
+      display: none;
+    }
+  }
+}
+
+.menu__mobile-level2--show {
+  ~ .nav__content {
+    display: none;
+  }
+
+  &:checked {
+
+    ~ a {
+      display: block;
+    }
+
+    ~ label {
+      display: none;
+    }
+
+    ~ .nav__content {
+      display: block;
     }
   }
 }
