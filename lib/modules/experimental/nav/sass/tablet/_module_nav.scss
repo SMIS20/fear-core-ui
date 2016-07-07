@@ -1,0 +1,13 @@
+.nav {
+
+  > li {
+    > a {
+      display: none;
+    }
+
+    > label {
+      display: block;
+      text-transform: uppercase;
+    }
+  }
+}
