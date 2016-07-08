@@ -2,10 +2,10 @@
 
 module.exports = {
     phone: {
-        maxWidth: 340
+        maxWidth: 900
     },
     tablet: {
-        minWidth: 341,
+        minWidth: 901,
         maxWidth: 1024
     },
     desktop: {
