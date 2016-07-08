@@ -11,12 +11,10 @@ module.exports = function () {
 
     gulp.task('lint-sass', function () {
         return lintSass([
-            './examples/**/*.scss',
             './lib/sass/**/*.scss',
             './test/sass/**/*.scss',
             '!./lib/sass/fear-core-ui/sprites/**/*.scss',
-            '!./lib/sass/fear-core-ui/_temp_sprites_generated.scss',
-            '!examples/assets/fonts/**/*.scss'
+            '!./lib/sass/fear-core-ui/_temp_sprites_generated.scss'
         ]);
     });
 };

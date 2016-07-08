@@ -26,8 +26,3 @@ function loadModule (modulePath) {
 
 //tasks
 loadModule('./tasks/dev');
-loadModule('./tasks/build');
-
-//core tasks
-loadModule('./tasks/core');
-loadModule('./tasks/serve');
