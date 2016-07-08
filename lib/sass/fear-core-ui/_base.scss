@@ -20,6 +20,10 @@
 @import 'utilities/opacity';
 @import 'utilities/shapes';
 @import 'utilities/animation';
+@import 'utilities/ie-only';
+@import 'utilities/scrollbar';
+@import 'utilities/webkit-bugfix';
+@import 'utilities/spacings';
 
 @import 'components/buttons/mixins';
 @import 'components/icons/mixins';
