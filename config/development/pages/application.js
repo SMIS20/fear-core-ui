@@ -5,7 +5,8 @@ module.exports = function () {
         {
             'name': 'Modules',
             'links': [
-                { 'name': 'Search input', 'url': 'core/module/search' }
+                { 'name': 'Search input', 'url': 'core/module/search' },
+                { 'name': 'Nav', 'url': 'core/module/nav' }
             ]
         },
         {

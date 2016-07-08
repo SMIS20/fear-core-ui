@@ -7,7 +7,7 @@
   }
 
   > nav {
-    margin-right: $spacing-default-med;
+    margin-right: $spacing-medium;
     min-width: 240px;
     border-right: 1px solid $color__brand--dark-grey;
 
@@ -25,7 +25,7 @@
 
     @include ie-only(9) {
       display: table-cell;
-      padding-left: $spacing-default-med;
+      padding-left: $spacing-medium;
       width: 100%;
       text-align: center;
 
@@ -38,7 +38,7 @@
 
 .l-main__nav {
   position: fixed;
-  margin: #{$spacing-default-med * 2} $spacing-default-med 0 0;
+  margin: #{$spacing-medium * 2} $spacing-medium 0 0;
   padding: 0;
 
   > li {

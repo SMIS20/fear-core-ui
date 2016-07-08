@@ -749,10 +749,12 @@
   window.addEventListener('resize', loadMobileJS);
 
   function loadMobileJS() {
-    if (window.innerWidth < 1025) {
-      System.import('/experimental/modules/progressive-nav/nav.js');
+    if (window.innerWidth < 900) {
+      System.import('/modules/nav/nav.js');
     }
   }
+
+  loadMobileJS();
 </script>
 
 </body>

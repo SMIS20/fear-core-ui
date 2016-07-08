@@ -2,7 +2,7 @@
 
 .menu__hamburger {
   display: inline-block;
-  padding: $spacing-default-sm;
+  padding: $spacing-small;
 }
 
 .menu__mobile-level2--back {
@@ -67,7 +67,7 @@
       &::before {
         position: absolute;
         top: calc(#{$menu__level3-height} - 28px);
-        right: $spacing-default-sm;
+        right: $spacing-small;
         z-index: -1;
         transition: all .15s ease;
       }

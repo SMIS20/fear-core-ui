@@ -1,9 +1,7 @@
-@import 'app-core/base';
-@import 'fear-core-ui/extends';
-@import 'fear-core-ui/experimental/utilities/webkit-bugfix';
-@import 'modules/experimental/nav/sass/variables';
-@import 'modules/experimental/nav/sass/tablet/module_nav';
-@import 'modules/experimental/nav/sass/desktop/module_nav__content';
+@import 'fear-core-ui/base';
+@import 'modules/nav/sass/variables';
+@import 'modules/nav/sass/desktop/module_nav';
+@import 'modules/nav/sass/desktop/module_nav__content';
 
 .nav__wrapper {
   display: flex;
@@ -25,4 +23,3 @@
     width: 100%;
   }
 }
-

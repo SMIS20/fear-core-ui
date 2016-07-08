@@ -1,7 +1,8 @@
-@import 'app-core/base';
-@import 'modules/experimental/nav/sass/variables';
-@import 'modules/experimental/nav/sass/desktop/module_nav';
-@import 'modules/experimental/nav/sass/desktop/module_nav__content';
+@import 'fear-core-ui/base';
+@import 'fear-core-ui/extends';
+@import 'modules/nav/sass/variables';
+@import 'modules/nav/sass/tablet/module_nav';
+@import 'modules/nav/sass/desktop/module_nav__content';
 
 .nav__wrapper {
   display: flex;
@@ -23,3 +24,4 @@
     width: 100%;
   }
 }
+
