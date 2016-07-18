@@ -4,8 +4,14 @@ dist
 .idea
 .vscode
 app/generated
-build
+/build
 deploy-package.tgz
 _gh_pages
 .DS_Store
 _temp_sprites_generated.scss
+.tmp
+css
+npm-debug.log
+*.orig
+
+app/common/scripts/config.js
