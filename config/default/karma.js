@@ -54,12 +54,14 @@ module.exports = {
         },
         serveFiles: [
             'lib/modules/**/*.js',
+            'lib/templates/**/*.js',
             'lib/modules/**/*.html'
         ]
     },
     files: [
         'test/spec/helper/global.js',
-        'lib/modules/**/*.spec.js'
+        'lib/modules/**/*.spec.js',
+        'lib/templates/**/*.spec.js'
     ],
     browsers: ['PhantomJS'],
     port: 8080,

@@ -8,14 +8,16 @@ try {
     fearCoreUiEntryPoint = process.cwd();
 }
 
-var sassDir = path.join(fearCoreUiEntryPoint, 'lib/sass');
-var assetsDir = path.join(fearCoreUiEntryPoint, 'lib/assets');
-var assetImageDir = path.join(fearCoreUiEntryPoint, 'lib/assets/images');
-var assetFontDir = path.join(fearCoreUiEntryPoint, 'lib/assets/fonts');
+var sassDir = path.dirname(fearCoreUiEntryPoint) + '/lib/sass';
+var templatesDir = path.dirname(fearCoreUiEntryPoint) + '/lib/templates';
+var assetsDir = path.dirname(fearCoreUiEntryPoint) + '/lib/assets';
+var assetImageDir = path.dirname(fearCoreUiEntryPoint) + '/lib/assets/images';
+var assetFontDir = path.dirname(fearCoreUiEntryPoint) + '/lib/assets/fonts';
 
 module.exports = {
-    sassPaths: [sassDir, bourbon.includePaths],
+    sassPaths: [sassDir, templatesDir, bourbon.includePaths],
     assetPaths: assetsDir,
     assetImagePaths: assetImageDir,
     assetFontPaths: assetFontDir
 };
+
