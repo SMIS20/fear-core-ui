@@ -1,6 +1,18 @@
 'use strict';
 
-module.exports = function () {
+var config = require('fear-core').utils.config();
+
+module.exports = function() {
+
     require('./open')();
-    require('./serve')();
+
+    var serveFactoryOptions = {
+        folder: config.get('cli.folder') || config.get('paths.app.base'),
+        mockDataPath: 'mock',
+        taskDependencies: [],
+        webserver: config.get('webserver')
+    };
+
+    require('./factory')(serveFactoryOptions);
 };
+
