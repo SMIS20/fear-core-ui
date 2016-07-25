@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docs": "./node_modules/sassdoc/bin/sassdoc lib/sass -d _gh_pages/docs",
-    "pretest": "eslint tasks/",
+    "pretest": "eslint tasks/ lib/mns-core-ui/",
     "postpublish": "node postpublish",
     "prepublish": "npm test",
     "test": "gulp lint-sass"

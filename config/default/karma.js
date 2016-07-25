@@ -53,15 +53,13 @@ module.exports = {
             }
         },
         serveFiles: [
-            'lib/modules/**/*.js',
-            'lib/templates/**/*.js',
-            'lib/modules/**/*.html'
+            'lib/mns-core-ui/**/*.js',
+            'lib/mns-core-ui/**/*.html'
         ]
     },
     files: [
         'test/spec/helper/global.js',
-        'lib/modules/**/*.spec.js',
-        'lib/templates/**/*.spec.js'
+        'lib/mns-core-ui/**/*.spec.js'
     ],
     browsers: ['PhantomJS'],
     port: 8080,
