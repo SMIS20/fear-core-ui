@@ -9,7 +9,7 @@ try {
 }
 
 var sassDir = path.dirname(fearCoreUiEntryPoint) + '/lib/sass';
-var coreUIDir = path.dirname(fearCoreUiEntryPoint) + '/lib/mns-core-ui';
+var coreUIDir = path.dirname(fearCoreUiEntryPoint) + '/lib';
 var assetsDir = path.dirname(fearCoreUiEntryPoint) + '/lib/assets';
 var assetImageDir = path.dirname(fearCoreUiEntryPoint) + '/lib/assets/images';
 var assetFontDir = path.dirname(fearCoreUiEntryPoint) + '/lib/assets/fonts';
