@@ -9,13 +9,13 @@ try {
 }
 
 var sassDir = path.dirname(fearCoreUiEntryPoint) + '/lib/sass';
-var templatesDir = path.dirname(fearCoreUiEntryPoint) + '/lib/templates';
+var coreUIDir = path.dirname(fearCoreUiEntryPoint) + '/lib/mns-core-ui';
 var assetsDir = path.dirname(fearCoreUiEntryPoint) + '/lib/assets';
 var assetImageDir = path.dirname(fearCoreUiEntryPoint) + '/lib/assets/images';
 var assetFontDir = path.dirname(fearCoreUiEntryPoint) + '/lib/assets/fonts';
 
 module.exports = {
-    sassPaths: [sassDir, templatesDir, bourbon.includePaths],
+    sassPaths: [sassDir, coreUIDir, bourbon.includePaths],
     assetPaths: assetsDir,
     assetImagePaths: assetImageDir,
     assetFontPaths: assetFontDir

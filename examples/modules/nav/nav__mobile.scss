@@ -1,10 +1,10 @@
 @import 'fear-core-ui/base';
 @import 'fear-core-ui/extends';
-@import 'modules/nav/sass/variables';
-@import 'modules/nav/sass/mobile/variables';
-@import 'modules/nav/sass/mobile/extends';
-@import 'modules/nav/sass/mobile/mixins';
-@import 'modules/nav/sass/mobile/module_nav';
+@import 'mns-core-ui/templates/nav/sass/variables';
+@import 'mns-core-ui/templates/nav/sass/mobile/variables';
+@import 'mns-core-ui/templates/nav/sass/mobile/extends';
+@import 'mns-core-ui/templates/nav/sass/mobile/mixins';
+@import 'mns-core-ui/templates/nav/sass/mobile/module_nav';
 
 @include mobile-nav($mobile-hide--sibling-for-hamburger: 'header', $mobile-hide--sibling-for-menu-items: '.nav__wrapper');
 @include mobile-nav__level1;
