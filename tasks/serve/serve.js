@@ -32,7 +32,7 @@ module.exports = function () {
         return isDev() && !isTestsRunning();
     }
 
-    gulp.task('start-server', ['build-sass', 'build-mustache', 'create-app-config'], function () {
+    gulp.task('start-server', ['compile-sass', 'build-mustache', 'create-app-config'], function () {
 
         var express = require('express');
         var app = express();
@@ -52,7 +52,7 @@ module.exports = function () {
             mustacheConfig,
             channelDefaults,
             [app],
-            ['^\/core\/module\/([a-zA-Z-_]*)$ /core/views/default/pages/module/index.html?module=$1 [L,QSA]']
+            ['^\/core\/([a-zA-Z-_]*)\/([a-zA-Z-_]*)$ /core/views/default/pages/$1/index.html?$1=$2 [L,QSA]']
         );
     });
 

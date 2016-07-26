@@ -5,8 +5,13 @@ module.exports = function () {
         {
             'name': 'Modules',
             'links': [
-                { 'name': 'Search input', 'url': 'core/module/search' },
-                { 'name': 'Nav', 'url': 'core/module/nav' }
+                { 'name': 'Search input', 'url': 'core/module/search' }
+            ]
+        },
+        {
+            'name': 'Templates',
+            'links': [
+                { 'name': 'Global Navigation', 'url': 'core/template/nav' }
             ]
         },
         {
