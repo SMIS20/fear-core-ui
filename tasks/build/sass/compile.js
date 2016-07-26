@@ -38,16 +38,16 @@ module.exports = function() {
     /**
      * compile-module-sass
      */
-    gulp.task('compile-module-sass', tasks.sass.compile('./lib/modules/**/*.scss', defaultOptions));
+    gulp.task('compile-core-ui-sass', tasks.sass.compile('./lib/mns-core-ui/**/*.scss', compileOptions({destination: 'assets/css'})));
 
     /**
      * compile-examples-sass
      */
     gulp.task('compile-examples-sass', tasks.sass.compile(['./examples/**/*.scss'], compileOptions({destination: 'examples/css'})));
 
-    return gulp.task('build-sass', [
+    return gulp.task('compile-sass', [
         'compile-core-sass',
-        'compile-module-sass',
+        'compile-core-ui-sass',
         'compile-examples-sass'
     ], function() {
         return gulp.src(path.join(config.get('paths.core.css'), config.get('paths.glob.css')))

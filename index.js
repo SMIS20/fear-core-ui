@@ -3,16 +3,16 @@ var bourbon = require('node-bourbon');
 var fearCoreUiEntryPoint;
 
 try {
-    fearCoreUiEntryPoint = require.resolve('fear-core-ui');
+    fearCoreUiEntryPoint = path.dirname(require.resolve('fear-core-ui'));
 } catch (e) {
     fearCoreUiEntryPoint = process.cwd();
 }
 
-var sassDir = path.dirname(fearCoreUiEntryPoint) + '/lib/sass';
-var coreUIDir = path.dirname(fearCoreUiEntryPoint) + '/lib';
-var assetsDir = path.dirname(fearCoreUiEntryPoint) + '/lib/assets';
-var assetImageDir = path.dirname(fearCoreUiEntryPoint) + '/lib/assets/images';
-var assetFontDir = path.dirname(fearCoreUiEntryPoint) + '/lib/assets/fonts';
+var sassDir = path.join(fearCoreUiEntryPoint, '/lib/sass');
+var coreUIDir = path.join(fearCoreUiEntryPoint, '/lib');
+var assetsDir = path.join(fearCoreUiEntryPoint, '/lib/assets');
+var assetImageDir = path.join(fearCoreUiEntryPoint, '/lib/assets/images');
+var assetFontDir = path.join(fearCoreUiEntryPoint, '/lib/assets/fonts');
 
 module.exports = {
     sassPaths: [sassDir, coreUIDir, bourbon.includePaths],
