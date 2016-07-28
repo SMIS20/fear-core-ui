@@ -1,5 +1,8 @@
 # fear-core-ui change log
 
+#### **4.0.2**
+- hide accessibility text from left instead of top
+
 #### **4.0.1**
 - new font assets - fixes 1/2 and 1/4 reversal
 
