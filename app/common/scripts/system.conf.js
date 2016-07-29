@@ -14,6 +14,9 @@ System.config({
         },
         'common/scripts/modules/es6/analytics/events' : {
             build: false
+        },
+        'applicationData' :{
+            build: false
         }
     },
     map: {
