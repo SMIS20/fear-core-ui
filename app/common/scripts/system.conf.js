@@ -11,6 +11,9 @@ System.config({
         'angular': {
             'format': 'global',
             'exports': 'angular'
+        },
+        'common/scripts/modules/es6/analytics/events' : {
+            build: false
         }
     },
     map: {
