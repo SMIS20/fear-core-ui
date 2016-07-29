@@ -5,7 +5,7 @@ var gulp = require('gulp');
 module.exports = function () {
     require('./sass/compile')();
     require('./mustache/compile')();
-    require('./javascript/bundle')();
+    require('./javascript')();
 
-    gulp.task('build', ['bundle-scripts', 'compile-sass']);
+    gulp.task('build', ['minify-scripts', 'compile-sass']);
 };
