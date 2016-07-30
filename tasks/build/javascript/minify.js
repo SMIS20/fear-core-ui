@@ -10,7 +10,10 @@ module.exports = function () {
 
         var outputFolder = 'dist';
 
-        var toProcess = ['lib/assets/js/**!(' + outputFolder + ')/*.js'];
+        var toProcess = [
+            'lib/assets/js/**/*.js',
+            '!lib/assets/js/' + outputFolder + '/**/*.js'
+        ];
 
         return tasks.javascript.minify(toProcess, {
             destination : path.join('js', outputFolder)

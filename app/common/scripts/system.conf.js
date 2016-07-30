@@ -12,10 +12,7 @@ System.config({
             'format': 'global',
             'exports': 'angular'
         },
-        'common/scripts/modules/es6/analytics/events' : {
-            build: false
-        },
-        'applicationData' :{
+        'config' :{
             build: false
         }
     },

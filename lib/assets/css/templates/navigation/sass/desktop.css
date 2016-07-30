@@ -35,17 +35,17 @@
 /* --------
 Functions
 -------- */
-/* line 4, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop/_module_nav.scss */
+/* line 4, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop/_module_nav.scss */
 .nav > li:hover > .nav__content {
   display: block;
 }
 
-/* line 10, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop/_module_nav.scss */
+/* line 10, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop/_module_nav.scss */
 .nav > li > a {
   display: block;
 }
 
-/* line 1, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop/_module_nav__content.scss */
+/* line 1, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop/_module_nav__content.scss */
 .nav {
   position: relative;
   height: 3rem;
@@ -60,7 +60,7 @@ Functions
   vertical-align: middle;
 }
 
-/* line 10, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop/_module_nav__content.scss */
+/* line 10, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop/_module_nav__content.scss */
 .nav > li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -79,7 +79,7 @@ Functions
   vertical-align: middle;
 }
 
-/* line 22, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop/_module_nav__content.scss */
+/* line 22, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop/_module_nav__content.scss */
 .nav__content {
   top: 3rem;
   left: 0;
@@ -90,7 +90,7 @@ Functions
   box-shadow: 0 19px 27px rgba(0, 0, 0, 0.1);
 }
 
-/* line 31, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop/_module_nav__content.scss */
+/* line 31, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop/_module_nav__content.scss */
 .nav__content-items {
   display: -webkit-box;
   display: -webkit-flex;
@@ -102,7 +102,7 @@ Functions
   justify-content: space-around;
 }
 
-/* line 36, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop/_module_nav__content.scss */
+/* line 36, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop/_module_nav__content.scss */
 .nav__content-items > li {
   padding: 20px;
   -webkit-box-flex: 1;
@@ -117,40 +117,40 @@ Functions
   width: auto;
 }
 
-/* line 45, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop/_module_nav__content.scss */
+/* line 45, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop/_module_nav__content.scss */
 .nav__content-items > li > h2 {
   margin-bottom: 5px;
   padding-bottom: 5px;
   border-bottom: 1px solid #CCCCCC;
 }
 
-/* line 53, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop/_module_nav__content.scss */
+/* line 53, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop/_module_nav__content.scss */
 .nav__content-group {
   margin: 0 0 20px 0;
   padding: 0;
 }
 
-/* line 57, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop/_module_nav__content.scss */
+/* line 57, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop/_module_nav__content.scss */
 .nav__content-group:first-child {
   margin-top: 0;
 }
 
-/* line 61, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop/_module_nav__content.scss */
+/* line 61, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop/_module_nav__content.scss */
 .nav__content-group:last-child {
   margin-bottom: 0;
 }
 
-/* line 65, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop/_module_nav__content.scss */
+/* line 65, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop/_module_nav__content.scss */
 .nav__content-group > li {
   line-height: 2.5rem;
 }
 
-/* line 69, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop/_module_nav__content.scss */
+/* line 69, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop/_module_nav__content.scss */
 .nav__content-group > li > a:hover {
   text-decoration: underline;
 }
 
-/* line 6, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop.scss */
+/* line 6, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop.scss */
 .nav__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -168,14 +168,14 @@ Functions
   text-align: center;
 }
 
-/* line 14, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop.scss */
+/* line 14, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop.scss */
 .ie9 .nav__wrapper > nav {
   display: table;
   margin: auto;
   text-align: left;
 }
 
-/* line 21, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/nav/sass/desktop.scss */
+/* line 21, /Users/b8173803/Sites/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/desktop.scss */
 .nav__wrapper > nav {
   max-width: 1024px;
   width: 100%;

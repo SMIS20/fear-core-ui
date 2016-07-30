@@ -1,8 +1,7 @@
 @import 'fear-core-ui/base';
-@import 'fear-core-ui/extends';
-@import 'mns-core-ui/templates/nav/sass/variables';
-@import 'mns-core-ui/templates/nav/sass/tablet/module_nav';
-@import 'mns-core-ui/templates/nav/sass/desktop/module_nav__content';
+@import 'mns-core-ui/templates/navigation/sass/variables';
+@import 'mns-core-ui/templates/navigation/sass/desktop/module_nav';
+@import 'mns-core-ui/templates/navigation/sass/desktop/module_nav__content';
 
 .nav__wrapper {
   display: flex;
@@ -24,4 +23,3 @@
     width: 100%;
   }
 }
-
