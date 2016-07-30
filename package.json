@@ -8,7 +8,7 @@
     "pretest": "eslint tasks/ lib/mns-core-ui/",
     "postpublish": "node postpublish",
     "prepublish": "npm test; gulp build",
-    "test": "gulp lint-sass"
+    "test": "gulp lint-sass; gulp test-unit"
   },
   "repository": {
     "type": "git",
