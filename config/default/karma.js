@@ -49,12 +49,14 @@ module.exports = {
             map: {
                 'sinon': 'node_modules/fear-core-dev/node_modules/sinon/pkg/sinon.js',
                 'chai': 'node_modules/fear-core-dev/node_modules/chai/chai.js',
-                'sinon-chai': 'node_modules/fear-core-dev/node_modules/sinon-chai/lib/sinon-chai.js'
+                'sinon-chai': 'node_modules/fear-core-dev/node_modules/sinon-chai/lib/sinon-chai.js',
+                "config": "app/common/scripts/config.js"
             }
         },
         serveFiles: [
             'lib/mns-core-ui/**/*.js',
-            'lib/mns-core-ui/**/*.html'
+            'lib/mns-core-ui/**/*.html',
+            'app/common/scripts/config.js'
         ]
     },
     files: [

@@ -1,5 +1,10 @@
 # fear-core-ui change log
 
+#### **4.1.2**
+- add (global) navigation template
+    - add application data module to make application config data available to modules/templates
+    - implement es6 transpiling/JS minification/SASS compilation to expose assets
+
 #### **4.0.2**
 - hide accessibility text from left instead of top
 
@@ -22,8 +27,8 @@
 
 #### **1.1.11**
 - Aligning with the UX team on which of the mns-london fonts we should use:
- - mns-london-regular - the semibold font (much better legibility)
- - mns-london-demibold - the bold font (used is font-weight: bold produces inconsistent results)
+- mns-london-regular - the semibold font (much better legibility)
+- mns-london-demibold - the bold font (used is font-weight: bold produces inconsistent results)
 - add ux tooltip styles
 - add fear-core dev sass and eslint
 
@@ -37,12 +42,12 @@
 - Install sassdoc-theme-mns from github using SSH, as repo is now private
 
 #### **1.1.7**
-**Added new icons**  
-- icon-circle-arrow e902  
-- icon-long-arrow e900  
-- icon-gear e903  
-- icon-gear-filled e904  
-- icon-lock e905  
+- Added new icons  
+    - icon-circle-arrow e902  
+    - icon-long-arrow e900  
+    - icon-gear e903  
+    - icon-gear-filled e904  
+    - icon-lock e905  
 
 #### **1.1.6**
 - Fix bug for sparks icons
