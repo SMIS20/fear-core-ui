@@ -1,6 +1,6 @@
 # fear-core-ui change log
 
-#### **4.1.2**
+#### **4.1.0**
 - add (global) navigation template
     - add application data module to make application config data available to modules/templates
     - implement es6 transpiling/JS minification/SASS compilation to expose assets
