@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Home</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Home</h1>
+
+    
+
+
+
+    
+
+
+    <h3> </h3>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article><p>Core Sass, fonts and images for Marks and Spencer</p>
+<h2>Consuming the Library</h2><p>The library exposes the following paths:</p>
+<ul>
+<li>sassPaths</li>
+<li>assetPaths</li>
+<li>assetImagePaths</li>
+<li>assetFontPaths</li>
+</ul>
+<p>Install the module:</p>
+<pre class="prettyprint source"><code>npm install fear-core-ui --save</code></pre><p>Add the following to the gulp sass compile file.</p>
+<pre class="prettyprint source lang-javascript"><code>var fearCoreUI = require('fear-core-ui');
+
+.pipe(sass({
+        includePaths: fearCoreUI.sassPaths
+    })
+);</code></pre><p>The following variables need to be set</p>
+<pre class="prettyprint source lang-sass"><code>$fear-core-ui-font-dir: '/assets/fonts';
+$fear-core-ui-images-dir: '/assets/images';</code></pre><p>Copy fear-core-ui assets to your working directory</p>
+<pre class="prettyprint source lang-javascript"><code>var fearCoreUI = require('fear-core-ui');
+
+gulp.task('copy-fear-core-ui-assets', function() {
+    return gulp.src([fearCoreUI.assetPaths + '/**/*.*'])
+        .pipe(gulp.dest('/assets'));
+});</code></pre><p><em>Note that the variables set in step 3 should correspond to the location of the assets copied in step 4.</em></p>
+<p>You can now reference any sass file.</p>
+<h3>example:</h3><pre class="prettyprint source lang-sass"><code>@import 'fear-core-ui/base';
+@import 'fear-core-ui/typography';</code></pre><h2>Basic Structure</h2><p><code>fear-core-ui/base</code> contains all the variables, functions and mixins in the library. 
+You can import this multiple times in your SASS code.</p>
+<p><code>fear-core-ui/extends</code> contains all the extends rules. 
+This should be imported once and ONLY once per generated CSS file. If you import it more than once per generated CSS file you will have duplicate CSS rules.</p>
+<h2>SASS / CSS coding standards</h2><p>We want to make sure that unnecessary CSS is not imported to consuming projects.</p>
+<h2>Aggregates</h2><p>The following can be exposed through aggregate files:</p>
+<ul>
+<li>mixins</li>
+<li>variables</li>
+<li>functions</li>
+</ul>
+<p><strong>Example:</strong> 
+<code>@import utlities.scss;</code></p>
+<pre class="prettyprint source lang-sass"><code>@import 'utilities/functions';
+@import 'utilities/mixins';
+@import 'utilities/variables';</code></pre><p>This can be done because the sass code in these files do not add CSS unless mixins / extends are explicitly called from the consuming code.</p>
+<h2>Explicit imports</h2><p>When a sass file contains direct CSS it needs to consumed through an explicit import. </p>
+<p>i.e. If I only wanted to use the <code>buttons.sass</code> component. Importing an aggregate <code>components.sass</code> 
+which included all the components CSS. That would create bloat and unused CSS being included in the consuming project.</p>
+<p><strong>Example:</strong>
+The buttons components contains direct CSS and must be imported through a direct import and not an aggregate sass file.</p>
+<p><code>@import ui-pattern/buttons;</code></p>
+<pre class="prettyprint source lang-sass"><code>.btn--primary {
+  @include create-btn(40px, 15px, $color__brand--green, $color__brand--dark-grey, $color__brand--background-grey, $color__brand--light-grey);
+}
+
+.btn--secondary {
+  @include create-btn(40px, 15px, $color__brand--grey-40, $color__brand--dark-grey, $color__brand--background-grey, $color__brand--light-grey);
+}</code></pre><h3>Directory structure</h3><pre class="prettyprint source"><code>assets
+    |- fonts
+    |- images
+sass</code></pre><h3>Directory pattern</h3><pre class="prettyprint source"><code>item.scss
+- item // directory
+    |- _variables.scss
+    |- _extends.scss
+    |- _functions.scss
+    |- _mixins.scss
+    |- _module_itemA.scss
+    |- _module_itemB.scss</code></pre><h4>item.scss</h4><pre class="prettyprint source lang-sass"><code>@import 'item/variables';
+@import 'item/extends';
+@import 'item/functions';
+@import 'item/mixins';
+@import 'item/module_itemA';
+@import 'item/module_itemB';</code></pre><h3>Directory categories</h3><pre class="prettyprint source"><code>|- layouts
+    |- _grid.scss
+    |- grid
+        |- _variables.scss        
+        |- _mixins.scss        
+        |- _module_grid.scss        
+    |- _zindex.scss
+|- normalize
+    |- _module_mns-normalize.scss
+    |- _module_normalize.scss
+|- typography
+|- ui-pattern
+    |- _buttons.scss
+    |- buttons
+        |- _mixins.scss
+        |- _module_icons.scss
+        |- _module_buttons.scss
+|- utilites
+    |- _mixins_measurements.scss
+_colors.scss
+_sprites.scss
+_normalize.scss</code></pre><h3>Add an icon to the mns-icon fonts</h3><p>The mns-icons fonts are located in the <code>lib/assets/fonts</code> directory.  The font directory contains the generated mns-icon fonts:</p>
+<ul>
+<li>mns-icons.eot</li>
+<li>mns-icons.svg</li>
+<li>mns-icons.ttf</li>
+<li>mns-icons.woff</li>
+</ul>
+<p>In the <code>mns-icons</code> folder you will find the settings file (<code>selection.json</code>) used by icomoon and a demo project to serve up and test the fonts:</p>
+<p>The following steps will guide you through the process of adding icons to the mns-icon font</p>
+<ol>
+<li>Browse to https://icomoon.io/app/</li>
+<li>Click on Import Icons</li>
+<li>Browse to the fear-core-ui project folder and select the selection.json file (<code>lib/assets/fonts/mns-icons/selection.json</code>)</li>
+<li>If a message dialog pops up select to import all settings from the file</li>
+<li>Select the required fonts from the UI</li>
+<li>When you are done, at the bottom click <code>Generate Font</code></li>
+<li>Check if the old icons unicode signatures match with the original font (you can achieve this by serving up the <code>demo.html</code> file in the demo-files folder.</li>
+<li>Click download and save the zip file on your local hard drive</li>
+<li>Unzip this folder and copy the generated font files to <code>lib/assets/fonts</code> and the demo files to the <code>mns-icons</code> folder</li>
+<li>Add the icons unicode sign to the following file: <code>lib/sass/fear-core-ui/ui-pattern/_extends_content.scss</code> and give it a proper sass variable name</li>
+<li>Generate the css class in the <code>lib/sass/fear-core-ui/ui-pattern/_module_icons.scss</code> file:<pre class="prettyprint source lang-scss"><code>@include('css-class-name', 'icon-variable-name')</code></pre></li>
+</ol>
+<h2><strong>Linting</strong></h2><p><code>npm test</code> runs eslint <code>eslint tasks</code> and sass lint <code>gulp lint-sass</code></p>
+<p>###<strong>Further reading</strong></p>
+<ul>
+<li><a href="http://digitalinnovation.github.io/fear-core">Website</a></li>
+<li><a href="http://digitalinnovation.github.io/fear-core/docs/">Technical documentation</a></li>
+<li><a href="http://patternlibrary.auto.devops.mnscorp.net/#/Core">Pattern library</a></li>
+<li><a href="https://github.com/DigitalInnovation/fear-core/wiki">Wiki</a></li>
+</ul></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Analytics.html">Analytics</a></li><li><a href="Default.html">Default</a></li><li><a href="Mobile.html">Mobile</a></li><li><a href="Navigation.html">Navigation</a></li><li><a href="UI.html">UI</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Sun Jul 31 2016 23:52:42 GMT+0100 (BST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
