@@ -4,7 +4,7 @@
   "description": "Marks and Spencer core UI sass, fonts, images and assets",
   "main": "index.js",
   "scripts": {
-    "docs": "./node_modules/sassdoc/bin/sassdoc lib/sass -d _gh_pages/docs",
+    "docs": "./node_modules/sassdoc/bin/sassdoc lib/sass -d _gh_pages/docs/sass; ./node_modules/.bin/jsdoc ./lib/mns-core-ui --recurse --destination _gh_pages/docs/mns-core-ui --readme README.md",
     "pretest": "eslint tasks/ lib/mns-core-ui/",
     "postpublish": "node postpublish",
     "prepublish": "npm test; gulp build",
@@ -51,6 +51,7 @@
     "gulp-sass": "git+https://github.com/digitalinnovation/gulp-sass.git",
     "gulp-util": "3.0.7",
     "ip": "1.1.3",
+    "jsdoc": "^3.4.0",
     "sassdoc": "2.1.15",
     "sassdoc-extras": "2.3.0",
     "sassdoc-theme-mns": "git+ssh://git@github.com:DigitalInnovation/sassdoc-theme-mns",
