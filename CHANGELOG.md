@@ -4,6 +4,7 @@
 - add (global) navigation template
     - add application data module to make application config data available to modules/templates
     - implement es6 transpiling/JS minification/SASS compilation to expose assets
+    - add JSdoc for mns-core-ui javascript
 
 #### **4.0.2**
 - hide accessibility text from left instead of top
