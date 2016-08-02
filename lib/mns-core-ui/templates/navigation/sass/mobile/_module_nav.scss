@@ -10,11 +10,28 @@
   display: block;
   background-color: $color__brand--black;
   color: $color__brand--white;
+
+  > label {
+    @extend %mns-icons;
+
+    &::before {
+      content: $icon-arrow-left;
+    }
+
+    &::after {
+      content: 'Back';
+    }
+  }
 }
 
 .menu__button--hide-menu {
+  @extend %hamburger-menu;
   border: 0;
   background-color: $color__trasparent;
+}
+
+.nav__wrapper {
+  position: relative;
 }
 
 .nav {
@@ -22,12 +39,12 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: $nav-content-z-index;
   display: none;
   flex-direction: column;
   padding: 20px;
-  transition: .5s;
   background-color: $color__brand--white;
-  z-index: $nav-content-z-index;
+  transition: .5s;
 
   > li {
     // hide desktop links
@@ -61,7 +78,6 @@
   > li {
     > h2 {
       @extend %mobile__list-item;
-      @extend %icon-arrow-down;
       @extend %mns-icons;
 
       position: relative;
@@ -71,6 +87,8 @@
         top: calc(#{$menu__level3-height} - 28px);
         right: $spacing-small;
         z-index: -1;
+        display: block;
+        content: $icon-arrow-down;
         transition: all .15s ease;
       }
 
@@ -79,4 +97,8 @@
       }
     }
   }
+}
+
+.menu__button--show-level1 {
+  @extend %hamburger-menu;
 }
