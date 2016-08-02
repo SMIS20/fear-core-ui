@@ -6,11 +6,19 @@
   @include ie-only(9) {
     vertical-align: middle;
   }
+}
 
+.nav__level1-panel {
   > li {
     display: flex;
     height: $nav-height;
     align-items: center;
+    flex-grow: 1;
+
+    > a {
+      width: 100%;
+      text-align: center;
+    }
 
     @include ie-only(9) {
       display: table-cell;
