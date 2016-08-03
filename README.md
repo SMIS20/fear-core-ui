@@ -196,7 +196,8 @@ The following steps will guide you through the process of adding icons to the mn
 ###**Further reading**
 
 * [Website](http://digitalinnovation.github.io/fear-core)
-* [Technical documentation](http://digitalinnovation.github.io/fear-core/docs/)
+* [SASS Technical documentation](http://digitalinnovation.github.io/fear-core-ui/docs/sass)
+* [Javascript Technical documentation](http://digitalinnovation.github.io/fear-core-ui/docs/mns-core-ui)
 * [Pattern library](http://patternlibrary.auto.devops.mnscorp.net/#/Core)
 * [Wiki](https://github.com/DigitalInnovation/fear-core/wiki)
  
