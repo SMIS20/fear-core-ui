@@ -27,6 +27,7 @@ function loadModule (modulePath) {
 //tasks
 loadModule('./tasks/dev');
 loadModule('./tasks/build');
+loadModule('./tasks/test');
 
 //core tasks
 loadModule('./tasks/core');

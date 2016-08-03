@@ -8,25 +8,26 @@ var docker;
 
 module.exports = function() {
 
-    function loadDepenedencies () {
+    function loadDependencies () {
         tasks = tasks || require('fear-core-aut').test;
         docker = docker || tasks.visualTesting.docker();
     }
 
     gulp.task('visual-testing-setup', function () {
-        loadDepenedencies();
+        loadDependencies();
         return docker.setup();
     });
 
     gulp.task('visual-testing-teardown', function () {
-        loadDepenedencies();
+        loadDependencies();
         return docker.teardown();
     });
 
     gulp.task('test-visual', function(done) {
+
         runSequence(
             'create-app-config',
-            'build-sass',
+            'compile-sass',
             'start-server',
             'visual-testing-setup',
             'run-visual-tests',
@@ -40,7 +41,7 @@ module.exports = function() {
 
     gulp.task('run-visual-tests', function(done) {
 
-        loadDepenedencies();
+        loadDependencies();
 
         var webdriverioConfig = config.get('webdriverio');
         var visualTests = tasks.webdriverIO(webdriverioConfig);
