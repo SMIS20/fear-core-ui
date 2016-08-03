@@ -9,7 +9,11 @@
         }
 
         .menu__button--show-level1 {
-          display: inline-block;
+          display: flex;
+
+          @include ie-only(9) {
+            display: table-cell;
+          }
         }
       }
     }
@@ -29,7 +33,11 @@
 
     ~ #{$mobile-hide--sibling-for-hamburger} {
       .menu__button--hide-menu {
-        display: inline-block;
+        display: flex;
+
+        @include ie-only(9) {
+          display: table-cell;
+        }
       }
 
       .menu__button--show-level1 {
