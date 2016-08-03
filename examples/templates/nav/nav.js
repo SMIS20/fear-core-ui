@@ -1,4 +1,4 @@
-import MobileNav from 'modules/nav/mobileNav';
+import 'mns-core-ui/templates/navigation/js/index';
 
-let mobileNav = new MobileNav();
-mobileNav.bind();
+// let mobileNav = new MobileNav();
+// mobileNav.bind();

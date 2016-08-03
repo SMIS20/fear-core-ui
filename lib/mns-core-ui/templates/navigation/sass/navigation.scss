@@ -1,16 +1,4 @@
 @import 'app-core/base';
-@import 'app-core/once';
-@import 'fear-core-ui/components/icons';
-@import 'fear-core-ui/components/buttons';
-
-.example-header {
-  border-bottom: 1px solid $color__brand--light-grey;
-
-  > nav {
-    width: 50px;
-  }
-}
-
 @import 'mns-core-ui/templates/navigation/sass/variables';
 @import 'mns-core-ui/templates/navigation/sass/device';
 @import 'mns-core-ui/templates/navigation/sass/all';
@@ -21,15 +9,6 @@
 *****************************/
 @include desktop {
   @import 'mns-core-ui/templates/navigation/sass/desktop';
-
-  .nav__wrapper {
-    border-bottom: 5px solid $color__brand--black;
-
-    > nav {
-      @include wrapper($screen-lg);
-    }
-  }
-
 }
 
 /*****************************
@@ -37,15 +16,6 @@
 *****************************/
 @include tablet {
   @import 'mns-core-ui/templates/navigation/sass/tablet';
-
-  .nav__wrapper {
-    border-bottom: 5px solid $color__brand--black;
-
-    > nav {
-      @include wrapper($screen-lg);
-    }
-  }
-
 }
 
 /*****************************
@@ -55,8 +25,4 @@
   @import 'mns-core-ui/templates/navigation/sass/mobile';
 
   @include mobile-nav($mobile-hide--sibling-for-hamburger: 'header', $mobile-hide--sibling-for-menu-items: '.nav__wrapper');
-
-  .menu__mobile__account {
-    display: block;
-  }
 }
