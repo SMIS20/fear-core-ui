@@ -105,3 +105,13 @@
 .menu__button--show-level1 {
   @extend %hamburger-menu;
 }
+
+.menu__mobile-level1__overlay {
+  position: absolute;
+  top: $mobile-header-height;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $nav-overlay-z-index;
+  background-color: $color__overlay;
+}
