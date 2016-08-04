@@ -152,6 +152,11 @@ Functions
   display: none;
 }
 
+/* line 108, /Users/Caylam/Development/MS/code/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/all/_module_nav.scss */
+.menu__mobile-level1__overlay {
+  display: none;
+}
+
 /*****************************
   DESKTOP
 *****************************/
@@ -606,12 +611,22 @@ Functions
   .nav__content-items > li > h2 > label {
     display: block;
   }
+  /* line 109, /Users/Caylam/Development/MS/code/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/mobile/_module_nav.scss */
+  .menu__mobile-level1__overlay {
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
   /* line 8, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/_webkit-bugfix.scss */
   .menu__mobile-level3:checked + h2:nth-child(n)::after {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
   }
-  /* line 92, /Users/Caylam/Development/MS/code/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/mobile/_mixins.scss */
+  /* line 96, /Users/Caylam/Development/MS/code/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/mobile/_mixins.scss */
   .menu__mobile-level3:checked + h2::before {
     -webkit-transform: scaleY(-1);
     -ms-transform: scaleY(-1);
@@ -636,7 +651,11 @@ Functions
   #menu__mobile--hide:not(:checked) ~ .nav__wrapper #menu__mobile-level1--show:not(:checked) ~ .nav {
     overflow-y: hidden;
   }
-  /* line 35, /Users/Caylam/Development/MS/code/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/mobile/_mixins.scss */
+  /* line 33, /Users/Caylam/Development/MS/code/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/mobile/_mixins.scss */
+  #menu__mobile--hide:not(:checked) ~ .menu__mobile-level1__overlay {
+    display: block;
+  }
+  /* line 39, /Users/Caylam/Development/MS/code/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/mobile/_mixins.scss */
   #menu__mobile--hide ~ header .menu__button--hide-menu {
     display: -webkit-box;
     display: -webkit-flex;
@@ -647,7 +666,7 @@ Functions
   .ie9 #menu__mobile--hide ~ header .menu__button--hide-menu {
     display: table-cell;
   }
-  /* line 43, /Users/Caylam/Development/MS/code/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/mobile/_mixins.scss */
+  /* line 47, /Users/Caylam/Development/MS/code/fear-core-ui/lib/mns-core-ui/templates/navigation/sass/mobile/_mixins.scss */
   #menu__mobile--hide ~ header .menu__button--show-level1 {
     display: none;
   }

@@ -29,6 +29,10 @@
           }
         }
       }
+
+      ~ .menu__mobile-level1__overlay {
+        display: block;
+      }
     }
 
     ~ #{$mobile-hide--sibling-for-hamburger} {
