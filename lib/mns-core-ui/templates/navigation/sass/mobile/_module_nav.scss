@@ -36,7 +36,6 @@
 
 .menu__button--hide-menu {
   @extend %hamburger-menu;
-  border: 0;
   background-color: $color__trasparent;
 }
 
