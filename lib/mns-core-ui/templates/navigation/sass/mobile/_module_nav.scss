@@ -7,9 +7,13 @@
 
 .menu__mobile-level2--back {
   @extend %mobile__list-item;
-  display: block;
+  display: flex;
   background-color: $color__brand--black;
   color: $color__brand--white;
+
+  @include ie-only(9) {
+    display: table-cell;
+  }
 
   > label {
     @extend %mns-icons;
@@ -21,6 +25,12 @@
     &::after {
       content: 'Back';
     }
+  }
+
+  > span {
+    margin-right: 70px;
+    text-align: center;
+    flex-grow: 1;
   }
 }
 
