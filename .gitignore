@@ -7,12 +7,11 @@ app/generated
 deploy-package.tgz
 _gh_pages
 .DS_Store
-_temp_sprites_generated.scss
 .tmp
 /css
 /examples/css/
 /app/core/css/
 npm-debug.log
 *.orig
-
+visual-results*
 app/common/scripts/config.js
