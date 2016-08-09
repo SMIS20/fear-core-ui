@@ -5,6 +5,7 @@
   },
   "globals": {
     "window": false,
+    "mock": false,
     "document": false,
     "describe": false,
     "it": false,

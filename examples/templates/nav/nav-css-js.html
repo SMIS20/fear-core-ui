@@ -755,29 +755,7 @@
 <script>
 
   System.import('lib/mns-core-ui/templates/navigation/js/index.js').then(function (Navigation) {
-
-    new Navigation({
-      mobile : {
-        link : [{
-          functionName: 'analyticsTopNavMobile1',
-          event: 'click'
-        }],
-        link2 : [{
-          functionName: 'analyticsTopNavMobile2',
-          event: 'click'
-        }]
-      },
-      desktop : {
-        link : [{
-          functionName: 'analyticsTopNavDesktop1',
-          event: 'click'
-        }],
-        link2 : [{
-          functionName: 'analyticsTopNavDesktop2',
-          event: 'click'
-        }]
-      }
-    });
+    new Navigation();
   });
 
 </script>
