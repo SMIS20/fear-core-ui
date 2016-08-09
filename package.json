@@ -1,6 +1,6 @@
 {
   "name": "fear-core-ui",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "Marks and Spencer core UI sass, fonts, images and assets",
   "main": "index.js",
   "scripts": {
