@@ -4,4 +4,5 @@ module.exports = function () {
     require('./lint')();
     require('./sprites')();
     require('./watch')();
+    require('./unit')();
 };
