@@ -754,15 +754,10 @@
 <script src="&#x2F;common/scripts/system.conf.js"></script>
 <script>
 
-  window.addEventListener('resize', loadMobileJS);
+  System.import('lib/mns-core-ui/templates/navigation/js/index.js').then(function (Navigation) {
+    new Navigation();
+  });
 
-  function loadMobileJS() {
-    if (window.innerWidth < 900) {
-      System.import('/templates/nav/nav.js');
-    }
-  }
-
-  loadMobileJS();
 </script>
 
 </body>

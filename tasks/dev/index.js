@@ -3,6 +3,6 @@
 module.exports = function () {
     require('./lint')();
     require('./sprites')();
-    require('./unit')();
     require('./watch')();
+    require('./unit')();
 };

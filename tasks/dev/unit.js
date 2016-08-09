@@ -1,11 +1,14 @@
 'use strict';
 
-var gulp = require('gulp');
-var tasks = require('fear-core-dev');
-var config = require('fear-core').utils.config();
+const gulp = require('gulp');
+const mocha = require('gulp-mocha');
+require('babel-register');
 
 module.exports = function () {
-    gulp.task('test-unit', function (done) {
-        return tasks.test.karmaRunOnce(config.get('karma'), done)();
-    });
+    gulp.task('test-unit', () =>
+        gulp.src('lib/mns-core-ui/**/*.spec.js', {read: false})
+            .pipe(mocha({
+                require: ['./test/spec/helper/global.js']
+            }))
+    );
 };

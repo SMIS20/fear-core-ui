@@ -11,9 +11,6 @@ System.config({
         "angular": {
             "format": "global",
             "exports": "angular"
-        },
-        "config" :{
-            build: false
         }
     },
     map: {

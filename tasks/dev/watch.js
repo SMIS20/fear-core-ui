@@ -10,25 +10,12 @@ module.exports = function registerTasks() {
 
     gulp.task('watch', function() {
 
-        // app
         watchScripts();
         watchMustache();
         watchViews();
         watchSass();
 
-        // config
-        // watchConfig();
-
-        // mock
-        // watchMock();
-
-        // tasks
-        // watchTasks();
-
-        // test
-        // watchTestSpec();
-        // watchTestTasks();
-        // watchTestHtml();
+        lintOnChange();
 
         livereload.listen({
             quiet: true
@@ -64,8 +51,7 @@ module.exports = function registerTasks() {
 
         var files = [
             config.get('paths.examples.views'),
-            path.join(config.get('paths.app.views'), config.get('paths.glob.views')),
-            path.join('!app/jspm_components', config.get('paths.glob.views'))
+            path.join(config.get('paths.app.views'), config.get('paths.glob.views'))
         ];
 
         tasks.watch(files, ['live-reload']);
@@ -82,35 +68,6 @@ module.exports = function registerTasks() {
             config.get('paths.examples.sass')
         ];
 
-        tasks.watch(files, ['build-sass', 'live-reload'], lintOnChange());
+        tasks.watch(files, ['compile-sass', 'live-reload'], lintOnChange());
     }
-
-    // config watchers
-    // function watchConfig () {
-    //     tasks.watch(['config/**/*.js'], [], tasks.lint.onChange);
-    // }
-
-    // mock watchers
-    // function watchMock () {
-    //     tasks.watch(['mock/**/*.js'], [], tasks.lint.onChange);
-    // }
-
-    // tasks watchers
-    // function watchTasks () {
-    //     tasks.watch(['tasks/**/*.js', 'gulpfile.js'], ['test-tasks'], tasks.lint.onChange);
-    // }
-
-    // test watchers
-    // function watchTestSpec () {
-    //     tasks.watch(['test/spec/**/*.js'], ['run-unit-test-suite'], tasks.lint.onChange);
-    // }
-    //
-    // function watchTestTasks () {
-    //     tasks.watch(['test/tasks/**/*.js'], ['test-tasks'], tasks.lint.onChange);
-    // }
-    //
-    // function watchTestHtml () {
-    //     tasks.watch(['test/spec/**/*.html'], ['run-unit-test-suite']);
-    // }
-
 };

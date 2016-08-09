@@ -29,32 +29,14 @@ module.exports = {
         base: '.tmp'
     },
     core: {
-        base: 'app/core',
         css: 'app/core/css',
-        sass: 'app/core/sass',
-        scripts: 'app/core/scripts',
-        views: 'app/core/views',
-        packages: '{{base}}/core/scripts/packages'
+        sass: 'app/core/sass'
     },
     common: {
         base: '{{base}}/common',
-        images: '{{base}}/common/assets/images',
-        font: '{{base}}/common/assets/fonts',
         css: '{{base}}/common/css',
         sass: '{{base}}/common/sass',
-        scripts: '{{base}}/common/scripts',
-        views: '{{base}}/common/views'
-    },
-    teams: {
-        example: {
-            base: '{{base}}/bandc',
-            images: '{{base}}/bandc/assets/images',
-            font: '{{base}}/bandc/assets/fonts',
-            css: '{{base}}/bandc/css',
-            sass: '{{base}}/bandc/sass',
-            scripts: '{{base}}/bandc/scripts',
-            views: '{{base}}/bandc/views'
-        }
+        scripts: '{{base}}/common/scripts'
     },
     glob: {
         css : '**/*.css',
