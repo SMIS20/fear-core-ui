@@ -754,15 +754,32 @@
 <script src="&#x2F;common/scripts/system.conf.js"></script>
 <script>
 
-  window.addEventListener('resize', loadMobileJS);
+  System.import('lib/mns-core-ui/templates/navigation/js/index.js').then(function (Navigation) {
 
-  function loadMobileJS() {
-    if (window.innerWidth < 900) {
-      System.import('/templates/nav/nav.js');
-    }
-  }
+    new Navigation({
+      mobile : {
+        link : [{
+          functionName: 'analyticsTopNavMobile1',
+          event: 'click'
+        }],
+        link2 : [{
+          functionName: 'analyticsTopNavMobile2',
+          event: 'click'
+        }]
+      },
+      desktop : {
+        link : [{
+          functionName: 'analyticsTopNavDesktop1',
+          event: 'click'
+        }],
+        link2 : [{
+          functionName: 'analyticsTopNavDesktop2',
+          event: 'click'
+        }]
+      }
+    });
+  });
 
-  loadMobileJS();
 </script>
 
 </body>
