@@ -24,6 +24,8 @@ System.config({
         "classList-polyfill": "node_modules/classlist-polyfill/src/index",
         "es6-promise": "node_modules/es6-promise/dist/es6-promise",
         "xhttp": "node_modules/xhttp/dist/xhttp",
-        "text": "node_modules/system-text/text"
+        "text": "node_modules/system-text/text",
+        "polyfill-foreach": "node_modules/babel-runtime/core-js/array/for-each",
+        "polyfill-from": "node_modules/babel-runtime/core-js/array/from"
     }
 });

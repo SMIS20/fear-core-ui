@@ -17,6 +17,8 @@ global.mock = {
                 },
                 querySelectorAll: function() {
                 },
+                getElementsByClassName: function() {
+                },
                 cookie: '',
                 clearTimeout: function() {
                 },
