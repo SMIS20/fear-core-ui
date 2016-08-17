@@ -19,4 +19,8 @@ module.exports = function () {
             '!examples/assets/fonts/**/*.scss'
         ]);
     });
+
+    gulp.task('eslint', function () {
+        return tasks.lint.javascript('./lib/mns-core-ui/**/*.js', false)();
+    });
 };
