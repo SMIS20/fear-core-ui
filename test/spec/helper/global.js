@@ -16,13 +16,16 @@ global.mock = {
                 querySelector: function() {
                 },
                 querySelectorAll: function() {
+                },
+                getElementsByClassName: function() {
+                },
+                cookie: '',
+                clearTimeout: function() {
+                },
+                setTimeout: function(func) {
+                    func();
                 }
-            },
-            clearTimeout: function() {
-            },
-            setTimeout: function(func) {
-                func();
             }
-        };
+        }
     }
 };
