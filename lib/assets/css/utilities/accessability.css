@@ -1,0 +1,69 @@
+/** * @group Font size */
+/**
+* Body font size for large devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for tsop devices (desktop)
+* @group Font size
+*/
+/**
+* Body font size for small devices (desktop)
+* @group Font size
+ */
+/**
+* Body font size for small devices (mobile/tablet)
+* @group Font families
+*/
+/* --------
+Functions
+-------- */
+/* --------
+  Accessibility
+  -------- */
+/* line 6, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/accessability/_module_accessibility.scss */
+.acc__skip-link,
+.acc__header,
+.acc__text {
+  position: absolute;
+  left: -99999px;
+}
+
+/* line 14, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/accessability/_module_accessibility.scss */
+.acc__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 20, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/accessability/_module_accessibility.scss */
+.acc-wrapper {
+  float: left;
+}
+
+/* line 25, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/accessability/_module_accessibility.scss */
+.acc__skip-link:focus,
+.acc__skip-link:active {
+  padding: 1rem 2rem;
+  top: 1.1rem;
+  left: 12rem;
+  min-width: 20rem;
+  background-color: #F8F8F8;
+  text-decoration: none;
+  border: solid 1px #CCCCCC;
+  text-align: left;
+  z-index: 9090;
+}
+
+/* line 38, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/accessability/_module_accessibility.scss */
+.acc__a-highlight a:focus,
+.acc__a-highlight:focus {
+  text-decoration: underline;
+}
+
+/* line 43, /Users/Caylam/Development/MS/code/fear-core-ui/lib/sass/fear-core-ui/utilities/accessability/_module_accessibility.scss */
+.acc--outline:focus {
+  outline: 1px dotted #000000;
+}
+
+/*# sourceMappingURL=accessability.css.map */

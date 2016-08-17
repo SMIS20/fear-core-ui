@@ -1,8 +1,12 @@
-@import 'app-core/base';
+//@import 'app-core/variables';
+@import 'fear-core-ui/base';
+@import 'fear-core-ui/utilities/ie-only';
+@import 'fear-core-ui/components/icons/variables';
+@import 'fear-core-ui/components/icons/extends';
+@import 'fear-core-ui/components/icons/extends_content';
 @import 'mns-core-ui/templates/navigation/sass/variables';
 @import 'mns-core-ui/templates/navigation/sass/device';
 @import 'mns-core-ui/templates/navigation/sass/all';
-
 
 /*****************************
   DESKTOP
@@ -24,5 +28,5 @@
 @include phone {
   @import 'mns-core-ui/templates/navigation/sass/mobile';
 
-  @include mobile-nav($mobile-hide--sibling-for-hamburger: 'header', $mobile-hide--sibling-for-menu-items: '.nav__wrapper');
+  @include mobile-nav($mobile-hide--sibling-for-hamburger: '.menu__mobile--hide__sibling-for-hamburger', $mobile-hide--sibling-for-menu-items: '.menu__mobile--hide__sibling-for-menu-items');
 }

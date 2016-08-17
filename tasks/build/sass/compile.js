@@ -38,7 +38,7 @@ module.exports = function() {
     /**
      * compile-module-sass
      */
-    gulp.task('compile-core-ui-sass', tasks.sass.compile('./lib/mns-core-ui/**/sass/*.scss', compileOptions({destination: 'assets/css'})));
+    gulp.task('compile-core-ui-sass', tasks.sass.compile('./lib/mns-core-ui/**/*.scss', compileOptions({destination: 'assets/css'})));
 
     /**
      * compile-examples-sass

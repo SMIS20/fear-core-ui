@@ -2,6 +2,7 @@
 @import 'mns-core-ui/templates/navigation/sass/mobile/extends';
 @import 'mns-core-ui/templates/navigation/sass/mobile/mixins';
 @import 'mns-core-ui/templates/navigation/sass/mobile/module_nav';
+@import 'mns-core-ui/templates/navigation/sass/mobile/module_account';
 
 @include mobile-nav__level1;
 @include mobile-nav__level2;
