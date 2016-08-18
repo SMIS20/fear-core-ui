@@ -9,7 +9,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
 <title>Progressive Nav</title>
-<link rel="stylesheet" href="/css/templates/nav/site.css" type="text/css"/>
+  <link rel="stylesheet" href="/css/templates/nav/site.css" type="text/css"/>
+  <link rel="stylesheet" href="/lib/assets/src/templates/navigation/sass/navigation.css" type="text/css"/>
 </head><body>
 <!--When this radio is checked then the menu is hidden -->
 <input type="radio" id="menu__mobile--hide" name="menu" aria-hidden="true" hidden checked/>
@@ -743,22 +744,9 @@
     </div>
   </nav>
 </div>
-<div data-js-location="&#x2F;" id="script-location"></div>
 
-<script>var mnsScriptLocation = document.getElementById('script-location').getAttribute('data-js-location');</script>
-
-<script src="&#x2F;node_modules/systemjs/dist/system.js"></script>
-
-<script>window.define = function () {};</script>
-
-<script src="&#x2F;common/scripts/system.conf.js"></script>
-<script>
-
-  System.import('lib/mns-core-ui/templates/navigation/js/index.js').then(function (Navigation) {
-    new Navigation();
-  });
-
-</script>
+<script src="/lib/assets/src/templates/navigation/js/index.js"></script>
+<script>new Navigation.default();</script>
 
 </body>
 </html>
